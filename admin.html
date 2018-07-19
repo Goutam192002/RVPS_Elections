@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:justify-content="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ">
+    <title>RVPS Elections</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark padding ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/rv.png">
+            RV PUBLIC SCHOOL
+        </a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="admin.html">Admin Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="wrapper">
+ <nav id="sidebar" style="padding-left: 2rem">
+     <div style="padding-top: 1rem; align-items: center">
+            <img src="assets/login.png" id="login" class="img-circle"/>
+            <h5>Admin Dashboard</h5>
+     </div>
+<!-- Sidebar Links -->
+<ul class="sidebar-menu">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Add/Remove Candidates</a></li>
+    <li><a href="#">Add Voters</a></li>
+    <li>
+        <a href="#MyAccountSubMenu" data-toggle="collapse" aria-expanded="false">My Account</a>
+        <ul class="collapse list-unstyled" id="MyAccountSubMenu">
+            <li><a href="#">Change password</a></li>
+            <li><a href="#">Change email</a></li>
+            <li><a href="#">Change number</a></li>
+            <li><a href="#">Change username</a> </li>
+        </ul>
+    <li><a href="#">Add Administrators</a> </li>
+</ul>
+</nav>
+</div>
+<footer>
+    <div class="container-fluid padding">
+        <h1  align="center">About Us</h1>
+        <p align="center">I am Goutam B Seervi. A student of RVPS for the year 2015-18</p>
+        <h2 align="center">Contact me</h2>
+        <p align="center">Phone nnumber : 7019271367</p>
+        <p align="center">Email id : goutambseervi@gmail.com</p>
+    </div>
+</footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            $(this).toggleClass('active');
+        });
+    });
+</script>
+</html>
