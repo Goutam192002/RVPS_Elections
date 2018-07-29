@@ -9,4 +9,9 @@ else
     student_details.style.display='none';
 }
 }
+$('#student-details-form').submit(function () {
+    event.preventDefault();
+   });
+
+
 
