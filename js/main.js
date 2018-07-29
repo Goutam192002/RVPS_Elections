@@ -11,6 +11,16 @@ else
 }
 $('#student-details-form').submit(function () {
     event.preventDefault();
+    var formData=new FormData();
+    formData.append('student_name',$('#student-name').val());
+    console.log(formData);
+    $.ajax({
+        url: 'student_details.php',
+        type: 'POST',
+        data: formData,
+        processData: false,
+    })
+
    });
 
 
