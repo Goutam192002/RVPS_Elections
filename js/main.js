@@ -11,16 +11,24 @@ else
 }
 $('#student-details-form').submit(function () {
     event.preventDefault();
-    var formData=new FormData();
+    let formData=new FormData();
     formData.append('student_name',$('#student-name').val());
+    formData.append('student_class',$('#student_class').val());
+    formData.append('student_section',$('#student-section').val());
+    formData.append('roll_no',$('#roll-no').val());
+    formData.append('student_house',$('#student-house').val());
+    formData.append('election_type',$('#election-type').val());
     console.log(formData);
-    $.ajax({
-        url: 'student_details.php',
-        type: 'POST',
-        data: formData,
-        processData: false,
-    })
-
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange=function () {
+        if(this.readyState===4 || this.status===400)
+        {
+            console.log('File uploaded');
+            console.log(xhr.response);
+        }
+    };
+    xhr.open('POST','student_details.php',true);
+    xhr.send(formData);
    });
 
 
