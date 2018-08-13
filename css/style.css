@@ -132,3 +132,11 @@ span:not(.icon-bar){
     margin: 2px;
     font-size: 25px;
 }
+.custom-color-1{
+    background-color: lightskyblue;
+    display: block;
+}
+.custom-color-2{
+    background-color: lightblue;
+    display: block;
+}
