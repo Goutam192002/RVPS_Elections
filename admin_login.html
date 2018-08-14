@@ -45,17 +45,17 @@
                 <form id="admin-signin">
                     <div class="form-group">
                         <label>Username</label>
-                        <input type="text" class="form-control input-lg" placeholder="Enter your username">
+                        <input id="admin_username" type="text" class="form-control input-lg" placeholder="Enter your username" required>
                     </div>
                     <div class="form-group">
                         <label>Password</label>
-                        <input type="password" class="form-control input-lg" placeholder="Enter your Password">
+                        <input id="admin_password" type="password" class="form-control input-lg" placeholder="Enter your Password" required>
                     </div>
                     <div class="form-group">
                         <a href="#" class="text-primary">Forgot Password?</a>
                     </div>
                     <div class="form-group" >
-                        <input type="submit" name="Sign In" value="Sign In" class="btn btn-success input-lg">
+                        <input id="submit_button" type="submit" name="Sign In" value="Sign In" class="btn btn-success input-lg">
                     </div>
                 </form>
             </div>
@@ -75,4 +75,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="admin_login_script.js"></script>
 </html>

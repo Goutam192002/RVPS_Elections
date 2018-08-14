@@ -140,3 +140,8 @@ span:not(.icon-bar){
     background-color: lightblue;
     display: block;
 }
+.vertical-row{
+    border-right: 2px black;
+    height: 100%;
+    width: 1px;
+}
