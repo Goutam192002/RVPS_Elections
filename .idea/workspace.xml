@@ -9,8 +9,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0b38b828-1858-4193-8fb7-77c77706863c" name="Default" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/admin_login_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/admin_login_script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +34,7 @@
     <session id="159389226">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.10" value="6" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.5" value="1" />
@@ -66,7 +64,7 @@
         <counts>
           <entry key="css" value="223" />
           <entry key="html" value="2291" />
-          <entry key="js" value="953" />
+          <entry key="js" value="955" />
           <entry key="php" value="646" />
           <entry key="sql" value="133" />
           <entry key="txt" value="17" />
@@ -76,7 +74,7 @@
         <counts>
           <entry key="CSS" value="223" />
           <entry key="HTML" value="2291" />
-          <entry key="JavaScript" value="953" />
+          <entry key="JavaScript" value="955" />
           <entry key="PHP" value="646" />
           <entry key="PLAIN_TEXT" value="17" />
           <entry key="Scratch" value="133" />
@@ -116,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/admin_login_script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            <state>
+              <caret column="36" selection-start-column="36" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -143,7 +141,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
@@ -202,8 +200,8 @@
         <option value="$PROJECT_DIR$/php_admin_login.php" />
         <option value="$PROJECT_DIR$/admin_login_script.js" />
         <option value="$PROJECT_DIR$/admin_login.html" />
-        <option value="$PROJECT_DIR$/js/admin_login_script.js" />
         <option value="$PROJECT_DIR$/admin.html" />
+        <option value="$PROJECT_DIR$/js/admin_login_script.js" />
       </list>
     </option>
   </component>
@@ -358,7 +356,7 @@
       <workItem from="1534335465345" duration="3992000" />
       <workItem from="1534356725743" duration="3000" />
       <workItem from="1534421787087" duration="2100000" />
-      <workItem from="1534425753085" duration="1435000" />
+      <workItem from="1534425753085" duration="1460000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1532003673856</created>
@@ -465,15 +463,28 @@
       <option name="project" value="LOCAL" />
       <updated>1534422243062</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Update">
+      <created>1534427268930</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1534427268930</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Update">
+      <created>1534427284314</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1534427284314</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66226000" />
+    <option name="totallyTimeSpent" value="66251000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32443365" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -631,13 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/admin_login_script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -647,6 +651,13 @@
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/admin_login_script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
         </state>
       </provider>
     </entry>
