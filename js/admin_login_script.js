@@ -1,4 +1,3 @@
-$(document).ready(function () {
     $("#admin-signin").on('submit',function (e) {
         e.preventDefault();
         let admin_username = $("#admin_username").val();
@@ -17,8 +16,9 @@ $(document).ready(function () {
                 }
                 else {
                     document.getElementById('admin-signin-card').innerHTML += '<div class="alert alert-danger"><h5>Error occured...Please try again</h5></div>';
+                    console.log("error shown");
                 }
             }
         });
+    return false;
     });
-});
