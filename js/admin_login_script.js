@@ -1,5 +1,4 @@
-    $(document).ready(function () {
-        $("#admin-signin").submit(function (e) {
+$("#admin-signin").submit(function () {
             e.preventDefault();
         let admin_username = $("#admin_username").val();
         let admin_password = $("#admin_password").val();
@@ -22,4 +21,3 @@
             }
         });
         });
-    });
