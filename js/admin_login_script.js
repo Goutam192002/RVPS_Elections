@@ -1,5 +1,6 @@
-    $("#admin-signin").on('submit',function (e) {
-        e.preventDefault();
+    $(document).ready(function () {
+        $("#admin-signin").submit(function (e) {
+            e.preventDefault();
         let admin_username = $("#admin_username").val();
         let admin_password = $("#admin_password").val();
         $.ajax({
@@ -20,5 +21,5 @@
                 }
             }
         });
-    return false;
+        });
     });
