@@ -15,8 +15,9 @@ $("#admin-signin").submit(function (e) {
                     window.open("admin.html", "_self");
                 }
                 else {
-                    document.getElementById('admin-signin-card').innerHTML += '<div class="alert alert-danger"><h5>Error occured...Please try again</h5></div>';
+                    document.getElementById("error-alert").style.display="flex";
                     console.log("error shown");
+                    return false;
                 }
             }
         });
