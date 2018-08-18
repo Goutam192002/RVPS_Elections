@@ -12,12 +12,11 @@ $("#admin-signin").submit(function (e) {
             dataType: "json",
             success: function (response) {
                 if (response === "OK") {
+                    document.cookie="admin_username="+admin_username+" ; path=/";
                     window.open("admin.html", "_self");
                 }
                 else {
                     document.getElementById("error-alert").style.display="flex";
-                    console.log("error shown");
-                    return false;
                 }
             }
         });

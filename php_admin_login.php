@@ -4,7 +4,7 @@ $admin_password=md5($_POST['admin_password']);
 include 'dbconnect.php';
 if($connection)
 {
-    $query="SELECT * FROM admin_table where admin_name='$admin_username' and admin_password='$admin_password'";
+    $query="SELECT * FROM admin_table where admin_username='$admin_username' and admin_password='$admin_password'";
     $result=$conn->query($query);
     if($result->num_rows==1)
     {
