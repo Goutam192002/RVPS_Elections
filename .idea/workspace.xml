@@ -7,13 +7,7 @@
     <bookmark url="file://$PROJECT_DIR$/js/admin_login_script.js" line="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b38b828-1858-4193-8fb7-77c77706863c" name="Default" comment="Update">
-      <change afterPath="$PROJECT_DIR$/retreive_admin_details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/admin_login_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/admin_login_script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/admin_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/admin_script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php_admin_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_admin_login.php" afterDir="false" />
-    </list>
+    <list default="true" id="0b38b828-1858-4193-8fb7-77c77706863c" name="Default" comment="Update" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +32,7 @@
     <session id="159389226">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="24" />
+          <entry key="project.closed" value="25" />
           <entry key="project.open.time.10" value="7" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.16" value="1" />
@@ -389,7 +383,7 @@
       <workItem from="1534480387312" duration="2301000" />
       <workItem from="1534483488817" duration="101000" />
       <workItem from="1534483610419" duration="13000" />
-      <workItem from="1534598199998" duration="2486000" />
+      <workItem from="1534598199998" duration="2657000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1532003673856</created>
@@ -517,11 +511,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534475489481</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Update">
+      <created>1534600729483</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1534600729483</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75571000" />
+    <option name="totallyTimeSpent" value="75742000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -535,7 +536,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3576052" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3576052" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -545,7 +546,7 @@
       <window_info id="Learn" order="7" weight="0.32928804" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32866043" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919093" weight="0.32866043" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49919093" weight="0.39719626" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -555,7 +556,7 @@
       <window_info anchor="bottom" id="PHP-CGI Server" order="9" weight="0.32866043" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32866043" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32866043" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5008091" side_tool="true" weight="0.39719626" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5008091" side_tool="true" weight="0.32866043" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49921876" weight="0.32866043" />
       <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32980332" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.32866043" />
