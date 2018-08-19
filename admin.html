@@ -64,13 +64,13 @@
           <img src="assets/icons8-male-user-filled-100.png">
           </div>
           <div class="col-8 " id="admin_details">
-                   <div  id="admin_details_name" style="background-color: lightblue">
+                   <div  id="admin_details_name" style="background-color: #E9E9E9">
                        Name:
                    </div>
               <div  class id="admin_details_password">
               Password:
               </div>
-          <div  class id="admin_details_mobileno" style="background-color: lightblue">
+          <div  class id="admin_details_mobileno" style="background-color: #E9E9E9">
             Mobiile Number:
           </div>
               <div class="" id="admin_details_email">
@@ -79,10 +79,29 @@
     </div>
 </div>
       </div>
-    <div class="row" style="padding-top: 2rem; padding-left: 2rem ;">
-        <div id="change-admin-details" class="col-12 card border-dark">
-
-        </div>
+    <div class="row" style="padding-top: 2rem; padding-left: 1rem ;">
+        <table class="table table-striped  table-bordered">
+            <tr>
+                <td>Admin Username</td>
+                <td id="table_admin_username"></td>
+                <td><a href="#" onclick="change_admin_username()">Change Username</a></td>
+            </tr>
+            <tr>
+                <td>Admin Password</td>
+                <td id="table_admin_password"></td>
+                <td><a href="#" onclick="change_admin_password()">Change Password</a> </td>
+            </tr>
+            <tr>
+                <td>Admin email</td>
+                <td id="table_admin_email"></td>
+                <td><a href="#" onclick="change_admin_email()" >Change email</a></td>
+            </tr>
+            <tr>
+                <td>Admin mobile Number</td>
+                <td id="table_admin_mobileno"></td>
+                <td><a href="#" onclick="change_admin_mobileno()">Change mobile number</a></td>
+            </tr>
+        </table>
     </div>
     </div>
 </div>
