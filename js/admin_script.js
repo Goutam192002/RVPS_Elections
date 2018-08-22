@@ -43,3 +43,8 @@ function change_admin_email() {
 function change_admin_mobileno() {
     
 }
+function addOrRemoveCandidates() {
+    document.getElementById("admin-home").style.display="none";
+    document.getElementById("add-remove-candidates").style.display="block";
+    //load candidate details into the table
+}
