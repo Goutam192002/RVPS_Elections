@@ -84,7 +84,7 @@
             <tr>
                 <td>Admin Username</td>
                 <td id="table_admin_username"></td>
-                <td><a href="#" onclick="change_admin_username()">Change Username</a></td>
+                <td><a href="#change-username-dialog" onclick="change_admin_username()">Change Username</a></td>
             </tr>
             <tr>
                 <td>Admin Password</td>
@@ -103,6 +103,102 @@
             </tr>
         </table>
     </div>
+        <div id="change-username-dialog" class="row card mb-5" style="">
+        <div class="card-header">
+            Change Username
+        </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label>Current Username</label>
+                <input type="text" value="" id="current-username" disabled>
+                </div>
+                    <form id="change-username-form">
+                    <div class="form-group">
+                        <label>Enter new username</label>
+                        <input type="text" id="new-username" required>
+                        <span id="username-available"></span>
+                    </div>
+                       <div class="form-group">
+                           <input type="submit" class="btn-primary">
+                       </div>
+                    </form>
+            </div>
+        </div>
+        <div id="change-password-dialog" class="row card mb-5" style="">
+            <div class="card-header">
+                Change Password
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label>Currrent Password</label>
+                    <input type="text" value="" id="current-password" disabled>
+                </div>
+                <form id="change-password-form">
+                    <div class="form-group">
+                        <label>Enter new password</label>
+                        <input type="text" id="new-password" required>
+                        <span id="password-alerts"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="change-email-dialog" class="row card mb-5" style="">
+            <div class="card-header">
+                Change e-mail address
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label>Current e-mail address</label>
+                    <input type="text" value="" id="current-emailid" disabled>
+                </div>
+                <form id="change-email-address">
+                    <div class="form-group">
+                        <label>New email address</label>
+                        <input type="text" id="new-email" required>
+                        <input type="button" class="btn-primary" name="send" value="send">
+                        <span id="email-errors"></span>
+                        <a style="display: inline-block"> A verification code will be sent to your new email address</a>
+                    </div>
+                    <div class="form-group">
+                        <label>Verification code</label>
+                        <input type="text" id="verification-code-email" required>
+                        <span id="email-verification-code-errors"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="change-mobileno-dialog" class="row card mb-5" style="">
+            <div class="card-header">
+                Change mobile number
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label>Cuurent mobile number</label>
+                    <input type="text" value="" id="current-mobileno" disabled>
+                </div>
+                <div class="form-group">
+                    <label>New mobile number</label>
+                    <input type="number" id="new-mobileno" required>
+                    <input type="button" class="btn-primary" name="send" value="send">
+                    <span id="mobileno-error"></span>
+                    <a style="display: inline-block"> A verification code will be sent to your new mobile number</a>
+                </div>
+                <div class="form-group">
+                    <label>Verfication code</label>
+                    <input type="text" id="verification-code-mobileno" required>
+                    <span id="mobileno-verification-code-errors"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn-primary">
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <footer>
