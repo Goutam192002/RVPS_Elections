@@ -45,6 +45,26 @@ function change_admin_mobileno() {
 }
 function addOrRemoveCandidates() {
     document.getElementById("admin-home").style.display="none";
+    document.getElementById("add-remove-voters").style.display="none";
+    document.getElementById("add-remove-administrators").style.display="none";
     document.getElementById("add-remove-candidates").style.display="block";
     //load candidate details into the table
+}
+function addOrRemoveVoters() {
+    document.getElementById("admin-home").style.display="none";
+    document.getElementById("add-remove-candidates").style.display="none";
+    document.getElementById("add-remove-administrators").style.display="none";
+    document.getElementById("add-remove-voters").style.display="block";
+    //load voter details into the table
+}
+function addOrRemoveAdministrators() {
+    document.getElementById("admin-home").style.display="none";
+    document.getElementById("add-remove-voters").style.display="none";
+    document.getElementById("add-remove-candidates").style.display="none";
+    document.getElementById("add-remove-administrators").style.display="block";
+    //load administrator details into the table
+}
+function adminLogoutYes() {
+document.cookie='admin_username=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    window.open("index.html", "_self");
 }
