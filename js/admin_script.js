@@ -65,6 +65,6 @@ function addOrRemoveAdministrators() {
     //load administrator details into the table
 }
 function adminLogoutYes() {
-document.cookie='admin_username=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+document.cookie='admin_username= ; path=/ ; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
     window.open("index.html", "_self");
 }
