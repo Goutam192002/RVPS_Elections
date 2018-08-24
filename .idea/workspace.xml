@@ -7,9 +7,7 @@
     <bookmark url="file://$PROJECT_DIR$/js/admin_login_script.js" line="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b38b828-1858-4193-8fb7-77c77706863c" name="Default" comment="Update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0b38b828-1858-4193-8fb7-77c77706863c" name="Default" comment="Update" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +32,7 @@
     <session id="159389226">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="43" />
+          <entry key="project.closed" value="44" />
           <entry key="project.open.time.10" value="14" />
           <entry key="project.open.time.11" value="5" />
           <entry key="project.open.time.12" value="1" />
@@ -43,8 +41,8 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="5" />
-          <entry key="project.open.time.9" value="11" />
-          <entry key="project.opened" value="45" />
+          <entry key="project.open.time.9" value="12" />
+          <entry key="project.opened" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -260,7 +258,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -277,6 +274,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
@@ -430,6 +428,7 @@
       <workItem from="1535049294161" duration="78000" />
       <workItem from="1535121759636" duration="2837000" />
       <workItem from="1535124694816" duration="73000" />
+      <workItem from="1535124987515" duration="43000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1532003673856</created>
@@ -617,7 +616,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97946000" />
+    <option name="totallyTimeSpent" value="97989000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -631,7 +630,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49844238" visible="true" weight="0.25566342" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49844238" visible="true" weight="0.25970873" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50155765" side_tool="true" weight="0.36893204" />
       <window_info id="Designer" order="3" />
@@ -651,7 +650,7 @@
       <window_info anchor="bottom" id="PHP-CGI Server" order="9" weight="0.32866043" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32866043" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32866043" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5008091" side_tool="true" weight="0.32866043" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5008091" side_tool="true" visible="true" weight="0.32866043" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49921876" weight="0.32866043" />
       <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32866043" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.32866043" />
