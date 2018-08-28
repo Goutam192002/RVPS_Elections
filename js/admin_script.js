@@ -1,7 +1,16 @@
 $(document).ready(function () {
-            let cookie=document.cookie.split(';').pop();
-            let admin_username=cookie.split('=').pop();
-            console.log(admin_username);
+    let cookie=document.cookie.split(';').pop();
+    let admin_username=cookie.split('=').pop();
+    let cookie_name=(document.cookie.split(';').pop()).split('=').slice();
+    console.log(cookie_name);
+    if (cookie_name[0]===' admin_username')
+    {
+        document.getElementById("admin-name-header").innerHTML="<a class=nav-link href=admin.html>" + admin_username + "</a>";
+    }
+    else
+    {
+        document.getElementById("admin-name-header").innerHTML="<a class=nav-link href=admin_login.html>Admin Login</a>";
+    }
             $.ajax({
                 url: 'retreive_admin_details.php',
                 data: {
@@ -32,16 +41,30 @@ function convertToPassword(val) {
     return result;
 }
 function change_admin_username() {
-
+document.getElementById('change-username-dialog').style.display="block";
+    document.getElementById('change-password-dialog').style.display="none";
+    document.getElementById('change-mobileno-dialog').style.display="none";
+    document.getElementById('change-email-dialog').style.display="none";
 }
 function change_admin_password() {
-    
+    document.getElementById('change-password-dialog').style.display="block";
+    document.getElementById('change-username-dialog').style.display="none";
+    document.getElementById('change-mobileno-dialog').style.display="none";
+    document.getElementById('change-email-dialog').style.display="none";
 }
 function change_admin_email() {
-    
+    document.getElementById('change-email-dialog').style.display="block";
+    document.getElementById('change-password-dialog').style.display="none";
+    document.getElementById('change-username-dialog').style.display="none";
+    document.getElementById('change-mobileno-dialog').style.display="none";
+
 }
 function change_admin_mobileno() {
-    
+    document.getElementById('change-mobileno-dialog').style.display="block";
+    document.getElementById('change-email-dialog').style.display="none";
+    document.getElementById('change-password-dialog').style.display="none";
+    document.getElementById('change-username-dialog').style.display="none";
+
 }
 function addOrRemoveCandidates() {
     document.getElementById("admin-home").style.display="none";
@@ -68,3 +91,4 @@ function adminLogoutYes() {
 document.cookie='admin_username= ; path=/ ; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
     window.open("index.html", "_self");
 }
+
