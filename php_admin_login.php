@@ -1,6 +1,6 @@
 <?php
 $admin_username=$_POST['admin_username'];
-$admin_password=md5($_POST['admin_password']);
+$admin_password = $_POST['admin_password'];
 include 'dbconnect.php';
 if($connection)
 {
