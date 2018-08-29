@@ -16,7 +16,7 @@ $("#admin-signin").submit(function (e) {
                     window.open("admin.html", "_self");
                 }
                 else {
-                    document.getElementById("error-alert").style.display="flex";
+                    document.getElementById("error-alert").style.display="block";
                 }
             }
         });

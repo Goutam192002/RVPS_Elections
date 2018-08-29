@@ -34,7 +34,6 @@ $(document).ready( function () {
     let cookie=document.cookie.split(';').pop();
     let admin_username=cookie.split('=').pop();
     let cookie_name=(document.cookie.split(';').pop()).split('=').slice();
-    console.log(cookie_name);
     if (cookie_name[0]===' admin_username')
     {
         document.getElementById("admin-name-header").innerHTML="<a class=nav-link href=admin.html>" + admin_username + "</a>";
