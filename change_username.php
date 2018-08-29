@@ -12,6 +12,5 @@ if($result->num_rows==0)
 }
 else
 {
-    echo json_encode("username already taken");
+    echo json_encode("Username has already been taken");
 }
-?>
