@@ -129,7 +129,22 @@ function addOrRemoveCandidates() {
     document.getElementById("add-remove-voters").style.display="none";
     document.getElementById("add-remove-administrators").style.display="none";
     document.getElementById("add-remove-candidates").style.display="block";
-    //load candidate details into the table
+    console.log("executing ajax");
+    $.ajax({
+        url: 'load_candidates_details.php',
+        type: 'POST',
+        data: {},
+        success: function (response) {
+            console.log(response);
+            document.getElementById("candidates-table-body").innerHTML = "<tr>" +
+                "<td>" + response.contestant_picture + "</td>" +
+                "<td>" + response.contestant_name + "</td>" +
+                "<td>" + response.constestant_id + "</td>" +
+                "<td>" + response.election_type + "</td>" +
+                "<td><a href='#'>Edit</a>" +
+                "<a href='#'>Remove</a></td></tr>";
+        }
+    })
 }
 function addOrRemoveVoters() {
     document.getElementById("admin-home").style.display="none";
