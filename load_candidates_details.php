@@ -1,5 +1,4 @@
 <?php
-phpinfo();
 include "dbconnect.php";
 $query = "SELECT * FROM contestant_details";
 $result = $conn->query($query);

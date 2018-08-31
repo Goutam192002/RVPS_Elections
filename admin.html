@@ -209,7 +209,6 @@
            </tr>
             </thead>
             <tbody id="candidates-table-body">
-            <!--append all contestants here-->
             </tbody>
         </table>
         <div class="row card mb-5">
@@ -217,7 +216,7 @@
                 Add a new candidate
             </div>
             <div class="card-body">
-                <form id="new-candidate">
+                <form id="new-candidate" enctype="multipart/form-data" action="add_candidate.php">
                     <div class="form-group">
                     <label>Candidate Name</label>
                     <input type="text" class="form-control input-lg" id="new-candidate-name" placeholder="Enter candidate name" required>

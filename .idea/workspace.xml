@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b38b828-1858-4193-8fb7-77c77706863c" name="Default" comment="Update">
-      <change afterPath="$PROJECT_DIR$/load_candidates_details.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add_candidate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/admin_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/admin_script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/load_candidates_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/load_candidates_details.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,10 +40,10 @@
     <session id="159389226">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="51" />
+          <entry key="project.closed" value="52" />
           <entry key="project.open.time.10" value="15" />
           <entry key="project.open.time.11" value="6" />
-          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.12" value="3" />
           <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
@@ -51,31 +52,31 @@
           <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="5" />
           <entry key="project.open.time.9" value="13" />
-          <entry key="project.opened" value="54" />
+          <entry key="project.opened" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="8" />
+          <entry key="html" value="9" />
           <entry key="js" value="12" />
-          <entry key="php" value="13" />
-          <entry key="sql" value="17" />
+          <entry key="php" value="14" />
+          <entry key="sql" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="8" />
+          <entry key="HTML" value="9" />
           <entry key="JavaScript" value="11" />
-          <entry key="PHP" value="13" />
-          <entry key="Scratch" value="18" />
+          <entry key="PHP" value="14" />
+          <entry key="Scratch" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="223" />
-          <entry key="html" value="10414" />
-          <entry key="js" value="6538" />
-          <entry key="php" value="2785" />
+          <entry key="html" value="10423" />
+          <entry key="js" value="7053" />
+          <entry key="php" value="3032" />
           <entry key="sql" value="724" />
           <entry key="txt" value="17" />
         </counts>
@@ -83,9 +84,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="223" />
-          <entry key="HTML" value="10419" />
-          <entry key="JavaScript" value="6533" />
-          <entry key="PHP" value="2785" />
+          <entry key="HTML" value="10428" />
+          <entry key="JavaScript" value="7048" />
+          <entry key="PHP" value="3032" />
           <entry key="PLAIN_TEXT" value="17" />
           <entry key="Scratch" value="724" />
         </counts>
@@ -97,23 +98,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin_login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="392" column="97" selection-start-line="392" selection-start-column="97" selection-end-line="392" selection-end-column="97" />
+            <state relative-caret-position="158">
+              <caret line="221" column="22" lean-forward="true" selection-start-line="221" selection-start-column="22" selection-end-line="221" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -136,17 +125,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/admin_script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="137" column="34" selection-start-line="137" selection-start-column="34" selection-end-line="137" selection-end-column="34" />
+            <state relative-caret-position="126">
+              <caret line="172" column="26" selection-start-line="172" selection-start-column="26" selection-end-line="172" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/add_candidate.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/load_candidates_details.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+            <state relative-caret-position="136">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bd81c98c-6a5b-45d4-bd6f-66259cf1c151/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -202,8 +209,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -242,10 +249,12 @@
         <option value="$PROJECT_DIR$/retreive_admin_details.php" />
         <option value="$PROJECT_DIR$/js/load_candidate_details.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bd81c98c-6a5b-45d4-bd6f-66259cf1c151/console.sql" />
-        <option value="$PROJECT_DIR$/admin.html" />
         <option value="$PROJECT_DIR$/admin_login.html" />
-        <option value="$PROJECT_DIR$/js/admin_script.js" />
+        <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/load_candidates_details.php" />
+        <option value="$PROJECT_DIR$/js/admin_script.js" />
+        <option value="$PROJECT_DIR$/admin.html" />
+        <option value="$PROJECT_DIR$/add_candidate.php" />
       </list>
     </option>
   </component>
@@ -279,6 +288,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -295,7 +305,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
@@ -320,7 +329,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
   <component name="RecentsManager">
     <key name="OPEN_URL_DIALOG">
@@ -344,14 +353,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.load_candidates_details.php">
-    <configuration name="admin login" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" uri="http://localhost:63342/RVPS Elections/admin_login.html" useFirstLineBreakpoints="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="PHP Script.add_candidate.php">
     <configuration name="admin.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/RVPS Elections/admin.html">
       <method v="2" />
     </configuration>
     <configuration name="admin_script.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="admin_script.js" working-dir="$PROJECT_DIR$/js">
+      <method v="2" />
+    </configuration>
+    <configuration name="add_candidate.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/add_candidate.php">
       <method v="2" />
     </configuration>
     <configuration name="load_candidates_details.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/load_candidates_details.php">
@@ -362,18 +371,18 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.admin.html" />
-      <item itemvalue="JavaScript Debug.admin login" />
       <item itemvalue="PHP Script.retreive_admin_details.php" />
       <item itemvalue="Node.js.admin_script.js" />
       <item itemvalue="PHP Script.load_candidates_details.php" />
+      <item itemvalue="PHP Script.add_candidate.php" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.add_candidate.php" />
         <item itemvalue="PHP Script.load_candidates_details.php" />
         <item itemvalue="Node.js.admin_script.js" />
         <item itemvalue="JavaScript Debug.admin.html" />
         <item itemvalue="PHP Script.retreive_admin_details.php" />
-        <item itemvalue="JavaScript Debug.admin login" />
       </list>
     </recent_temporary>
   </component>
@@ -473,7 +482,8 @@
       <workItem from="1535565488205" duration="410000" />
       <workItem from="1535635877974" duration="6406000" />
       <workItem from="1535643802818" duration="1730000" />
-      <workItem from="1535648754327" duration="4218000" />
+      <workItem from="1535648754327" duration="4296000" />
+      <workItem from="1535720176223" duration="4972000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1532003673856</created>
@@ -685,11 +695,18 @@
       <option name="project" value="LOCAL" />
       <updated>1535565873792</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Update">
+      <created>1535652985425</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1535652985425</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124759000" />
+    <option name="totallyTimeSpent" value="129809000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -702,9 +719,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49419954" visible="true" weight="0.29530746" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49419954" visible="true" weight="0.3001618" />
       <window_info id="Structure" order="1" sideWeight="0.5058005" side_tool="true" weight="0.2855987" />
       <window_info id="Favorites" order="2" sideWeight="0.50311524" side_tool="true" weight="0.27588996" />
       <window_info id="Designer" order="3" />
@@ -714,7 +730,7 @@
       <window_info id="Learn" order="7" weight="0.32928804" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919093" weight="0.32866043" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919093" visible="true" weight="0.3317757" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49919093" weight="0.39719626" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -826,6 +842,11 @@
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
+        <expression-string>$result_array</expression-string>
+        <language-id>PHP</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>$resultarray</expression-string>
         <language-id>PHP</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -913,13 +934,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/load_candidate_details.php" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bd81c98c-6a5b-45d4-bd6f-66259cf1c151/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="99" selection-start-line="4" selection-start-column="99" selection-end-line="4" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin_login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -965,17 +979,109 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1403">
+          <caret line="1123" column="12" lean-forward="true" selection-start-line="1123" selection-start-column="12" selection-end-line="1123" selection-end-column="12" />
+          <folding>
+            <element signature="e#1457#6901#0" expanded="true" />
+            <element signature="e#7473#7479#0" expanded="true" />
+            <element signature="e#7502#7508#0" expanded="true" />
+            <element signature="e#7509#7515#0" expanded="true" />
+            <element signature="e#7534#7540#0" expanded="true" />
+            <element signature="e#7541#7547#0" expanded="true" />
+            <element signature="e#7629#7635#0" expanded="true" />
+            <element signature="e#7636#7642#0" expanded="true" />
+            <element signature="e#7725#7731#0" expanded="true" />
+            <element signature="e#7732#7738#0" expanded="true" />
+            <element signature="e#7769#7775#0" expanded="true" />
+            <element signature="e#7776#7782#0" expanded="true" />
+            <element signature="e#7808#7814#0" expanded="true" />
+            <element signature="e#7815#7821#0" expanded="true" />
+            <element signature="e#7839#7845#0" expanded="true" />
+            <element signature="e#7846#7852#0" expanded="true" />
+            <element signature="e#7862#7868#0" expanded="true" />
+            <element signature="e#10071#16159#0" expanded="true" />
+            <element signature="e#16266#16272#0" expanded="true" />
+            <element signature="e#16278#16284#0" expanded="true" />
+            <element signature="e#16291#16297#0" expanded="true" />
+            <element signature="e#16306#16312#0" expanded="true" />
+            <element signature="e#16315#16321#0" expanded="true" />
+            <element signature="e#16330#16336#0" expanded="true" />
+            <element signature="e#16340#16346#0" expanded="true" />
+            <element signature="e#16364#16370#0" expanded="true" />
+            <element signature="e#16370#16376#0" expanded="true" />
+            <element signature="e#16376#16382#0" expanded="true" />
+            <element signature="e#16382#16388#0" expanded="true" />
+            <element signature="e#16392#16398#0" expanded="true" />
+            <element signature="e#16404#16410#0" expanded="true" />
+            <element signature="e#16417#16423#0" expanded="true" />
+            <element signature="e#16432#16438#0" expanded="true" />
+            <element signature="e#16441#16447#0" expanded="true" />
+            <element signature="e#16457#16463#0" expanded="true" />
+            <element signature="e#16465#16471#0" expanded="true" />
+            <element signature="e#16477#16483#0" expanded="true" />
+            <element signature="e#19049#19054#1" expanded="true" />
+            <element signature="e#19073#19078#1" expanded="true" />
+            <element signature="e#19154#19159#1" expanded="true" />
+            <element signature="e#19178#19183#1" expanded="true" />
+            <element signature="e#21813#21835#0" expanded="true" />
+            <element signature="e#21875#21897#0" expanded="true" />
+            <element signature="e#21991#22013#0" expanded="true" />
+            <element signature="e#22053#22075#0" expanded="true" />
+            <element signature="e#22166#22188#0" expanded="true" />
+            <element signature="e#22228#22250#0" expanded="true" />
+            <element signature="e#22344#22366#0" expanded="true" />
+            <element signature="e#22406#22428#0" expanded="true" />
+            <element signature="e#22521#22543#0" expanded="true" />
+            <element signature="e#22583#22605#0" expanded="true" />
+            <element signature="e#30786#30792#0" expanded="true" />
+            <element signature="e#30797#30803#0" expanded="true" />
+            <element signature="e#37857#37863#0" expanded="true" />
+            <element signature="e#37871#37877#0" expanded="true" />
+            <element signature="e#62233#62239#0" expanded="true" />
+            <element signature="e#62240#62244#0" expanded="true" />
+            <element signature="e#62244#62250#0" expanded="true" />
+            <element signature="e#62271#62277#0" expanded="true" />
+            <element signature="e#62278#62282#0" expanded="true" />
+            <element signature="e#62282#62288#0" expanded="true" />
+            <element signature="e#93516#93521#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bd81c98c-6a5b-45d4-bd6f-66259cf1c151/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/load_candidates_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/admin_script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="137" column="34" selection-start-line="137" selection-start-column="34" selection-end-line="137" selection-end-column="34" />
+        <state relative-caret-position="126">
+          <caret line="172" column="26" selection-start-line="172" selection-start-column="26" selection-end-line="172" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_candidate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="392" column="97" selection-start-line="392" selection-start-column="97" selection-end-line="392" selection-end-column="97" />
+        <state relative-caret-position="158">
+          <caret line="221" column="22" lean-forward="true" selection-start-line="221" selection-start-column="22" selection-end-line="221" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -991,13 +1097,6 @@
             <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/load_candidates_details.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
         </state>
       </provider>
     </entry>

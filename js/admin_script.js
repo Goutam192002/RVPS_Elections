@@ -125,24 +125,27 @@ function change_admin_mobileno() {
 
 }
 function addOrRemoveCandidates() {
+    document.getElementById("candidates-table-body").innerHTML = "";
     document.getElementById("admin-home").style.display="none";
     document.getElementById("add-remove-voters").style.display="none";
     document.getElementById("add-remove-administrators").style.display="none";
     document.getElementById("add-remove-candidates").style.display="block";
-    console.log("executing ajax");
+
     $.ajax({
         url: 'load_candidates_details.php',
         type: 'POST',
         data: {},
+        dataType: "json",
         success: function (response) {
-            console.log(response);
-            document.getElementById("candidates-table-body").innerHTML = "<tr>" +
-                "<td>" + response.contestant_picture + "</td>" +
-                "<td>" + response.contestant_name + "</td>" +
-                "<td>" + response.constestant_id + "</td>" +
-                "<td>" + response.election_type + "</td>" +
-                "<td><a href='#'>Edit</a>" +
-                "<a href='#'>Remove</a></td></tr>";
+            for (let i = 0; i < response.length; i++) {
+                document.getElementById("candidates-table-body").innerHTML += "<tr>" +
+                    "<td>" + response[i].contestant_picture + "</td>" +
+                    "<td>" + response[i].contestant_name + "</td>" +
+                    "<td>" + response[i].contestant_id + "</td>" +
+                    "<td>" + response[i].election_type + "</td>" +
+                    "<td><a href='#' style='padding-right: 1rem'>Edit</a>" +
+                    "<a href='#'>Remove</a></td></tr>";
+            }
         }
     })
 }
@@ -164,4 +167,21 @@ function adminLogoutYes() {
 document.cookie='admin_username= ; path=/ ; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
     window.open("index.html", "_self");
 }
+
+$('#new-candidate').submit(function (e) {
+    e.preventDefault();
+    let formData = new FormData(document.getElementById('new-candidate'));
+    $.ajax({
+        url: "add_candidate.php",
+        data: formData,
+        type: "POST",
+        dataType: "json",
+        processData: false,
+        cache: false,
+        contentType: false,
+        success: function (response) {
+            console.log(response);
+        }
+    })
+});
 
