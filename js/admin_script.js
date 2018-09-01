@@ -125,29 +125,11 @@ function change_admin_mobileno() {
 
 }
 function addOrRemoveCandidates() {
-    document.getElementById("candidates-table-body").innerHTML = "";
     document.getElementById("admin-home").style.display="none";
     document.getElementById("add-remove-voters").style.display="none";
     document.getElementById("add-remove-administrators").style.display="none";
     document.getElementById("add-remove-candidates").style.display="block";
-
-    $.ajax({
-        url: 'load_candidates_details.php',
-        type: 'POST',
-        data: {},
-        dataType: "json",
-        success: function (response) {
-            for (let i = 0; i < response.length; i++) {
-                document.getElementById("candidates-table-body").innerHTML += "<tr>" +
-                    "<td>" + response[i].contestant_picture + "</td>" +
-                    "<td>" + response[i].contestant_name + "</td>" +
-                    "<td>" + response[i].contestant_id + "</td>" +
-                    "<td>" + response[i].election_type + "</td>" +
-                    "<td><a href='#' style='padding-right: 1rem'>Edit</a>" +
-                    "<a href='#'>Remove</a></td></tr>";
-            }
-        }
-    })
+    refreshCandidateTable();
 }
 function addOrRemoveVoters() {
     document.getElementById("admin-home").style.display="none";
@@ -170,7 +152,10 @@ document.cookie='admin_username= ; path=/ ; expires=Thu, 01 Jan 1970 00:00:01 GM
 
 $('#new-candidate').submit(function (e) {
     e.preventDefault();
-    let formData = new FormData(document.getElementById('new-candidate'));
+    let formData = new FormData();
+    formData.append("contestant-name", document.getElementById("new-candidate-name").value);
+    formData.append("contestant-election-type", document.getElementById("new-candidate-election-type").value);
+    formData.append("contestant-picture", document.getElementById("new-candidate-picture").files[0]);
     $.ajax({
         url: "add_candidate.php",
         data: formData,
@@ -181,7 +166,35 @@ $('#new-candidate').submit(function (e) {
         contentType: false,
         success: function (response) {
             console.log(response);
+            if (response == "OK") {
+                refreshCandidateTable();
+            }
+            else {
+                document.getElementById("response").style.display = "block";
+                document.getElementById("response").innerHTML = "<p class=text-danger>" + response + "</p>";
+            }
         }
     })
 });
+
+function refreshCandidateTable() {
+    $.ajax({
+        url: 'load_candidates_details.php',
+        type: 'POST',
+        data: {},
+        dataType: "json",
+        success: function (res) {
+            document.getElementById("candidates-table-body").innerHTML = "";
+            for (let i = 0; i < res.length; i++) {
+                document.getElementById("candidates-table-body").innerHTML += "<tr>" +
+                    "<td>" + res[i].contestant_picture + "</td>" +
+                    "<td>" + res[i].contestant_name + "</td>" +
+                    "<td>" + res[i].contestant_id + "</td>" +
+                    "<td>" + res[i].election_type + "</td>" +
+                    "<td><a href='#' style='padding-right: 1rem'>Edit</a>" +
+                    "<a href='#'>Remove</a></td></tr>";
+            }
+        }
+    })
+}
 
