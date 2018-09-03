@@ -5,65 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b38b828-1858-4193-8fb7-77c77706863c" name="Default" comment="Update">
-      <change afterPath="$PROJECT_DIR$/add_class_voters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery-3.3.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery-3.3.1.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/esm/popper-utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/esm/popper-utils.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/esm/popper-utils.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/esm/popper-utils.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/esm/popper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/esm/popper.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/esm/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/esm/popper.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/popper-utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/popper-utils.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/popper-utils.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/popper-utils.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/popper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/popper.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/popper.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/umd/popper-utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/umd/popper-utils.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/umd/popper-utils.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/umd/popper-utils.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/umd/popper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/umd/popper.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/umd/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/dist/umd/popper.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/popper.js-1.14.0/package/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_candidate.php" beforeDir="false" afterPath="$PROJECT_DIR$/add_candidate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin_login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/admin_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/admin_script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +36,7 @@
     <session id="159389226">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="57" />
+          <entry key="project.closed" value="58" />
           <entry key="project.open.time.10" value="16" />
           <entry key="project.open.time.11" value="8" />
           <entry key="project.open.time.12" value="4" />
@@ -557,7 +499,7 @@
       <workItem from="1535816456135" duration="67000" />
       <workItem from="1535853539796" duration="6890000" />
       <workItem from="1535905132202" duration="2149000" />
-      <workItem from="1535934783136" duration="1055000" />
+      <workItem from="1535934783136" duration="1105000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1532003673856</created>
@@ -790,13 +732,20 @@
       <option name="project" value="LOCAL" />
       <updated>1535816468110</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Update">
+      <created>1535935877906</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1535935877906</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147701000" />
+    <option name="totallyTimeSpent" value="147751000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -823,7 +772,7 @@
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49919093" weight="0.39719626" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.32866043" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32866043" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32866043" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="9" weight="0.32866043" />
@@ -916,6 +865,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Update" />
     <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
