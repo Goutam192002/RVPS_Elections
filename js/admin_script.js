@@ -177,6 +177,10 @@ $('#new-candidate').submit(function (e) {
     })
 });
 
+function changeCandidateDetails() {
+    document.getElementById('change-candidate-details').style.display = "block";
+    document.getElementById('add-new-candidate').style.display = "none";
+}
 function refreshCandidateTable() {
     $.ajax({
         url: 'load_candidates_details.php',
@@ -187,14 +191,35 @@ function refreshCandidateTable() {
             document.getElementById("candidates-table-body").innerHTML = "";
             for (let i = 0; i < res.length; i++) {
                 document.getElementById("candidates-table-body").innerHTML += "<tr>" +
-                    "<td>" + res[i].contestant_picture + "</td>" +
-                    "<td>" + res[i].contestant_name + "</td>" +
-                    "<td>" + res[i].contestant_id + "</td>" +
-                    "<td>" + res[i].election_type + "</td>" +
-                    "<td><a href='#' style='padding-right: 1rem'>Edit</a>" +
-                    "<a href='#'>Remove</a></td></tr>";
+                    "<td class='contestant-picture'>" + res[i].contestant_picture + "</td>" +
+                    "<td class='contestant-name'>" + res[i].contestant_name + "</td>" +
+                    "<td class='contestant-id'>" + res[i].contestant_id + "</td>" +
+                    "<td class='election-type'>" + res[i].election_type + "</td>" +
+                    "<td><a href='#new-candidate' onclick='changeCandidateDetails()' style='padding-right: 1rem' id='edit-candidate'>Edit</a>" +
+                    "<a href='#new-candidate' id='remove-candidate'>Remove</a></td></tr>";
             }
         }
     })
 }
 
+$('add-new-voter-class').submit(function (e) {
+    e.preventDefault();
+    $.ajax({
+        url: 'add_class_voters.php',
+        type: 'POST',
+        data: {
+            "voters-class": document.getElementById('new-voters-class').value,
+            "voters-section": document.getElementById('new-voters-section').value,
+            "no-of-students": document.getElementById('no-of-candidates').value
+        },
+        dataType: 'json',
+        success: function (res) {
+            //refresh the voters table
+
+        }
+    })
+});
+
+function refreshVotersTable(response) {
+
+}

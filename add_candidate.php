@@ -22,7 +22,7 @@ $result1 = $conn->query($query2);
 $response = "";
 if ($result->num_rows == 0 && $result1->num_rows == 0) {
     move_uploaded_file($image_tmp_name, $image_directory);
-    $query = "INSERT into contestant_details (contestant_name,contestant_picture,contestant_id,election_type) VALUES('$contestant_name','$image_directory','$contestant_id','$election_type')";
+    $query = "INSERT into contestant_details (contestant_name,contestant_picture,contestant_id,election_type) VALUES('$contestant_name','$image_directory','$contestant_id','$contestant_election_type')";
     $result2 = $conn->query($query);
     $response = "OK";
     /*else
