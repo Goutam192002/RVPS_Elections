@@ -224,8 +224,8 @@
                     </div>
                     <div class="form-group">
                         <label>Election Type</label>
-                        <select class="form-control input-lg" id="new-candidate-election-type" required>
-                            <option disabled>Select the Election Type</option>
+                        <select class="form-control input-lg selectpicker" id="new-candidate-lection-type" required>
+                            <option disabled selected>Select the Election Type</option>
                             <option name="SVC">School Vice Captain</option>
                             <option name="SHB">School Head Boy</option>
                             <option name="BHC">Bhaskara House Captain</option>
@@ -262,7 +262,7 @@
                 <div class="form-group">
                     <label>Election Type</label>
                     <select class="form-control input-lg" id="candidate-election-type" required>
-                        <option disabled>Select the Election Type</option>
+                        <option disabled selected>Select the Election Type</option>
                         <option name="SVC">School Vice Captain</option>
                         <option name="SHB">School Head Boy</option>
                         <option name="BHC">Bhaskara House Captain</option>
@@ -284,7 +284,6 @@
         <div class="alert alert-danger" id="change-candidate-form-response" style="display: none; padding-top: 2rem">
         </div>
     </div>
-</div>
     <div class="col-8" id="add-remove-voters" style="padding-top: 2rem; padding-left: 12rem ; display: none">
         <table id="voters-table" class="table table-striped table-bordered">
             <thead class="thead-dark">
@@ -341,20 +340,19 @@
             </div>
         </div>
     </div>
-
     <div class="col-8" id="add-remove-administrators" style="padding-top: 2rem; padding-left: 12rem ; display: none">
-    <table id="admin-info-table" class="table table-striped table-bordered">
-        <thead class="thead-dark">
-        <tr>
-            <th scope="col">Admin username</th>
-            <th scope="col">Admin password</th>
-            <th scope="col">Action</th>
-        </tr>
-        </thead>
-        <tbody>
-        <!--admin lists here-->
-        </tbody>
-    </table>
+        <table id="admin-info-table" class="table table-striped table-bordered">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">Admin username</th>
+                <th scope="col">Admin password</th>
+                <th scope="col">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!--admin lists here-->
+            </tbody>
+        </table>
         <div class="row card mb-5">
             <div class="card-header">
                 Add administrator

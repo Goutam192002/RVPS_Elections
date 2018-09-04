@@ -176,10 +176,12 @@ $('#new-candidate').submit(function (e) {
         }
     })
 });
-
-function changeCandidateDetails() {
+let res={};
+function changeCandidateDetails(id) {
     document.getElementById('change-candidate-details').style.display = "block";
     document.getElementById('add-new-candidate').style.display = "none";
+    document.getElementById('candidate-name').value=res[id].contestant_name;
+    document.getElementsByName(res[id].election_type)[0].selected=true;
 }
 function refreshCandidateTable() {
     $.ajax({
@@ -195,13 +197,12 @@ function refreshCandidateTable() {
                     "<td class='contestant-name'>" + res[i].contestant_name + "</td>" +
                     "<td class='contestant-id'>" + res[i].contestant_id + "</td>" +
                     "<td class='election-type'>" + res[i].election_type + "</td>" +
-                    "<td><a href='#new-candidate' onclick='changeCandidateDetails()' style='padding-right: 1rem' id='edit-candidate'>Edit</a>" +
+                    "<td><a href='#new-candidate' onclick='changeCandidateDetails(i)' style='padding-right: 1rem' id='edit-candidate'>Edit</a>" +
                     "<a href='#new-candidate' id='remove-candidate'>Remove</a></td></tr>";
             }
         }
     })
 }
-
 $('add-new-voter-class').submit(function (e) {
     e.preventDefault();
     $.ajax({

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="election database">
+<dataSource name="RVPS_election">
   <database-model serializer="dbm" rdbms="MYSQL" format-version="4.9">
     <root id="1">
       <ServerVersion>10.1.31</ServerVersion>
@@ -9,7 +9,8 @@
     </root>
     <schema id="2" parent="1" name="election_database">
       <Current>1</Current>
-      <Collation>utf8_unicode_ci</Collation>
+      <Visible>1</Visible>
+      <Collation>latin1_swedish_ci</Collation>
     </schema>
     <schema id="3" parent="1" name="information_schema">
       <Collation>utf8_general_ci</Collation>
@@ -962,5 +963,89 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
+    <table id="242" parent="2" name="admin_table"/>
+    <table id="243" parent="2" name="contestant_details"/>
+    <table id="244" parent="2" name="voting_details"/>
+    <column id="245" parent="242" name="admin_name">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+      <Collation>utf8_unicode_ci</Collation>
+    </column>
+    <column id="246" parent="242" name="admin_password">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+      <Collation>utf8_unicode_ci</Collation>
+    </column>
+    <column id="247" parent="242" name="admin_email">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+      <Collation>utf8_unicode_ci</Collation>
+    </column>
+    <column id="248" parent="242" name="admin_mobile_no">
+      <Position>4</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="249" parent="243" name="contestant_name">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+      <Collation>utf8_unicode_ci</Collation>
+    </column>
+    <column id="250" parent="243" name="contestant_picture">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+      <Collation>utf8_unicode_ci</Collation>
+    </column>
+    <column id="251" parent="243" name="contestant_id">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+      <Collation>utf8_unicode_ci</Collation>
+    </column>
+    <column id="252" parent="243" name="election_type">
+      <Position>4</Position>
+      <DataType>char(5)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+      <Collation>utf8_unicode_ci</Collation>
+    </column>
+    <column id="253" parent="244" name="student_roll_no">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="254" parent="244" name="student_class">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="255" parent="244" name="student_section">
+      <Position>3</Position>
+      <DataType>char(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+      <Collation>utf8_unicode_ci</Collation>
+    </column>
+    <column id="256" parent="244" name="election_type">
+      <Position>4</Position>
+      <DataType>char(5)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+      <Collation>utf8_unicode_ci</Collation>
+    </column>
   </database-model>
 </dataSource>

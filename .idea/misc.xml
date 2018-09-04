@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="IdProvider" IDEtalkID="B826C50ACAF323D2193570CAB0B4BC06" />
   <component name="JavaScriptSettings">
-    <option name="languageLevel" value="JSX" />
+    <option name="languageLevel" value="ES6" />
   </component>
 </project>

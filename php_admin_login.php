@@ -1,7 +1,9 @@
 <?php
-$admin_username=$_POST['admin_username'];
-$admin_password = $_POST['admin_password'];
+/*$admin_username=$_POST['admin_username'];
+$admin_password = $_POST['admin_password'];*/
 include 'dbconnect.php';
+$admin_username="root";
+$admin_password ="RVPS2018";
 if($connection)
 {
     $query="SELECT * FROM admin_table where admin_username='$admin_username' and admin_password='$admin_password'";
