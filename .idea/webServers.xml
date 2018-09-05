@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="36d0644a-5b84-462f-a6fb-c77bfc6d670e" name="RVPS_elections" url="http://localhost">
+      <webServer id="36d0644a-5b84-462f-a6fb-c77bfc6d670e" name="RVPS_elections" url="http://localhost/RVPS_Elections">
         <fileTransfer port="0" mountedRoot="C:\xampp\htdocs\RVPS_Elections" accessType="MOUNT" />
       </webServer>
     </option>

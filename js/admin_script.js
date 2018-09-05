@@ -136,7 +136,7 @@ function addOrRemoveVoters() {
     document.getElementById("add-remove-candidates").style.display="none";
     document.getElementById("add-remove-administrators").style.display="none";
     document.getElementById("add-remove-voters").style.display="block";
-    //load voter details into the table
+    refreshVotersTable();
 }
 function addOrRemoveAdministrators() {
     document.getElementById("admin-home").style.display="none";
@@ -197,12 +197,48 @@ function refreshCandidateTable() {
                     "<td class='contestant-name'>" + res[i].contestant_name + "</td>" +
                     "<td class='contestant-id'>" + res[i].contestant_id + "</td>" +
                     "<td class='election-type'>" + res[i].election_type + "</td>" +
-                    "<td><a href='#new-candidate' onclick='changeCandidateDetails(i)' style='padding-right: 1rem' id='edit-candidate'>Edit</a>" +
-                    "<a href='#new-candidate' id='remove-candidate'>Remove</a></td></tr>";
+                    "<td><a href='#change-candidate-details' onclick='changeCandidateDetails(i)' style='padding-right: 1rem' id='edit-candidate'>Edit</a>" +
+                    "<a data-toggle=\"modal\" data-target=\"#removeCandidateModal\" onclick='removeCandidate(i)'>Remove</a></td></tr>";
             }
         }
     })
 }
+
+function removeCandidate(param) {
+    document.getElementById('Remove-candidate-modal-content').innerText = "Are you sure you want to remove the following candidate" +
+        "Candidate Name:" + res[param].contestant_name +
+        "Candidate ID:" + res[param].contestant_id +
+        "Elections:" + res[param].election_type;
+    document.getElementById('Remove-candidate-modal-content').outerHTML = '<div class="modal-footer">\n' +
+        '                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>\n' +
+        '                <button type="button" class="btn btn-primary" onclick="removeCandidateYes(param)"\n' +
+        '            </div>';
+}
+
+function removeCandidateYes(param) {
+    $.ajax({
+        url: 'remove_candidate.php',
+        type: 'POST',
+        data: {
+            candidate_id: res[param].contestant_id
+        },
+        dataType: 'JSON',
+        success: function (responseServer) {
+            if (responseServer == "OK") {
+                document.getElementById('removeCandidateModal').style.display = "none";
+                refreshCandidateTable();
+            }
+            else {
+                document.getElementById('removeCandidateModal').innerHTML = '<div class=\'alert alert-danger\'>'
+                    + '<h5>Sorry...Error Occured Please try again</h5>' +
+                    '</div>';
+                document.getElementById('removeCandidateModal').outerHTML = '<button type=\'button\' class=\'btn btn-primary\' data-dismiss=\'modal\'>OK</button>';
+            }
+        }
+    })
+}
+
+res = {};
 $('add-new-voter-class').submit(function (e) {
     e.preventDefault();
     $.ajax({
@@ -215,12 +251,71 @@ $('add-new-voter-class').submit(function (e) {
         },
         dataType: 'json',
         success: function (res) {
-            //refresh the voters table
+            if (res == "OK")
+                refreshVotersTable();
 
         }
     })
 });
 
-function refreshVotersTable(response) {
-
+function refreshVotersTable() {
+    $.ajax({
+        url: 'refresh_voters_details.php',
+        type: 'POST',
+        data: {},
+        dataType: "json",
+        success: function (res) {
+            document.getElementById("voters-table-body").innerHTML = "";
+            for (let i = 0; i < res.length; i++) {
+                document.getElementById("voters-table-body").innerHTML += "<tr>" +
+                    "<td class='contestant-picture'>" + res[i].student_class + "</td>" +
+                    "<td class='contestant-name'>" + res[i].student_section + "</td>" +
+                    "<td><a href='#new-candidate' onclick='changeVoterDetails(i)' style='padding-right: 1rem' id='edit-candidate'>Edit</a>" +
+                    "<a data-toggle=\"modal\" data-target=\"#removeVoterModal\" onclick='removeVoter(i)'>Remove</a></td></tr>"
+            }
+        }
+    })
 }
+
+function changeVoterDetails(param) {
+    document.getElementById('add-class-div').style.display = 'none';
+    document.getElementById('change-class-div').style.display = 'block';
+    document.getElementsByName(res[i].student_class)[0].selected = true;
+    document.getElementsByName(res[i].student_section)[0].selected = true;
+    document.getElementById('edit-no-of-students').value = res[i].no_of_students;
+}
+
+function removeVoter(param) {
+    document.getElementById("Remove-voter-modal-content").innerText = "Are you sure you want to delete the class " + res[param].student_class +
+        "and section " + res[param].student_section;
+    document.getElementById("Remove-voter-modal-content").outerHTML = '<div class="modal-footer">\n' +
+        '                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>\n' +
+        '                <button type="button" class="btn btn-primary" onclick="removeVoterYes(param)"\n' +
+        '            </div>';
+}
+
+function removeVoterYes(param) {
+    $.ajax({
+        url: 'remove_voter_class.php',
+        type: 'POST',
+        data: {
+            voter_class: res[param].student_class,
+            voter_section: res[param].student_section
+        },
+        dataType: 'json',
+        success: function (responseServer) {
+            if (responseServer == "OK") {
+                document.getElementById('removeVoterModal').style.display = "none";
+                refreshVotersTable();
+            }
+            else {
+                document.getElementById('removeVoterModal').innerHTML = '<div class=\'alert alert-danger\'>'
+                    + '<h5>Sorry...Error Occured Please try again</h5>' +
+                    '</div>';
+                document.getElementById('removeVoterModal').outerHTML = '<button type=\'button\' class=\'btn btn-primary\' data-dismiss=\'modal\'>OK</button>';
+            }
+        }
+    })
+}
+
+
