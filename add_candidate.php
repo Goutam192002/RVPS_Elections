@@ -8,11 +8,7 @@ $temp = explode(" ", $contestant_name);
 foreach ($temp as $t) {
     $contestant_id .= $t[0];
 }
-$temp = explode(" ", $contestant_election_type);
-foreach ($temp as $t) {
-    $election_type .= $t[0];
-}
-$contestant_id .= $election_type;
+$contestant_id .= $contestant_election_type;
 $image_directory = "assets/" . $contestant_id . ".jpg";
 include "dbconnect.php";
 $query1 = "SELECT * FROM contestant_details where contestant_name='$contestant_name'";

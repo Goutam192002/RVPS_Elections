@@ -224,16 +224,16 @@
                     </div>
                     <div class="form-group">
                         <label>Election Type</label>
-                        <select class="form-control input-lg selectpicker" id="new-candidate-lection-type" required>
+                        <select class="form-control input-lg selectpicker" id="new-candidate-election-type" required>
                             <option disabled selected>Select the Election Type</option>
-                            <option name="SVCN">School Vice Captain</option>
-                            <option name="SLCN">School Captain</option>
-                            <option name="BHCN">Bhaskara House Captain</option>
-                            <option name="BVCN">Bhaskara House Vice Captain</option>
-                            <option name="SHCN">Shushrutha House Captain</option>
-                            <option name="SHVC">Shushrutha House Vice Captain</option>
-                            <option name="CHCN">Charaka House Captain</option>
-                            <option name="CHVC">Charaka House Vice Captain</option>
+                            <option value="SVCN">School Vice Captain</option>
+                            <option value="SLCN">School Captain</option>
+                            <option value="BHCN">Bhaskara House Captain</option>
+                            <option value="BVCN">Bhaskara House Vice Captain</option>
+                            <option value="SHCN">Shushrutha House Captain</option>
+                            <option value="SHVC">Shushrutha House Vice Captain</option>
+                            <option value="CHCN">Charaka House Captain</option>
+                            <option value="CHVC">Charaka House Vice Captain</option>
                         </select>
                     </div>
                 <div class="form-group">
@@ -249,43 +249,45 @@
             <div class="alert alert-danger" id="response" style="display: none; padding-top: 2rem">
             </div>
         </div>
-    </div>
-    <div class="row card mb-5" id="change-candidate-details" style="display: none; padding-top: 1rem">
-        <div class="card-header">
-            Edit candidate details
-        </div>
-        <div class="card-body">
-            <form id="edit-candidate-details" enctype="multipart/form-data" action="add_candidate.php">
-                <div class="form-group">
-                    <label>Candidate Name</label>
-                    <input type="text" class="form-control input-lg" id="candidate-name"
-                           placeholder="Enter candidate name" required>
-                </div>
-                <div class="form-group">
-                    <label>Election Type</label>
-                    <select class="form-control input-lg" id="candidate-election-type" required>
-                        <option disabled selected>Select the Election Type</option>
-                        <option name="SVC">School Vice Captain</option>
-                        <option name="SHB">School Head Boy</option>
-                        <option name="BHC">Bhaskara House Captain</option>
-                        <option name="BVC">Bhaskara House Vice Captain</option>
-                        <option name="SHC">Shushrutha House Captain</option>
-                        <option name="SHVC">Shushrutha House Vice Captain</option>
-                        <option name="CHC">Charaka House Captain</option>
-                        <option name="CVC">Charaka House Vice Captain</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <button class="btn btn-default input-lg">
-                        <input type="file" id="candidate-picture" required hidden>
-                    </button>
-                </div>
-                <div class="form-group">
-                    <input type="submit" class="btn btn-primary form-control input-lg" id="submit-candidate-details">
-                </div>
-            </form>
-        </div>
-        <div class="alert alert-danger" id="change-candidate-form-response" style="display: none; padding-top: 2rem">
+        <div class="row card mb-5" id="change-candidate-details" style="display: none">
+            <div class="card-header">
+                Edit candidate details
+            </div>
+            <div class="card-body">
+                <form id="edit-candidate-details" enctype="multipart/form-data" action="add_candidate.php">
+                    <div class="form-group">
+                        <label>Candidate Name</label>
+                        <input type="text" class="form-control input-lg" id="candidate-name"
+                               placeholder="Enter candidate name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Election Type</label>
+                        <select class="form-control input-lg" id="candidate-election-type" required>
+                            <option disabled selected>Select the Election Type</option>
+                            <option value="SLVC">School Vice Captain</option>
+                            <option value="SLCN">School Captain</option>
+                            <option value="BAHC">Bhaskara House Captain</option>
+                            <option value="BHVC">Bhaskara House Vice Captain</option>
+                            <option value="SHCN">Shushrutha House Captain</option>
+                            <option value="SHVC">Shushrutha House Vice Captain</option>
+                            <option value="CHCN">Charaka House Captain</option>
+                            <option value="CHVC">Charaka House Vice Captain</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-default input-lg">
+                            <input type="file" id="candidate-picture" required>
+                        </button>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary form-control input-lg"
+                               id="submit-candidate-details">
+                    </div>
+                </form>
+            </div>
+            <div class="alert alert-danger" id="change-candidate-form-response"
+                 style="display: none; padding-top: 2rem">
+            </div>
         </div>
     </div>
     <div class="col-8" id="add-remove-voters" style="padding-top: 2rem; padding-left: 12rem ; display: none">
@@ -311,26 +313,26 @@
                         <label>Select Class</label>
                         <select class="form-control input-lg" id="new-voters-class" required>
                             <option disabled>Select the class</option>
-                            <option name="1">1</option>
-                            <option name="2">2</option>
-                            <option name="3">3</option>
-                            <option name="4">4</option>
-                            <option name="5">5</option>
-                            <option name="6">6</option>
-                            <option name="7">7</option>
-                            <option name="8">8</option>
-                            <option name="9">9</option>
-                            <option name="10">10</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label>Select Section</label>
                         <select class="form-control input-lg" id="new-voters-section" required>
                             <option disabled>Select section</option>
-                            <option name="A">A</option>
-                            <option name="B">B</option>
-                            <option name="C">C</option>
-                            <option name="D">D</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -354,26 +356,26 @@
                     <label>Select Class</label>
                     <select class="form-control input-lg" id="edit-voters-class" required>
                         <option disabled>Select the class</option>
-                        <option name="1">1</option>
-                        <option name="2">2</option>
-                        <option name="3">3</option>
-                        <option name="4">4</option>
-                        <option name="5">5</option>
-                        <option name="6">6</option>
-                        <option name="7">7</option>
-                        <option name="8">8</option>
-                        <option name="9">9</option>
-                        <option name="10">10</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label>Select Section</label>
                     <select class="form-control input-lg" id="edit-voters-section" required>
                         <option disabled>Select section</option>
-                        <option name="A">A</option>
-                        <option name="B">B</option>
-                        <option name="C">C</option>
-                        <option name="D">D</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
                     </select>
                 </div>
                 <div class="form-group">

@@ -154,7 +154,7 @@ $('#new-candidate').submit(function (e) {
     e.preventDefault();
     let formData = new FormData();
     formData.append("contestant-name", document.getElementById("new-candidate-name").value);
-    formData.append("contestant-election-type", document.getElementById("new-candidate-election-type").value);
+    formData.append("contestant-election-type", $('#new-candidate-election-type option:selected').val());
     formData.append("contestant-picture", document.getElementById("new-candidate-picture").files[0]);
     $.ajax({
         url: "add_candidate.php",
@@ -176,13 +176,8 @@ $('#new-candidate').submit(function (e) {
         }
     })
 });
-let res={};
-function changeCandidateDetails(id) {
-    document.getElementById('change-candidate-details').style.display = "block";
-    document.getElementById('add-new-candidate').style.display = "none";
-    document.getElementById('candidate-name').value=res[id].contestant_name;
-    document.getElementsByName(res[id].election_type)[0].selected=true;
-}
+let iRes = 0;
+let tempRes = [];
 function refreshCandidateTable() {
     $.ajax({
         url: 'load_candidates_details.php',
@@ -191,36 +186,49 @@ function refreshCandidateTable() {
         dataType: "json",
         success: function (res) {
             document.getElementById("candidates-table-body").innerHTML = "";
-            for (let i = 0; i < res.length; i++) {
+            for (iRes = 0; iRes < res.length; iRes++) {
+                tempRes[res[iRes].contestant_id] = JSON.stringify(res[iRes]);
                 document.getElementById("candidates-table-body").innerHTML += "<tr>" +
-                    "<td class='contestant-picture'>" + res[i].contestant_picture + "</td>" +
-                    "<td class='contestant-name'>" + res[i].contestant_name + "</td>" +
-                    "<td class='contestant-id'>" + res[i].contestant_id + "</td>" +
-                    "<td class='election-type'>" + res[i].election_type + "</td>" +
-                    "<td><a href='#change-candidate-details' onclick='changeCandidateDetails(i)' style='padding-right: 1rem' id='edit-candidate'>Edit</a>" +
-                    "<a data-toggle=\"modal\" data-target=\"#removeCandidateModal\" onclick='removeCandidate(i)'>Remove</a></td></tr>";
+                    "<td class=\'contestant-picture\'>" +
+                    "<img src=\'" + res[iRes].contestant_picture + "\' alt=\'image-of-candidate\' width=\'140\' height=\'140\'>" +
+                    "</td>" +
+                    "<td class=\'contestant-name\'>" + res[iRes].contestant_name + "</td>" +
+                    "<td class=\'contestant-id\'>" + res[iRes].contestant_id + "</td>" +
+                    "<td class=\'election-type\'>" + res[iRes].election_type + "</td>" +
+                    "<td><a href=\'#\' onclick=changeCandidateDetails('" + res[iRes].contestant_id + "')  style=\'padding-right: 1rem\' id=\'edit-candidate\'>Edit</a>" +
+                    "<a data-toggle=\"modal\" data-target=\"#removeCandidateModal\" onclick=removeCandidate('" + res[iRes].contestant_id + "')>Remove</a></td></tr>";
             }
         }
     })
 }
 
-function removeCandidate(param) {
-    document.getElementById('Remove-candidate-modal-content').innerText = "Are you sure you want to remove the following candidate" +
-        "Candidate Name:" + res[param].contestant_name +
-        "Candidate ID:" + res[param].contestant_id +
-        "Elections:" + res[param].election_type;
+function changeCandidateDetails(candidate_id) {
+    document.getElementById('add-new-candidate').style.display = "none";
+    document.getElementById('change-candidate-details').style.display = "block";
+    tempRes[candidate_id] = JSON.parse(tempRes[candidate_id]);
+    document.getElementById('candidate-name').value = tempRes[candidate_id].contestant_name;
+    let res_election_type = tempRes[candidate_id].election_type;
+    document.getElementById('candidate-election-type').value = res_election_type;
+}
+
+function removeCandidate(candidate_id_2) {
+    tempRes[candidate_id_2] = JSON.parse(tempRes[candidate_id_2]);
+    document.getElementById('Remove-candidate-modal-content').innerHTML = '<p>Are you sure you want to remove the following candidate' +
+        'Candidate Name:' + tempRes[candidate_id_2].contestant_name +
+        'Candidate ID:' + tempRes[candidate_id_2].contestant_id +
+        'Elections:' + tempRes[candidate_id_2].election_type + '</p>';
     document.getElementById('Remove-candidate-modal-content').outerHTML = '<div class="modal-footer">\n' +
         '                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>\n' +
-        '                <button type="button" class="btn btn-primary" onclick="removeCandidateYes(param)"\n' +
+        '                <button type="button" class="btn btn-primary" onclick=removeCandidateYes(' + tempRes[candidate_id_2].contestant_id + ')>Yes</button>\n' +
         '            </div>';
 }
 
-function removeCandidateYes(param) {
+function removeCandidateYes(candidate_id_3) {
     $.ajax({
         url: 'remove_candidate.php',
         type: 'POST',
         data: {
-            candidate_id: res[param].contestant_id
+            candidate_id: candidate_id_3
         },
         dataType: 'JSON',
         success: function (responseServer) {
