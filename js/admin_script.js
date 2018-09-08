@@ -266,7 +266,6 @@ $('add-new-voter-class').submit(function (e) {
         }
     })
 });
-
 function refreshVotersTable() {
     $.ajax({
         url: 'refresh_voter_details.php',
@@ -277,39 +276,43 @@ function refreshVotersTable() {
             document.getElementById("voters-table-body").innerHTML = "";
             for (let i = 0; i < res.length; i++) {
                 document.getElementById("voters-table-body").innerHTML += "<tr>" +
-                    "<td class='contestant-picture'>" + res[i].student_class + "</td>" +
-                    "<td class='contestant-name'>" + res[i].student_section + "</td>" +
-                    "<td><a href='#new-candidate' onclick='changeVoterDetails(i)' style='padding-right: 1rem' id='edit-candidate'>Edit</a>" +
-                    "<a data-toggle=\"modal\" data-target=\"#removeVoterModal\" onclick='removeVoter(i)'>Remove</a></td></tr>"
+                    "<td>" + res[i].student_class + "</td>" +
+                    "<td>" + res[i].student_section + "</td>" +
+                    "<td>" + res[i].no_of_students + "</td>" +
+                    "<td><a href='#new-candidate' onclick=changeVoterDetails('" + JSON.stringify(res[i]) + "') style='padding-right: 1rem' id='edit-candidate'>Edit</a>" +
+                    "<a data-toggle=\"modal\" data-target=\"#removeVoterModal\" onclick=removeVoter('" + JSON.stringify(res[i] + '"))>Remove</a></td></tr>";
             }
         }
     })
 }
 
 function changeVoterDetails(param) {
+    param = JSON.parse(param);
     document.getElementById('add-class-div').style.display = 'none';
     document.getElementById('change-class-div').style.display = 'block';
-    document.getElementsByName(res[i].student_class)[0].selected = true;
-    document.getElementsByName(res[i].student_section)[0].selected = true;
-    document.getElementById('edit-no-of-students').value = res[i].no_of_students;
+    document.getElementById('edit-voters-class').value = param.student_class;
+    document.getElementById('edit-voters-section').value = param.student_section;
+    document.getElementById('edit-no-of-students').value = param.no_of_students;
 }
 
 function removeVoter(param) {
-    document.getElementById("Remove-voter-modal-content").innerText = "Are you sure you want to delete the class " + res[param].student_class +
-        "and section " + res[param].student_section;
+    param = JSON.parse(param);
+    document.getElementById("Remove-voter-modal-content").innerText = "Are you sure you want to delete the class " + param.student_class +
+        "and section " + param.student_section;
     document.getElementById("Remove-voter-modal-content").outerHTML = '<div class="modal-footer">\n' +
         '                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>\n' +
-        '                <button type="button" class="btn btn-primary" onclick="removeVoterYes(param)"\n' +
+        '                <button type="button" class="btn btn-primary" onclick=removeVoterYes("' + JSON.stringify(param) + '")\n' +
         '            </div>';
 }
 
 function removeVoterYes(param) {
+    param = JSON.parse(param);
     $.ajax({
         url: 'remove_voter_class.php',
         type: 'POST',
         data: {
-            voter_class: res[param].student_class,
-            voter_section: res[param].student_section
+            voter_class: param.student_class,
+            voter_section: param.student_section
         },
         dataType: 'json',
         success: function (responseServer) {

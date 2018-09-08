@@ -294,6 +294,7 @@
             <tr>
                 <th scope="col">Class</th>
                 <th scope="col">Section</th>
+                <th scope="col">No of students</th>
                 <th scope="col">Action</th>
             </tr>
             </thead>
@@ -343,50 +344,49 @@
                 </form>
             </div>
         </div>
-    </div>
-    <div class="row card mb-5" id="change-class-div" style="display: none">
-        <div class="card-header">
-            Change Class Details
+        <div class="row card mb-5" id="change-class-div" style="display: none">
+            <div class="card-header">
+                Change Class Details
+            </div>
+            <div class="card-body">
+                <form id="change-voter-class">
+                    <div class="form-group">
+                        <label>Select Class</label>
+                        <select class="form-control input-lg" id="edit-voters-class" required>
+                            <option disabled>Select the class</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Select Section</label>
+                        <select class="form-control input-lg" id="edit-voters-section" required>
+                            <option disabled>Select section</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Enter the number of students</label>
+                        <input type="number" class="form-control input-lg" id="edit-no-of-students" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="Submit" value="Submit" class="btn btn-primary form-control input-lg">
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="card-body">
-            <form id="change-voter-class">
-                <div class="form-group">
-                    <label>Select Class</label>
-                    <select class="form-control input-lg" id="edit-voters-class" required>
-                        <option disabled>Select the class</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Select Section</label>
-                    <select class="form-control input-lg" id="edit-voters-section" required>
-                        <option disabled>Select section</option>
-                        <option value="A">A</option>
-                        <option value="B">B</option>
-                        <option value="C">C</option>
-                        <option value="D">D</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Enter the number of students</label>
-                    <input type="number" class="form-control input-lg" id="edit-no-of-students" required>
-                </div>
-                <div class="form-group">
-                    <input type="submit" name="Submit" value="Submit" class="btn btn-primary form-control input-lg">
-                </div>
-            </form>
-        </div>
     </div>
-</div>
     <div class="col-8" id="add-remove-administrators" style="padding-top: 2rem; padding-left: 12rem ; display: none">
         <table id="admin-info-table" class="table table-striped table-bordered">
             <thead class="thead-dark">
