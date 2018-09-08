@@ -196,7 +196,7 @@ function refreshCandidateTable() {
                     "<td class=\'contestant-id\'>" + res[iRes].contestant_id + "</td>" +
                     "<td class=\'election-type\'>" + res[iRes].election_type + "</td>" +
                     "<td><a href=\'#\' onclick=changeCandidateDetails('" + res[iRes].contestant_id + "')  style=\'padding-right: 1rem\' id=\'edit-candidate\'>Edit</a>" +
-                    "<a data-toggle=\"modal\" data-target=\"#removeCandidateModal\" onclick=removeCandidate('" + res[iRes].contestant_id + "')>Remove</a></td></tr>";
+                    "<a href='#' onclick=removeCandidate('" + res[iRes].contestant_id + "')>Remove</a></td></tr>";
             }
         }
     })
@@ -210,17 +210,18 @@ function changeCandidateDetails(candidate_id) {
     let res_election_type = tempRes[candidate_id].election_type;
     document.getElementById('candidate-election-type').value = res_election_type;
 }
-
 function removeCandidate(candidate_id_2) {
     tempRes[candidate_id_2] = JSON.parse(tempRes[candidate_id_2]);
     document.getElementById('Remove-candidate-modal-content').innerHTML = '<p>Are you sure you want to remove the following candidate' +
         'Candidate Name:' + tempRes[candidate_id_2].contestant_name +
         'Candidate ID:' + tempRes[candidate_id_2].contestant_id +
         'Elections:' + tempRes[candidate_id_2].election_type + '</p>';
-    document.getElementById('Remove-candidate-modal-content').outerHTML = '<div class="modal-footer">\n' +
-        '                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>\n' +
-        '                <button type="button" class="btn btn-primary" onclick=removeCandidateYes(' + tempRes[candidate_id_2].contestant_id + ')>Yes</button>\n' +
+    //the above innerHTML is not working for unknown reasons
+    document.getElementById('Remove-candidate-modal-content').outerHTML = '<div class="modal-footer">' +
+        '<button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>\n' +
+        '                <button type="button" class="btn btn-primary" onclick=removeCandidateYes("' + candidate_id_2 + '")>Yes</button>\n' +
         '            </div>';
+    $('#removeCandidateModal').modal('show');
 }
 
 function removeCandidateYes(candidate_id_3) {
@@ -233,7 +234,7 @@ function removeCandidateYes(candidate_id_3) {
         dataType: 'JSON',
         success: function (responseServer) {
             if (responseServer == "OK") {
-                document.getElementById('removeCandidateModal').style.display = "none";
+                $('#removeCandidateModal').modal('hide');
                 refreshCandidateTable();
             }
             else {
@@ -268,7 +269,7 @@ $('add-new-voter-class').submit(function (e) {
 
 function refreshVotersTable() {
     $.ajax({
-        url: 'refresh_voters_details.php',
+        url: 'refresh_voter_details.php',
         type: 'POST',
         data: {},
         dataType: "json",
