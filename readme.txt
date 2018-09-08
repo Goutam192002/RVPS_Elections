@@ -22,5 +22,3 @@ dbconnect.php
 The database was created using phpMyAdmin, there may be some problems in using the database.In case of any problem mail me.
 
 Email id: goutambseervi@gmail.com
-
-Web Link to the website:https://goutam192002.github.io/RVPS_Elections/
