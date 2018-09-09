@@ -190,7 +190,7 @@ function refreshCandidateTable() {
                 tempRes[res[iRes].contestant_id] = JSON.stringify(res[iRes]);
                 document.getElementById("candidates-table-body").innerHTML += "<tr>" +
                     "<td class=\'contestant-picture\'>" +
-                    "<img src=\'" + res[iRes].contestant_picture + "\' alt=\'image-of-candidate\' width=\'140\' height=\'140\'>" +
+                    "<img src=\'" + res[iRes].contestant_picture + "\' alt=\'image-of-candidate\'  height=\'100\'>" +
                     "</td>" +
                     "<td class=\'contestant-name\'>" + res[iRes].contestant_name + "</td>" +
                     "<td class=\'contestant-id\'>" + res[iRes].contestant_id + "</td>" +
@@ -248,7 +248,7 @@ function removeCandidateYes(candidate_id_3) {
 }
 
 res = {};
-$('add-new-voter-class').submit(function (e) {
+$('#add-new-voter-class').submit(function (e) {
     e.preventDefault();
     $.ajax({
         url: 'add_class_voters.php',
@@ -256,7 +256,7 @@ $('add-new-voter-class').submit(function (e) {
         data: {
             "voters-class": document.getElementById('new-voters-class').value,
             "voters-section": document.getElementById('new-voters-section').value,
-            "no-of-students": document.getElementById('no-of-candidates').value
+            "no-of-students": document.getElementById('no-of-students').value
         },
         dataType: 'json',
         success: function (res) {
@@ -336,17 +336,22 @@ function refreshAdministratorTable() {
         type: 'GET',
         dataType: 'json',
         success: function (responseAdministratorTable) {
-            document.getElementById('admin-table-body').innerHTML = "";
+            document.getElementById('administrator-table-body').innerHTML = " ";
             for (let i = 0; i < responseAdministratorTable.length; i++) {
-                document.getElementById('admin-table-body').innerHTML += '<td>' + responseAdministratorTable.admin_username + '</td>' +
-                    '<td>' + convertToPassword(responseAdministratorTable.admin_password) + '</td>' +
-                    '<td><a href="#" id="removeAdmin" onclick=removeAdmin("' + responseAdministratorTable.admin_username + '")></a> </td>';
+                console.log(responseAdministratorTable[i].admin_password);
+                responseAdministratorTable.admin_password = convertToPassword(responseAdministratorTable[i].admin_password);
+                document.getElementById('administrator-table-body').innerHTML += '<tr><td>' + responseAdministratorTable[i].admin_username + '</td>' +
+                    '<td>' + responseAdministratorTable[i].admin_password + '</td>' +
+                    '<td>' +
+                    '<a href="#" id="removeAdmin" onclick=removeAdmin("' + responseAdministratorTable[i].admin_username + '")>Remove</a> ' +
+                    '</td>' +
+                    '</tr>';
             }
         }
     })
 }
 
-$('add-new-admin-form').submit(function (e) {
+$('#add-new-admin-form').submit(function (e) {
     e.preventDefault();
     //do some necessary validations/
     //find a way to know if a username is avialable without submitting the form
@@ -370,9 +375,29 @@ $('add-new-admin-form').submit(function (e) {
         }
     })
 });
-function removeAdmin(admin_name) {
+
+function removeAdmin(admin_username) {
     document.getElementById("remove-administrator-modal-content").innerHTML = "<p>Are you sure you want to remove administrator<strong>" + admin_name + "</strong> ?";
     document.getElementById("remove-administrator-modal-content").outerHTML = "<button type='button' class='btn btn-secondary' data-dismiss='modal'>No</button>" +
-        "<button type='button' class='btn btn-primary' onclick=removeAdminYes('" + admin_name + "')>Yes</button>";
+        "<button type='button' class='btn btn-primary' onclick=removeAdminYes('" + admin_username + "')>Yes</button>";
 }
 
+function removeAdminYes(param) {
+    $.ajax({
+        url: 'remove_admin.php',
+        data: {
+            admin_username: param
+        },
+        dataType: 'json',
+        type: 'POST',
+        success: function (response) {
+            if (response == "OK") {
+                $('#removeAdminModal').how('hide');
+                refreshAdministratorTable();
+            }
+            else {
+                //do something
+            }
+        }
+    })
+}

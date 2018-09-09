@@ -40,14 +40,16 @@
 <!-- Sidebar Links -->
         <div id="sidebar-menu-items" style="padding-left: 0.5rem">
 <ul class="sidebar-menu">
-    <li class="nav-link  active"><a href="admin.html">Home</a></li>
-    <li class="nav-link"><a href="#add-remove-candidates" onclick="addOrRemoveCandidates()">Add/Remove Candidates</a>
+    <li class="active nav-item"><a class="nav-item" href="admin.html">Home</a></li>
+    <li class="nav-item"><a class="nav-item" href="#add-remove-candidates" onclick="addOrRemoveCandidates()">Add/Remove
+        Candidates</a>
     </li>
-    <li class="nav-link"><a href="#add-remove-voters" onclick="addOrRemoveVoters()">Add/Remove Voters</a></li>
-    <li class="nav-link"><a href="#add-remove-administrators" onclick="addOrRemoveAdministrators()">Add/Remove
+    <li class="nav-item"><a class="nav-item" href="#add-remove-voters" onclick="addOrRemoveVoters()">Add/Remove
+        Voters</a></li>
+    <li class="nav-item"><a class="nav-item" href="#add-remove-administrators" onclick="addOrRemoveAdministrators()">Add/Remove
         Administrators</a></li>
-    <li class="nav-link"><a href="#">Statistics </a></li>
-    <li class="nav-link"><a data-toggle="modal" data-target="#exitModal">Logout</a></li>
+    <li class="nav-item"><a href="#" class="nav-item">Statistics </a></li>
+    <li class="nav-item"><a class="nav-item" data-toggle="modal" data-target="#exitModal">Logout</a></li>
 </ul>
      </div>
     <!--</div>-->
@@ -236,6 +238,8 @@
                             <option value="SHVC">Shushrutha House Vice Captain</option>
                             <option value="CHCN">Charaka House Captain</option>
                             <option value="CHVC">Charaka House Vice Captain</option>
+                            <option value="AHCN">Aryabhatta House Captain</option>
+                            <option value="AHVC">Aryabhatta House Vice Captain</option>
                         </select>
                     </div>
                 <div class="form-group">
@@ -264,14 +268,16 @@
                         <label>Election Type</label>
                         <select class="form-control input-lg" id="candidate-election-type" required>
                             <option disabled selected>Select the Election Type</option>
-                            <option value="SLVC">School Vice Captain</option>
+                            <option value="SVCN">School Vice Captain</option>
                             <option value="SLCN">School Captain</option>
-                            <option value="BAHC">Bhaskara House Captain</option>
-                            <option value="BHVC">Bhaskara House Vice Captain</option>
+                            <option value="BHCN">Bhaskara House Captain</option>
+                            <option value="BVCN">Bhaskara House Vice Captain</option>
                             <option value="SHCN">Shushrutha House Captain</option>
                             <option value="SHVC">Shushrutha House Vice Captain</option>
                             <option value="CHCN">Charaka House Captain</option>
                             <option value="CHVC">Charaka House Vice Captain</option>
+                            <option value="AHCN">Aryabhatta House Captain</option>
+                            <option value="AHVC">Aryabhatta House Vice Captain</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -398,8 +404,12 @@
                 <th scope="col">Action</th>
             </tr>
             </thead>
-            <tbody id="admin-table-body ">
-            <!--admin lists here-->
+            <tbody id="administrator-table-body">
+            <tr>
+                <td>Admin Username</td>
+                <td>Admin password</td>
+                <td>Action</td>
+            </tr>
             </tbody>
         </table>
         <div class="row card mb-5">
