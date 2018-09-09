@@ -370,7 +370,6 @@ $('add-new-admin-form').submit(function (e) {
         }
     })
 });
-
 function removeAdmin(admin_name) {
     document.getElementById("remove-administrator-modal-content").innerHTML = "<p>Are you sure you want to remove administrator<strong>" + admin_name + "</strong> ?";
     document.getElementById("remove-administrator-modal-content").outerHTML = "<button type='button' class='btn btn-secondary' data-dismiss='modal'>No</button>" +
