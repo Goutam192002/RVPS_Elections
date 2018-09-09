@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="RVPS_elections">
+  <component name="PublishConfigData" autoUpload="Always" serverName="RVPS_elections" uploadOnCheckin="36d0644a-5b84-462f-a6fb-c77bfc6d670e">
     <serverData>
       <paths name="RVPS_elections">
         <serverdata>
@@ -10,6 +10,7 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="RVPS_elections" />
     <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>

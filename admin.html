@@ -38,14 +38,16 @@
             <h5>Admin Dashboard</h5>
      </div>
 <!-- Sidebar Links -->
-     <div id="sidebar-menu-items" style="padding-left: 1rem">
+        <div id="sidebar-menu-items" style="padding-left: 0.5rem">
 <ul class="sidebar-menu">
-    <li class="active"><a href="admin.html">Home</a></li>
-    <li><a href="#add-remove-candidates" onclick="addOrRemoveCandidates()">Add/Remove Candidates</a></li>
-    <li><a href="#add-remove-voters" onclick="addOrRemoveVoters()">Add/Remove Voters</a></li>
-    <li><a href="#add-remove-administrators" onclick="addOrRemoveAdministrators()">Add/Remove Administrators</a></li>
-    <li><a href="#">Statistics </a></li>
-    <li><a data-toggle="modal" data-target="#exitModal">Logout</a> </li>
+    <li class="nav-link  active"><a href="admin.html">Home</a></li>
+    <li class="nav-link"><a href="#add-remove-candidates" onclick="addOrRemoveCandidates()">Add/Remove Candidates</a>
+    </li>
+    <li class="nav-link"><a href="#add-remove-voters" onclick="addOrRemoveVoters()">Add/Remove Voters</a></li>
+    <li class="nav-link"><a href="#add-remove-administrators" onclick="addOrRemoveAdministrators()">Add/Remove
+        Administrators</a></li>
+    <li class="nav-link"><a href="#">Statistics </a></li>
+    <li class="nav-link"><a data-toggle="modal" data-target="#exitModal">Logout</a></li>
 </ul>
      </div>
     <!--</div>-->
@@ -77,22 +79,22 @@
             <tr>
                 <td>Admin Username</td>
                 <td id="table_admin_username"></td>
-                <td><a href="#change-username-dialog" onclick="change_admin_username()">Change Username</a></td>
+                <td><a href="#change-username-dialog" onclick=change_admin_username()>Change Username</a></td>
             </tr>
             <tr>
                 <td>Admin Password</td>
                 <td id="table_admin_password"></td>
-                <td><a href="#" onclick="change_admin_password()">Change Password</a> </td>
+                <td><a href="#" onclick=change_admin_password()>Change Password</a></td>
             </tr>
             <tr>
                 <td>Admin email</td>
                 <td id="table_admin_email"></td>
-                <td><a href="#" onclick="change_admin_email()" >Change email</a></td>
+                <td><a href="#" onclick=change_admin_email()>Change email</a></td>
             </tr>
             <tr>
                 <td>Admin mobile Number</td>
                 <td id="table_admin_mobileno"></td>
-                <td><a href="#" onclick="change_admin_mobileno()">Change mobile number</a></td>
+                <td><a href="#" onclick=change_admin_mobileno()>Change mobile number</a></td>
             </tr>
         </table>
     </div>
@@ -396,7 +398,7 @@
                 <th scope="col">Action</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody id="admin-table-body ">
             <!--admin lists here-->
             </tbody>
         </table>
@@ -422,7 +424,8 @@
                     </div>
                     <div class="form-group">
                         <label>Admin email-id</label>
-                        <input type="text" class="form-control input-lg" placeholder="Enter email address" id="admin_address">
+                        <input type="text" class="form-control input-lg" placeholder="Enter email address"
+                               id="admin_email_address">
                         <span id="emailid_check"></span>
                     </div>
                     <div class="form-group">
@@ -472,6 +475,8 @@
                 </button>
             </div>
             <div class="modal-body" id="Remove-voter-modal-content">
+
+
             </div>
         </div>
     </div>
@@ -487,6 +492,8 @@
             </div>
             <div class="modal-body">
                 <div id="Remove-candidate-modal-content">
+
+
                 </div>
             </div>
         </div>

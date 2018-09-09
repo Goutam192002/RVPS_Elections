@@ -2,7 +2,7 @@
 include "dbconnect.php";
 $query = "SELECT DISTINCT student_class,student_section FROM voting_details";
 $result = $conn->query($query);
-$reultarray = [];
+$resultarray = [];
 for ($i = 0; $i < $result->num_rows; $i++) {
     $resultarray[] = $result->fetch_assoc();
 }

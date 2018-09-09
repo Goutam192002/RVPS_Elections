@@ -100,35 +100,9 @@ footer{
     margin-left: -250px;
     transform: rotateY(100deg); /* Rotate sidebar vertically by 100 degrees. */
 }
-.sidebar-menu{
-    padding: 0px;
-    list-style: none;
-}
-.sidebar-menu li{
-    text-indent: 8px;
-    line-height: 40px;
-}
-.sidebar-menu li a{
-    font-size: 17px;
-    text-decoration: none;
-    color: white;
-    display: block;
-}
-.sidebar-menu li a:hover{
-    background: rgba(220, 220, 220, 0.6);
-}
 
-#wrapper.active .sidebar-menu dummy{
-    display: none;
-}
-span:not(.icon-bar){
-    margin: 0px 5px 0px 0px;
+.sidebar-menu {
     padding: 0px;
-}
-#wrapper.active .sidebar-menu span{
-    text-indent: 0px;
-    margin: 2px;
-    font-size: 25px;
 }
 .custom-color-1{
     background-color: lightskyblue;

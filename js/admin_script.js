@@ -5,11 +5,11 @@ $(document).ready(function () {
     let cookie_name=(document.cookie.split(';').pop()).split('=').slice();
     if (cookie_name[0]===' admin_username')
     {
-        document.getElementById("admin-name-header").innerHTML = "<a class=nav-link href=../admin.html id='admin-username-navigation'>" + admin_username + "</a>";
+        document.getElementById("admin-name-header").innerHTML = "<a class=nav-link href=admin.html id='admin-username-navigation'>" + admin_username + "</a>";
     }
     else
     {
-        document.getElementById("admin-name-header").innerHTML = "<a class=nav-link id='admin-username-navigation' href=../admin_login.html>Admin Login</a>";
+        document.getElementById("admin-name-header").innerHTML = "<a class=nav-link id='admin-username-navigation' href=admin_login.html>Admin Login</a>";
     }
             $.ajax({
                 url: 'retreive_admin_details.php',
@@ -143,7 +143,7 @@ function addOrRemoveAdministrators() {
     document.getElementById("add-remove-voters").style.display="none";
     document.getElementById("add-remove-candidates").style.display="none";
     document.getElementById("add-remove-administrators").style.display="block";
-    //load administrator details into the table
+    refreshAdministratorTable();
 }
 function adminLogoutYes() {
 document.cookie='admin_username= ; path=/ ; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
@@ -280,7 +280,7 @@ function refreshVotersTable() {
                     "<td>" + res[i].student_section + "</td>" +
                     "<td>" + res[i].no_of_students + "</td>" +
                     "<td><a href='#new-candidate' onclick=changeVoterDetails('" + JSON.stringify(res[i]) + "') style='padding-right: 1rem' id='edit-candidate'>Edit</a>" +
-                    "<a data-toggle=\"modal\" data-target=\"#removeVoterModal\" onclick=removeVoter('" + JSON.stringify(res[i]) + "'))>Remove</a></td></tr>";
+                    "<a data-toggle=\"modal\" data-target=\"#removeVoterModal\" onclick=removeVoter('" + JSON.stringify(res[i]) + "')>Remove</a></td></tr>";
             }
         }
     })
@@ -299,10 +299,10 @@ function removeVoter(param) {
     param = JSON.parse(param);
     document.getElementById("Remove-voter-modal-content").innerText = "Are you sure you want to delete the class " + param.student_class +
         "and section " + param.student_section;
-    document.getElementById("Remove-voter-modal-content").outerHTML = '<div class="modal-footer">\n' +
-        '                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>\n' +
-        '                <button type="button" class="btn btn-primary" onclick=removeVoterYes("' + JSON.stringify(param) + '")\n' +
-        '            </div>';
+    document.getElementById("Remove-voter-modal-content").outerHTML = "<div class='modal-footer'>\n" +
+        "                <button type='button' class='btn btn-secondary' data-dismiss='modal'>No</button>\n" +
+        "                <button type='button' class='btn btn-primary' onclick=removeVoterYes('" + JSON.stringify(param) + "')>Yes</button>" +
+        "                    </div>";
 }
 
 function removeVoterYes(param) {
@@ -317,7 +317,7 @@ function removeVoterYes(param) {
         dataType: 'json',
         success: function (responseServer) {
             if (responseServer == "OK") {
-                document.getElementById('removeVoterModal').style.display = "none";
+                $('#removeVoterModal').modal('hide');
                 refreshVotersTable();
             }
             else {
@@ -330,4 +330,44 @@ function removeVoterYes(param) {
     })
 }
 
+function refreshAdministratorTable() {
+    $.ajax({
+        url: 'load_administrator_details.php',
+        type: 'GET',
+        dataType: 'json',
+        success: function (responseAdministratorTable) {
+            document.getElementById('admin-table-body').innerHTML = "";
+            for (let i = 0; i < responseAdministratorTable.length; i++) {
+                document.getElementById('admin-table-body').innerHTML += '<td>' + responseAdministratorTable.admin_username + '</td>' +
+                    '<td>' + convertToPassword(responseAdministratorTable.admin_password) + '</td>' +
+                    '<td><a href="#" id="removeAdmin" onclick=removeAdmin("' + responseAdministratorTable.admin_username + '")></a> </td>';
+            }
+        }
+    })
+}
+
+$('add-new-admin-form').submit(function (e) {
+    e.preventDefault();
+    //do some necessary validations/
+    //find a way to know if a username is avialable without submitting the form
+    $.ajax({
+        url: 'add_new_admin.php',
+        type: 'POST',
+        dataType: 'json',
+        data: {
+            admin_name: document.getElementById('admin-name').value,
+            admin_username: document.getElementById('admin-username').value,
+            admin_mobile_no: document.getElementById('admin-mobileno').value,
+            admin_email: document.getElementById('admin_email_address').value,
+            admin_password: document.getElementById('admin-password').value
+        },
+        success: function (resp) {
+            if (resp == "OK") {
+                document.getElementById('add-new-admin-form').outerHTML = "<div class='alert alert-success' id='admin-form-success-message'>Administrator successfully added</div>";
+                refreshAdministratorTable();
+                $("#admin-form-success-message").delay(1000).fadeOut();
+            }
+        }
+    })
+});
 
