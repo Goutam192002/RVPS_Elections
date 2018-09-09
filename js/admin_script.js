@@ -5,11 +5,11 @@ $(document).ready(function () {
     let cookie_name=(document.cookie.split(';').pop()).split('=').slice();
     if (cookie_name[0]===' admin_username')
     {
-        document.getElementById("admin-name-header").innerHTML="<a class=nav-link href=admin.html id='admin-username-navigation'>" + admin_username + "</a>";
+        document.getElementById("admin-name-header").innerHTML = "<a class=nav-link href=../admin.html id='admin-username-navigation'>" + admin_username + "</a>";
     }
     else
     {
-        document.getElementById("admin-name-header").innerHTML="<a class=nav-link id='admin-username-navigation' href=admin_login.html>Admin Login</a>";
+        document.getElementById("admin-name-header").innerHTML = "<a class=nav-link id='admin-username-navigation' href=../admin_login.html>Admin Login</a>";
     }
             $.ajax({
                 url: 'retreive_admin_details.php',
@@ -280,7 +280,7 @@ function refreshVotersTable() {
                     "<td>" + res[i].student_section + "</td>" +
                     "<td>" + res[i].no_of_students + "</td>" +
                     "<td><a href='#new-candidate' onclick=changeVoterDetails('" + JSON.stringify(res[i]) + "') style='padding-right: 1rem' id='edit-candidate'>Edit</a>" +
-                    "<a data-toggle=\"modal\" data-target=\"#removeVoterModal\" onclick=removeVoter('" + JSON.stringify(res[i] + '"))>Remove</a></td></tr>";
+                    "<a data-toggle=\"modal\" data-target=\"#removeVoterModal\" onclick=removeVoter('" + JSON.stringify(res[i]) + "'))>Remove</a></td></tr>";
             }
         }
     })
