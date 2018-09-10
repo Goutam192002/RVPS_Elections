@@ -216,62 +216,25 @@
             <tbody id="candidates-table-body">
             </tbody>
         </table>
-        <div class="row card mb-5" id="add-new-candidate">
+        <div class="row card mb-5" id="add-edit-candidate-div">
             <div class="card-header" id="candidate-form-header">
                 Add a new candidate
             </div>
             <div class="card-body">
-                <form id="new-candidate" enctype="multipart/form-data" action="add_candidate.php">
+                <form id="add-edit-candidate" enctype="multipart/form-data" action="add_candidate.php">
                     <div class="form-group">
                     <label>Candidate Name</label>
-                    <input type="text" class="form-control input-lg" id="new-candidate-name" placeholder="Enter candidate name" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Election Type</label>
-                        <select class="form-control input-lg selectpicker" id="new-candidate-election-type" required>
-                            <option disabled selected>Select the Election Type</option>
-                            <option value="SVCN">School Vice Captain</option>
-                            <option value="SLCN">School Captain</option>
-                            <option value="BHCN">Bhaskara House Captain</option>
-                            <option value="BVCN">Bhaskara House Vice Captain</option>
-                            <option value="SHCN">Shushrutha House Captain</option>
-                            <option value="SHVC">Shushrutha House Vice Captain</option>
-                            <option value="CHCN">Charaka House Captain</option>
-                            <option value="CHVC">Charaka House Vice Captain</option>
-                            <option value="AHCN">Aryabhatta House Captain</option>
-                            <option value="AHVC">Aryabhatta House Vice Captain</option>
-                        </select>
-                    </div>
-                <div class="form-group">
-                        <input type="file" id="new-candidate-picture" required>
-                </div>
-                <div class="form-group">
-                    <input type="submit" class="btn btn-primary form-control input-lg" id="submit-new-candidate-details" >
-                </div>
-                </form>
-            </div>
-            <div class="alert alert-danger" id="response" style="display: none; padding-top: 2rem">
-            </div>
-        </div>
-        <div class="row card mb-5" id="change-candidate-details" style="display: none">
-            <div class="card-header">
-                Edit candidate details
-            </div>
-            <div class="card-body">
-                <form id="edit-candidate-details" enctype="multipart/form-data" action="add_candidate.php">
-                    <div class="form-group">
-                        <label>Candidate Name</label>
                         <input type="text" class="form-control input-lg" id="candidate-name"
                                placeholder="Enter candidate name" required>
                     </div>
                     <div class="form-group">
                         <label>Election Type</label>
-                        <select class="form-control input-lg" id="candidate-election-type" required>
+                        <select class="form-control input-lg selectpicker" id="candidate-election-type" required>
                             <option disabled selected>Select the Election Type</option>
                             <option value="SVCN">School Vice Captain</option>
                             <option value="SLCN">School Captain</option>
                             <option value="BHCN">Bhaskara House Captain</option>
-                            <option value="BVCN">Bhaskara House Vice Captain</option>
+                            <option value="BHVC">Bhaskara House Vice Captain</option>
                             <option value="SHCN">Shushrutha House Captain</option>
                             <option value="SHVC">Shushrutha House Vice Captain</option>
                             <option value="CHCN">Charaka House Captain</option>
@@ -280,19 +243,22 @@
                             <option value="AHVC">Aryabhatta House Vice Captain</option>
                         </select>
                     </div>
+                <div class="form-group">
+                    <input type="file" class="form-control-file" id="candidate-picture" required>
+                </div>
                     <div class="form-group">
-                        <button class="btn btn-default input-lg">
-                            <input type="file" id="candidate-picture" required>
-                        </button>
+                        <label>Submit form as</label>
+                        <select class="form-control input-lg selectpicker" id="type-of-form" required>
+                            <option value="new-candidate" selected>New candidate</option>
+                            <option value="edit-candidate">Edit candidate</option>
+                        </select>
                     </div>
-                    <div class="form-group">
-                        <input type="submit" class="btn btn-primary form-control input-lg"
-                               id="submit-candidate-details">
-                    </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary form-control input-lg" id="submit-candidate-details">
+                </div>
                 </form>
             </div>
-            <div class="alert alert-danger" id="change-candidate-form-response"
-                 style="display: none; padding-top: 2rem">
+            <div class="alert alert-danger" id="response" style="display: none; padding-top: 2rem">
             </div>
         </div>
     </div>

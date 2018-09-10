@@ -150,12 +150,26 @@ document.cookie='admin_username= ; path=/ ; expires=Thu, 01 Jan 1970 00:00:01 GM
     window.open("index.html", "_self");
 }
 
-$('#new-candidate').submit(function (e) {
+let old_candidate_id = "";
+$('#type-of-form').on('change', function (e) {
     e.preventDefault();
+    console.log(document.getElementById('type-of-form').value);
+    if (document.getElementById('type-of-form').value == "new-candidate")
+        document.getElementById('candidate-form-header').innerText = "Add a new candidate";
+    else
+        document.getElementById('candidate-form-header').innerText = "Edit candidate Details";
+});
+$('#add-edit-candidate').submit(function (e) {
+    e.preventDefault();
+    let typeOfForm = document.getElementById('type-of-form').value;
     let formData = new FormData();
-    formData.append("contestant-name", document.getElementById("new-candidate-name").value);
-    formData.append("contestant-election-type", $('#new-candidate-election-type option:selected').val());
-    formData.append("contestant-picture", document.getElementById("new-candidate-picture").files[0]);
+    formData.append("contestant-name", document.getElementById("candidate-name").value);
+    formData.append("contestant-election-type", document.getElementById('candidate-election-type').value);
+    formData.append("contestant-picture", document.getElementById("candidate-picture").files[0]);
+    formData.append("type-of-form", typeOfForm);
+    if (typeOfForm == "edit-candidate") {
+        formData.append("old-candidate-id", old_candidate_id);
+    }
     $.ajax({
         url: "add_candidate.php",
         data: formData,
@@ -181,8 +195,7 @@ let tempRes = [];
 function refreshCandidateTable() {
     $.ajax({
         url: 'load_candidates_details.php',
-        type: 'POST',
-        data: {},
+        type: 'GET',
         dataType: "json",
         success: function (res) {
             document.getElementById("candidates-table-body").innerHTML = "";
@@ -203,12 +216,15 @@ function refreshCandidateTable() {
 }
 
 function changeCandidateDetails(candidate_id) {
-    document.getElementById('add-new-candidate').style.display = "none";
-    document.getElementById('change-candidate-details').style.display = "block";
+    //document.getElementById('add-new-candidate').style.display = "none";
+    //document.getElementById('change-candidate-details').style.display = "block";
+    document.getElementById('candidate-form-header').innerText = "Edit Candidate Details";
     tempRes[candidate_id] = JSON.parse(tempRes[candidate_id]);
     document.getElementById('candidate-name').value = tempRes[candidate_id].contestant_name;
     let res_election_type = tempRes[candidate_id].election_type;
     document.getElementById('candidate-election-type').value = res_election_type;
+    old_candidate_id = tempRes[candidate_id].contestant_id;
+    document.getElementById('type-of-form').value = 'edit-candidate';
 }
 function removeCandidate(candidate_id_2) {
     tempRes[candidate_id_2] = JSON.parse(tempRes[candidate_id_2]);
@@ -269,8 +285,7 @@ $('#add-new-voter-class').submit(function (e) {
 function refreshVotersTable() {
     $.ajax({
         url: 'refresh_voter_details.php',
-        type: 'POST',
-        data: {},
+        type: 'GET',
         dataType: "json",
         success: function (res) {
             document.getElementById("voters-table-body").innerHTML = "";
