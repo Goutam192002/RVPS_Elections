@@ -294,20 +294,10 @@ function refreshVotersTable() {
                     "<td>" + res[i].student_class + "</td>" +
                     "<td>" + res[i].student_section + "</td>" +
                     "<td>" + res[i].no_of_students + "</td>" +
-                    "<td><a href='#new-candidate' onclick=changeVoterDetails('" + JSON.stringify(res[i]) + "') style='padding-right: 1rem' id='edit-candidate'>Edit</a>" +
-                    "<a data-toggle=\"modal\" data-target=\"#removeVoterModal\" onclick=removeVoter('" + JSON.stringify(res[i]) + "')>Remove</a></td></tr>";
+                    "<td><a data-toggle=\"modal\" data-target=\"#removeVoterModal\" onclick=removeVoter('" + JSON.stringify(res[i]) + "')>Remove</a></td></tr>";
             }
         }
     })
-}
-
-function changeVoterDetails(param) {
-    param = JSON.parse(param);
-    document.getElementById('add-class-div').style.display = 'none';
-    document.getElementById('change-class-div').style.display = 'block';
-    document.getElementById('edit-voters-class').value = param.student_class;
-    document.getElementById('edit-voters-section').value = param.student_section;
-    document.getElementById('edit-no-of-students').value = param.no_of_students;
 }
 
 function removeVoter(param) {
@@ -353,7 +343,6 @@ function refreshAdministratorTable() {
         success: function (responseAdministratorTable) {
             document.getElementById('administrator-table-body').innerHTML = " ";
             for (let i = 0; i < responseAdministratorTable.length; i++) {
-                console.log(responseAdministratorTable[i].admin_password);
                 responseAdministratorTable.admin_password = convertToPassword(responseAdministratorTable[i].admin_password);
                 document.getElementById('administrator-table-body').innerHTML += '<tr><td>' + responseAdministratorTable[i].admin_username + '</td>' +
                     '<td>' + responseAdministratorTable[i].admin_password + '</td>' +
@@ -366,20 +355,114 @@ function refreshAdministratorTable() {
     })
 }
 
+$('#admin-name').on('change', function () {
+    let hasNumber = /\d/;
+    if (hasNumber.test(document.getElementById('admin-name').value)) {
+        document.getElementById('name-error').innerText = "Admin Name cannot contain numbers";
+        document.getElementById('admin-name').style = "border: 1px solid #FF1F1F;\n" +
+            "    border-radius: ;\n" +
+            "    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;";
+    }
+    else
+        document.getElementById('admin-name').style = "border: 1px solid #05F02C;\n" +
+            "    border-radius: 0.25rem;\n" +
+            "    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;"
+});
+$('#admin-username').on('blur', function () {
+    let username = document.getElementById('admin-username').value;
+    $.ajax({
+        url: 'check_username_availability.php',
+        type: 'POST',
+        dataType: 'json',
+        data: {
+            username: username
+        },
+        success: function (serverResponse) {
+            if (serverResponse == "username already taken") {
+                document.getElementById('is_username_available').innerText = serverResponse;
+                document.getElementById('admin-username').style = "border: 1px solid #FF1F1F;\n" +
+                    "    border-radius: ;\n" +
+                    "    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;";
+            } else
+                document.getElementById('admin-username').style = "border: 1px solid #05F02C;\n" +
+                    "    border-radius: 0.25rem;\n" +
+                    "    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;";
+        }
+    })
+});
+$('#admin-mobileno').on('blur', function () {
+    let mobile_no = document.getElementById('admin-mobileno').value;
+    if (mobile_no.match(/^[0-9]+$/) && mobile_no.length == 10) {
+        document.getElementById('admin-mobileno').style = "border: 1px solid #05F02C;\n" +
+            "    border-radius: 0.25rem;\n" +
+            "    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;";
+    }
+    else {
+        document.getElementById('mobileno_check').innerText = "Invalid Mobile no";
+        document.getElementById('admin-mobileno').style = "border: 1px solid #FF1F1F;\\n\" +\n" +
+            "                    \"    border-radius: ;\\n\" +\n" +
+            "                    \"    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;";
+    }
+});
+$("#admin_email_address").on('blur', function () {
+    let admin_emailid = document.getElementById('admin_email_address').value;
+    if (/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test(admin_emailid)) {
+        document.getElementById('admin_email_address').style = "border: 1px solid #05F02C;\\n\" +\n" +
+            "            \"    border-radius: 0.25rem;\\n\" +\n" +
+            "            \"    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;";
+    }
+    else {
+        document.getElementById('emailid_check').innerText = "Invalid email address";
+        document.getElementById('admin_email_address').style = "border: 1px solid #FF1F1F;\\n\" +\n" +
+            "                    \"    border-radius: ;\\n\" +\n" +
+            "                    \"    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;";
+    }
+});
+$('#admin-password').on('blur', function () {
+    if (document.getElementById('admin-password').value.length < 8) {
+        document.getElementById('password-error').innerText = "Password should be atleast 8 characters";
+        document.getElementById('admin-password').style = "border: 1px solid #FF1F1F;\\n\" +\n" +
+            "                    \"    border-radius: ;\\n\" +\n" +
+            "                    \"    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;";
+    }
+});
+$('#confirm-admin-password').on('blur', function () {
+    if ((document.getElementById('admin-password').value) == (document.getElementById('confirm-admin-password').value)) {
+        document.getElementById('admin-password').style = "border: 1px solid #05F02C;\\n\" +\n" +
+            "            \"    border-radius: 0.25rem;\\n\" +\n" +
+            "            \"    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;";
+        document.getElementById('confirm-admin-password').style = "border: 1px solid #05F02C;\\n\" +\n" +
+            "            \"    border-radius: 0.25rem;\\n\" +\n" +
+            "            \"    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;";
+    }
+    else {
+        document.getElementById('confirm-password-error').innerText = "Passwords do not match";
+        document.getElementById('admin-password').style = "border: 1px solid #FF1F1F;\\n\" +\n" +
+            "                    \"    border-radius: ;\\n\" +\n" +
+            "                    \"    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;";
+        document.getElementById('confirm-admin-password').style = "border: 1px solid #FF1F1F;\\n\" +\n" +
+            "                    \"    border-radius: ;\\n\" +\n" +
+            "                    \"    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;";
+    }
+});
+
 $('#add-new-admin-form').submit(function (e) {
+    let admin_name = document.getElementById('admin-name').value;
+    admin_password = document.getElementById('admin-password').value;
+    admin_username = document.getElementById('admin-username').value;
+    let admin_mobileno = document.getElementById('admin-mobileno').value;
+    let admin_email = document.getElementById('admin_email_address').value;
     e.preventDefault();
-    //do some necessary validations/
-    //find a way to know if a username is avialable without submitting the form
     $.ajax({
         url: 'add_new_admin.php',
         type: 'POST',
         dataType: 'json',
         data: {
-            admin_name: document.getElementById('admin-name').value,
-            admin_username: document.getElementById('admin-username').value,
-            admin_mobile_no: document.getElementById('admin-mobileno').value,
-            admin_email: document.getElementById('admin_email_address').value,
-            admin_password: document.getElementById('admin-password').value
+            admin_name: admin_name,
+            admin_username: admin_username,
+            admin_mobile_no: admin_mobileno,
+            admin_email: admin_email,
+            admin_password: admin_password
         },
         success: function (resp) {
             if (resp == "OK") {
