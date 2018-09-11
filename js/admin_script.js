@@ -343,11 +343,11 @@ function refreshAdministratorTable() {
         success: function (responseAdministratorTable) {
             document.getElementById('administrator-table-body').innerHTML = " ";
             for (let i = 0; i < responseAdministratorTable.length; i++) {
-                responseAdministratorTable.admin_password = convertToPassword(responseAdministratorTable[i].admin_password);
+                responseAdministratorTable[i].admin_password = convertToPassword(responseAdministratorTable[i].admin_password);
                 document.getElementById('administrator-table-body').innerHTML += '<tr><td>' + responseAdministratorTable[i].admin_username + '</td>' +
                     '<td>' + responseAdministratorTable[i].admin_password + '</td>' +
                     '<td>' +
-                    '<a href="#" id="removeAdmin" onclick=removeAdmin("' + responseAdministratorTable[i].admin_username + '")>Remove</a> ' +
+                    '<a id="removeAdmin" onclick=removeAdmin("' + responseAdministratorTable[i].admin_username + '")>Remove</a> ' +
                     '</td>' +
                     '</tr>';
             }
@@ -475,9 +475,10 @@ $('#add-new-admin-form').submit(function (e) {
 });
 
 function removeAdmin(admin_username) {
-    document.getElementById("remove-administrator-modal-content").innerHTML = "<p>Are you sure you want to remove administrator<strong>" + admin_name + "</strong> ?";
+    document.getElementById("remove-administrator-modal-content").innerHTML = "<p>Are you sure you want to remove administrator<strong>" + admin_username + "</strong> ?";
     document.getElementById("remove-administrator-modal-content").outerHTML = "<button type='button' class='btn btn-secondary' data-dismiss='modal'>No</button>" +
-        "<button type='button' class='btn btn-primary' onclick=removeAdminYes('" + admin_username + "')>Yes</button>";
+        "<button type='button' data-toggle='modal' data-target='#removeAdminModal' class='btn btn-primary' onclick=removeAdminYes('" + admin_username + "')>Yes</button>";
+    $('#removeVoterModal').show('show');
 }
 
 function removeAdminYes(param) {
@@ -490,7 +491,7 @@ function removeAdminYes(param) {
         type: 'POST',
         success: function (response) {
             if (response == "OK") {
-                $('#removeAdminModal').how('hide');
+                $('#removeAdminModal').show('hide');
                 refreshAdministratorTable();
             }
             else {
