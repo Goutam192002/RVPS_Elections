@@ -9,22 +9,38 @@ else
     student_details.style.display='none';
 }
 }
+
+let param = "";
+
+function loadAllCandidates(param) {
+    $.ajax({
+        url: 'get_candidates.php',
+        data: {student_house: param},
+        type: 'POST',
+        dataType: 'json',
+        success: function (res) {
+            //load all details of candidates
+        }
+    })
+}
+
+let formData = new FormData();
 $('#student-details-form').submit(function () {
     event.preventDefault();
-    let formData=new FormData();
-    formData.append('student_name',$('#student-name').val());
     formData.append('student_class',$('#student_class').val());
     formData.append('student_section',$('#student-section').val());
     formData.append('roll_no',$('#roll-no').val());
     formData.append('student_house',$('#student-house').val());
-    formData.append('election_type',$('#election-type').val());
+    param = $('#student-house').val();
     console.log(formData);
     let xhr = new XMLHttpRequest();
     xhr.onreadystatechange=function () {
         if(this.readyState===4 || this.status===400)
         {
-            console.log('File uploaded');
-            console.log(xhr.response);
+            if (xhr.response == "OK") {
+                //call a function to load data into the card
+                //display the div to show voting option
+            }
         }
     };
     xhr.open('POST','student_details.php',true);
@@ -42,5 +58,5 @@ $(document).ready( function () {
     {
         document.getElementById("admin-name-header").innerHTML="<a class=nav-link href=admin_login.html>Admin Login</a>";
     }
-})
+});
 

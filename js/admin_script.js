@@ -184,8 +184,11 @@ $('#add-edit-candidate').submit(function (e) {
                 refreshCandidateTable();
             }
             else {
-                document.getElementById("response").style.display = "block";
                 document.getElementById("response").innerHTML = "<p class=text-danger>" + response + "</p>";
+                $('#response').show().delay(5000).queue(function (n) {
+                    $(this).hide();
+                    n();
+                })
             }
         }
     })
