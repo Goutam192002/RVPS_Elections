@@ -5,6 +5,6 @@ $query = "SELECT contestant_name,contestant_picture,contestant_id FROM contestan
 $result = $conn->query($query);
 $response = [];
 for ($i = 0; $i < $result->num_rows; $i++) {
-    $response[] = json_encode($result->fetch_assoc());
+    $response[] = $result->fetch_assoc();
 }
-print_r($response);
+echo json_encode($response);
