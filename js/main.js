@@ -45,11 +45,11 @@ function loadAllCandidates(param) {
             for (let i = 0; i < res.length; i++) {
                 if (res[i].election_type == "SLCN")
                     document.getElementById('school-captain-select').appendChild(returnChild(res[i]));
-                if (res[i].election_type == "SVCN")
+                else if (res[i].election_type == "SVCN")
                     document.getElementById('school-vice-captain-select').appendChild(returnChild(res[i]));
-                if (res[i].election_type.substring(1, 3) == "HCN")
+                else if ((res[i].election_type).substring(1, 4) == "HCN")
                     document.getElementById('house-captain').appendChild(returnChild(res[i]));
-                if (res[i].election_type.substring(1, 3) == "HVC")
+                else if ((res[i].election_type).substring(1, 5) == "HVC")
                     document.getElementById('house-vice-captain').appendChild(returnChild(res[i]));
             }
         }
@@ -61,7 +61,7 @@ function returnChild(res) {
     opt.value = res.contestant_id;
     opt.innerHTML = "<div class='row'>" +
         " <img class='col-4' src='" + res.contestant_picture + "' width='140'>" +
-        "<p class='col-12'>" + res.contestant_name + "</p>" +
+        "<p class='col-8'>" + res.contestant_name + "</p>" +
         "</div>";
     return opt;
 }

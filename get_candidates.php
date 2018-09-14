@@ -1,5 +1,5 @@
 <?php
-$student_house = $_POST[''];
+$student_house = $_POST['student_house'];
 include "dbconnect.php";
 $query = "SELECT contestant_name,contestant_picture,contestant_id,election_type FROM contestant_details WHERE election_type IN(CONCAT('$student_house','CN'),CONCAT('$student_house','VC'),'SLCN','SVCN')";
 $result = $conn->query($query);

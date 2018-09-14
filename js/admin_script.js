@@ -187,7 +187,6 @@ $('#add-edit-candidate').submit(function (e) {
                 document.getElementById("response").innerHTML = "<p class=text-danger>" + response + "</p>";
                 $('#response').show().delay(5000).queue(function (n) {
                     $(this).hide();
-                    n();
                 })
             }
         }
