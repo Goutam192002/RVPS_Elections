@@ -134,30 +134,38 @@
         </div>
     </div>
 </div>
-<div class="container-fluid padding" style="align-items: center;  justify-content:center;  display: none"
+<div class="container-fluid padding" style="align-items: center;  justify-content:center;  display: block"
      id="voting-section">
     <div class="row padding">
-        <div class="card">
+        <div class="card" id="voting-card">
             <div class="card-header" style="align-items: center">
                 Vote for the best person
             </div>
             <div class="card-body" style="align-items: center" id="voting-section-body">
-                <div class="row">
-                    <div class="col-6" style="align-items: center">
-                        <h5>School Captain</h5>
+                <form id="vote-form">
+                    <div class="row">
+                        <div class="col-6" style="align-items: center" id="school-captain-section">
+                            <h5>School Captain</h5>
+                            <div class="form-group">
+                                <select type="radio" class="form-control input-lg" id="school-captain-select"></select>
+                            </div>
+                        </div>
+                        <div class="col-6" style="align-items: center" id="school-vice-captain-section">
+                            <h5>School Vice Captain</h5>
+                            <div class="form-group">
+                                <select class="form-control input-lg" id="school-vice-captain-select"></select>
+                            </div>
+                        </div>
                     </div>
-                    <div class=" col-6" style="align-items: center">
-                        <h5>School Vice Captain</h5>
+                    <div class="row">
+                        <div class="col-6" style="align-items: center" id="house-captain-section">
+                            <!--House Captain-->
+                        </div>
+                        <div class="col-6" style="align-items: center" id="house-vice-captain-section">
+                            <!--House Vice Captain-->
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-6" style="align-items: center">
-                        House Captain
-                    </div>
-                    <div class="col-6" style="align-items: center">
-                        House Vice Captain
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
