@@ -36,11 +36,11 @@ function loadAllCandidates(param) {
             }
             document.getElementById('house-captain-section').innerHTML = "<h5>" + houseName + " Captain</h5>" +
                 "<div class='form-group'>" +
-                "<select class='form-control input-lg' id='house-captain'</select>  " +
+                "<select class='form-control input-lg selectpicker' id='house-captain'</select>  " +
                 "</div>";
             document.getElementById('house-vice-captain-section').innerHTML = "<h5>" + houseName + " Vice Captain</h5>" +
                 "<div class='form-group'>" +
-                "<select  class='form-control input-lg' id='house-vice-captain'</select>" +
+                "<select  class='form-control input-lg selectpicker' id='house-vice-captain'</select>" +
                 "</div>";
             for (let i = 0; i < res.length; i++) {
                 if (res[i].election_type == "SLCN")
@@ -59,10 +59,7 @@ function loadAllCandidates(param) {
 function returnChild(res) {
     let opt = document.createElement('option');
     opt.value = res.contestant_id;
-    opt.innerHTML = "<div class='row'>" +
-        " <img class='col-4' src='" + res.contestant_picture + "' width='140'>" +
-        "<p class='col-8'>" + res.contestant_name + "</p>" +
-        "</div>";
+    opt.innerText = res.contestant_name;
     return opt;
 }
 
@@ -81,7 +78,8 @@ $('#student-details-form').submit(function () {
         {
             if (xhr.response == "OK") {
                 loadAllCandidates(param);
-                //display the div to show voting option
+                $('#student-details-section').hide();
+                document.getElementById('voting-section').style.display = "flex";
             }
         }
     };
@@ -92,7 +90,7 @@ $(document).ready( function () {
     let cookie=document.cookie.split(';').pop();
     let admin_username=cookie.split('=').pop();
     let cookie_name=(document.cookie.split(';').pop()).split('=').slice();
-    if (cookie_name[0]===' admin_username')
+    if (cookie_name[0] === 'admin_username')
     {
         document.getElementById("admin-name-header").innerHTML="<a class=nav-link href=admin.html>" + admin_username + "</a>";
     }

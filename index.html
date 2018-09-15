@@ -7,6 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--<link rel="stylesheet" href="css/bootstrap-select.css">-->
     <script src="js/popper.js-1.14.0/package/dist/popper.js"></script>
 </head>
 <body>
@@ -134,36 +135,38 @@
         </div>
     </div>
 </div>
-<div class="container-fluid padding" style="align-items: center;  justify-content:center;  display: block"
-     id="voting-section">
-    <div class="row padding">
-        <div class="card" id="voting-card">
-            <div class="card-header" style="align-items: center">
-                Vote for the best person
-            </div>
-            <div class="card-body" style="align-items: center" id="voting-section-body">
+<div class="container-fluid" style="align-items: center;  justify-content:center; display:none ; " id="voting-section">
+    <div class="row">
+        <div class="card mr-auto ml-auto mt-auto mb-auto" id="voting-card">
+            <div class="card-body" id="voting-section-body">
+                <h4 class="display-4">Vote for the best person</h4>
                 <form id="vote-form">
                     <div class="row">
-                        <div class="col-6" style="align-items: center" id="school-captain-section">
+                        <div class="col-6" id="school-captain-section">
                             <h5>School Captain</h5>
                             <div class="form-group">
-                                <select type="radio" class="form-control input-lg" id="school-captain-select"></select>
+                                <select class=" form-control input-lg " id="school-captain-select"></select>
                             </div>
                         </div>
-                        <div class="col-6" style="align-items: center" id="school-vice-captain-section">
+                        <div class="col-6" id="school-vice-captain-section">
                             <h5>School Vice Captain</h5>
                             <div class="form-group">
-                                <select class="form-control input-lg" id="school-vice-captain-select"></select>
+                                <select class="form-control input-lg" id="school-vice-captain-select">
+                                </select>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6" style="align-items: center" id="house-captain-section">
+                        <div class="col-6" id="house-captain-section">
                             <!--House Captain-->
                         </div>
-                        <div class="col-6" style="align-items: center" id="house-vice-captain-section">
+                        <div class="col-6" id="house-vice-captain-section">
                             <!--House Vice Captain-->
                         </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary form-control input-lg" id="submit-vote"
+                               name="Submit" value="Submit">
                     </div>
                 </form>
             </div>
@@ -171,7 +174,7 @@
     </div>
 </div>
 <!--footer-->
-<footer>
+<footer class="mt-auto">
     <div class="container-fluid padding">
         <h1  align="center">About Us</h1>
         <p align="center">I am Goutam B Seervi. A student of RVPS for the year 2015-18</p>
@@ -183,6 +186,7 @@
 </body>
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<!--<script src="js/bootstrap-select.js"></script>-->
 <script src="js/popper.js-1.14.0/package/dist/popper.js"></script>
 <script src="js/main.js"></script>
 </html>

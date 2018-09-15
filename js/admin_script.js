@@ -3,7 +3,8 @@ let admin_username=cookie.split('=').pop();
 let admin_password = "";
 $(document).ready(function () {
     let cookie_name=(document.cookie.split(';').pop()).split('=').slice();
-    if (cookie_name[0]===' admin_username')
+    //console.log(cookie_name[0]);
+    if (cookie_name[0] == 'admin_username')
     {
         document.getElementById("admin-name-header").innerHTML = "<a class=nav-link href=admin.html id='admin-username-navigation'>" + admin_username + "</a>";
     }
