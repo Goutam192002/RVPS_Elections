@@ -30,32 +30,40 @@
         </ul>
     </div>
 </nav>
-<div class="wrapper">
-    <nav id="sidebar" class="col-3" style="padding-left: 5px">
     <!--<div class="col-3" style="padding-left: 5px" >-->
         <div style="padding-left: 1.5rem ; padding-top: 1rem; align-items: center">
             <img src="assets/icons8-male-user-filled-100.png" id="login" class="img-circle"/>
             <h5>Admin Dashboard</h5>
      </div>
 <!-- Sidebar Links -->
-        <div id="sidebar-menu-items" style="padding-left: 0.5rem">
-<ul class="sidebar-menu">
-    <li class="active nav-item"><a class="nav-item" href="admin.html">Home</a></li>
-    <li class="nav-item"><a class="nav-item" href="#add-remove-candidates" onclick="addOrRemoveCandidates()">Add/Remove
+<ul class="nav nav-tabs" id="navbar-admin" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#admin-home" role="tab" aria-controls="admin-home"
+           aria-selected="true">Home</a>
+    </li>
+    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#add-remove-candidates" role="tab"
+                            aria-controls="add-remove-candidates" aria-selected="false">Add/Remove
         Candidates</a>
     </li>
-    <li class="nav-item"><a class="nav-item" href="#add-remove-voters" onclick="addOrRemoveVoters()">Add/Remove
+    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#add-remove-voters" role="tab"
+                            aria-controls="add-remove-voters" aria-selected="false">Add/Remove
         Voters</a></li>
-    <li class="nav-item"><a class="nav-item" href="#add-remove-administrators" onclick="addOrRemoveAdministrators()">Add/Remove
+    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#add-remove-administrators" role="tab"
+                            aria-controls="add-remove-administrators" aria-selected="false">Add/Remove
         Administrators</a></li>
-    <li class="nav-item"><a href="#" class="nav-item">Statistics </a></li>
-    <li class="nav-item"><a class="nav-item" data-toggle="modal" data-target="#exitModal">Logout</a></li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#" aria-controls="" role="tab"
+           aria-selected="false">Statistics </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="pill modal" data-target="#exitModal" role="tab">Logout</a>
+    </li>
 </ul>
-     </div>
     <!--</div>-->
-    </nav>
-    <div class="col-8" id="admin-home" style="padding-top: 2rem; padding-left: 12rem ; display: block">
-      <div class="card border-dark">
+<div id="nav-content" class="tab-content">
+    <div class="col-8 tab-pane fade show active" role="tabpanel" aria-labelledby="admin-home-tab" id="admin-home"
+         style="padding-top: 2rem; padding-left: 12rem ;">
+        <div class="card border-dark">
           <div class="row">
           <div class="col-4 mx-auto vertical-row">
           <img src="assets/icons8-male-user-filled-100.png">
@@ -202,7 +210,8 @@
             </div>
         </div>
     </div>
-    <div class="col-8" id="add-remove-candidates" style="padding-top: 2rem; padding-left: 12rem ; display: none">
+    <div class="col-8 tab-pane fade" role="tabpanel" aria-labelledby="add-remove-candidates-tab"
+         id="add-remove-candidates" style="padding-top: 2rem; padding-left: 12rem ;">
         <table id="candidates-table" class="table table-striped table-bordered">
             <thead class="thead-dark">
             <tr>
@@ -262,7 +271,8 @@
             </div>
         </div>
     </div>
-    <div class="col-8" id="add-remove-voters" style="padding-top: 2rem; padding-left: 12rem ; display: none">
+    <div class="col-8 tab-pane fade" role="tabpanel" aria-labelledby="add-remove-voters-tab" id="add-remove-voters"
+         style="padding-top: 2rem; padding-left: 12rem ;">
         <table id="voters-table" class="table table-striped table-bordered">
             <thead class="thead-dark">
             <tr>
@@ -361,7 +371,8 @@
             </div>
         </div>
     </div>
-    <div class="col-8" id="add-remove-administrators" style="padding-top: 2rem; padding-left: 12rem ; display: none">
+    <div class="col-8 tab-pane fade" role="tabpanel" aria-labelledby="add-remove-administrators-tab"
+         id="add-remove-administrators" style="padding-top: 2rem; padding-left: 12rem ; ">
         <table id="admin-info-table" class="table table-striped table-bordered">
             <thead class="thead-dark">
             <tr>

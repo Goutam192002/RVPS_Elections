@@ -36,11 +36,13 @@ function loadAllCandidates(param) {
             }
             document.getElementById('house-captain-section').innerHTML = "<h5>" + houseName + " Captain</h5>" +
                 "<div class='form-group'>" +
-                "<select class='form-control input-lg selectpicker' id='house-captain'</select>  " +
+                "<select class='form-control input-lg selectpicker' id='house-captain' required>" +
+                "<option class='active disabled'>Select house captain</option></select>  " +
                 "</div>";
             document.getElementById('house-vice-captain-section').innerHTML = "<h5>" + houseName + " Vice Captain</h5>" +
                 "<div class='form-group'>" +
-                "<select  class='form-control input-lg selectpicker' id='house-vice-captain'</select>" +
+                "<select  class='form-control input-lg selectpicker' id='house-vice-captain' required>" +
+                "<option class='active disabled'>Select house vice captain</option></select>" +
                 "</div>";
             for (let i = 0; i < res.length; i++) {
                 if (res[i].election_type == "SLCN")
@@ -76,10 +78,16 @@ $('#student-details-form').submit(function () {
     xhr.onreadystatechange=function () {
         if(this.readyState===4 || this.status===400)
         {
-            if (xhr.response == "OK") {
+            console.log(xhr.response);
+            if (xhr.response == "\"OK\"") {
                 loadAllCandidates(param);
                 $('#student-details-section').hide();
-                document.getElementById('voting-section').style.display = "flex";
+                document.getElementById('invalid-student-details').style.display = "none";
+                document.getElementById('voting-section').style.display = "block";
+            }
+            else {
+                document.getElementById('invalid-student-details').style.display = 'block';
+                document.getElementById('invalid-student-details').innerText = xhr.response;
             }
         }
     };
