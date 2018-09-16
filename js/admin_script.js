@@ -125,18 +125,11 @@ function change_admin_mobileno() {
     document.getElementById('change-username-dialog').style.display="none";
 
 }
-
-function goToAdminHome() {
-    document.getElementById("admin-home").style.display = "block";
-    document.getElementById("admin-remove-voters").style.display = "none";
-    document.getElementById("admin-remove-administrators").style.display = "none";
-    document.getElementById("add-remove-candidates").style.display = "none";
-}
 function addOrRemoveCandidates() {
-    document.getElementById("admin-home").style.display="none";
-    document.getElementById("add-remove-voters").style.display="none";
-    document.getElementById("add-remove-administrators").style.display="none";
-    document.getElementById("add-remove-candidates").style.display="block";
+    /* document.getElementById("admin-home").style.display="none";
+     document.getElementById("add-remove-voters").style.display="none";
+     document.getElementById("add-remove-administrators").style.display="none";
+     document.getElementById("add-remove-candidates").style.display="block";*/
     refreshCandidateTable();
 }
 function addOrRemoveVoters() {

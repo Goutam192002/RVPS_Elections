@@ -30,103 +30,98 @@
         </ul>
     </div>
 </nav>
+<div class="row">
     <!--<div class="col-3" style="padding-left: 5px" >-->
+    <!-- Sidebar Links -->
+    <div class="nav nav-pills flex-column col-3" id="navbar-admin" role="tablist" style="padding-left: 1rem">
         <div style="padding-left: 1.5rem ; padding-top: 1rem; align-items: center">
             <img src="assets/icons8-male-user-filled-100.png" id="login" class="img-circle"/>
             <h5>Admin Dashboard</h5>
-     </div>
-<!-- Sidebar Links -->
-<ul class="nav nav-tabs" id="navbar-admin" role="tablist">
-    <li class="nav-item">
+        </div>
         <a class="nav-link" data-toggle="pill" href="#admin-home" role="tab" aria-controls="admin-home"
            aria-selected="true">Home</a>
-    </li>
-    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#add-remove-candidates" role="tab"
-                            aria-controls="add-remove-candidates" aria-selected="false">Add/Remove
-        Candidates</a>
-    </li>
-    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#add-remove-voters" role="tab"
-                            aria-controls="add-remove-voters" aria-selected="false">Add/Remove
-        Voters</a></li>
-    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#add-remove-administrators" role="tab"
-                            aria-controls="add-remove-administrators" aria-selected="false">Add/Remove
-        Administrators</a></li>
-    <li class="nav-item">
+
+        <a class="nav-link" data-toggle="pill" href="#add-remove-candidates" role="tab"
+           aria-controls="add-remove-candidates" aria-selected="false" onclick="addOrRemoveCandidates()">Add/Remove
+            Candidates</a>
+        <a class="nav-link" data-toggle="pill" href="#add-remove-voters" role="tab"
+           aria-controls="add-remove-voters" aria-selected="false" onclick="addOrRemoveVoters()">Add/Remove
+            Voters</a>
+        <a class="nav-link" data-toggle="pill" href="#add-remove-administrators" role="tab"
+           aria-controls="add-remove-administrators" aria-selected="false" onclick="addOrRemoveAdministrators()">Add/Remove
+            Administrators</a>
         <a class="nav-link" data-toggle="pill" href="#" aria-controls="" role="tab"
            aria-selected="false">Statistics </a>
-    </li>
-    <li class="nav-item">
         <a class="nav-link" data-toggle="pill modal" data-target="#exitModal" role="tab">Logout</a>
-    </li>
-</ul>
+    </div>
     <!--</div>-->
 <div id="nav-content" class="tab-content">
-    <div class="col-8 tab-pane fade show active" role="tabpanel" aria-labelledby="admin-home-tab" id="admin-home"
-         style="padding-top: 2rem; padding-left: 12rem ;">
+    <div class="tab-pane col-9 fade show active" role="tabpanel" aria-labelledby="admin-home-tab" id="admin-home"
+         style="padding-top: 2rem; padding-left: 2rem ;">
         <div class="card border-dark">
-          <div class="row">
-          <div class="col-4 mx-auto vertical-row">
-          <img src="assets/icons8-male-user-filled-100.png">
-          </div>
-          <div class="col-8 " id="admin_details">
-                   <div  id="admin_details_name" style="background-color: #E9E9E9">
-                       Name:
-                   </div>
-              <div id="admin_details_password">
-              Password:
-              </div>
-              <div id="admin_details_mobileno" style="background-color: #E9E9E9">
-            Mobiile Number:
-          </div>
-              <div id="admin_details_email">
-              Email ID:
-              </div>
-    </div>
+            <div class="row">
+                <div class="col-4 mx-auto vertical-row">
+                    <img src="assets/icons8-male-user-filled-100.png">
+                </div>
+                <div class="col-8 " id="admin_details">
+                    <div id="admin_details_name" style="background-color: #E9E9E9">
+                        Name:
+                    </div>
+                    <div id="admin_details_password">
+                        Password:
+                    </div>
+                    <div id="admin_details_mobileno" style="background-color: #E9E9E9">
+                        Mobiile Number:
+                    </div>
+                    <div id="admin_details_email">
+                        Email ID:
+                    </div>
+                </div>
 </div>
-      </div>
-    <div class="row" style="padding-top: 2rem; padding-left: 1rem ;">
-        <table class="table table-striped  table-bordered">
-            <tr>
-                <td>Admin Username</td>
-                <td id="table_admin_username"></td>
-                <td><a href="#change-username-dialog" onclick=change_admin_username()>Change Username</a></td>
-            </tr>
-            <tr>
-                <td>Admin Password</td>
-                <td id="table_admin_password"></td>
-                <td><a href="#" onclick=change_admin_password()>Change Password</a></td>
-            </tr>
-            <tr>
-                <td>Admin email</td>
-                <td id="table_admin_email"></td>
-                <td><a href="#" onclick=change_admin_email()>Change email</a></td>
-            </tr>
-            <tr>
-                <td>Admin mobile Number</td>
-                <td id="table_admin_mobileno"></td>
-                <td><a href="#" onclick=change_admin_mobileno()>Change mobile number</a></td>
-            </tr>
-        </table>
-    </div>
-        <div id="change-username-dialog" class="row card mb-5 " style="display: none">
-        <div class="card-header">
-            Change Username
         </div>
+        <div class="row" style="padding-top: 2rem; padding-left: 1rem ;">
+            <table class="table table-striped  table-bordered">
+                <tr>
+                    <td>Admin Username</td>
+                    <td id="table_admin_username"></td>
+                    <td><a href="#change-username-dialog" onclick=change_admin_username()>Change Username</a></td>
+                </tr>
+                <tr>
+                    <td>Admin Password</td>
+                    <td id="table_admin_password"></td>
+                    <td><a href="#" onclick=change_admin_password()>Change Password</a></td>
+                </tr>
+                <tr>
+                    <td>Admin email</td>
+                    <td id="table_admin_email"></td>
+                    <td><a href="#" onclick=change_admin_email()>Change email</a></td>
+                </tr>
+                <tr>
+                    <td>Admin mobile Number</td>
+                    <td id="table_admin_mobileno"></td>
+                    <td><a href="#" onclick=change_admin_mobileno()>Change mobile number</a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="change-username-dialog" class="row card mb-5 " style="display: none">
+            <div class="card-header">
+                Change Username
+            </div>
             <div class="card-body">
                 <div class="form-group">
                     <label>Current Username</label>
-                <input type="text" value="" id="current-username" class="form-control input-lg" readonly>
+                    <input type="text" value="" id="current-username" class="form-control input-lg" readonly>
                 </div>
-                    <form id="change-username-form">
+                <form id="change-username-form">
                     <div class="form-group">
                         <label>Enter new username</label>
                         <input type="text" id="new-username" class="form-control input-lg" required>
                         <span id="username-availability" class="text-danger"></span>
                     </div>
-                       <div class="form-group">
-                           <input type="submit" class="btn-primary form-control input-lg">
-                       </div>
-                    </form>
+                    <div class="form-group">
+                        <input type="submit" class="btn-primary form-control input-lg">
+                    </div>
+                </form>
             </div>
         </div>
         <div id="change-password-dialog" class="row card mb-5" style="display: none">
@@ -194,7 +189,7 @@
                 </div>
                 <div class="form-group">
                     <label>New mobile number</label>
-                    <input type="number" id="new-mobileno" class="form-control input-lg"required>
+                    <input type="number" id="new-mobileno" class="form-control input-lg" required>
                     <a style="display: inline-block"> A verification code will be sent to your new mobile number</a>
                     <input type="button" class="btn-primary form-control input-lg" name="send" value="send">
                     <span id="mobileno-error"></span>
@@ -210,17 +205,17 @@
             </div>
         </div>
     </div>
-    <div class="col-8 tab-pane fade" role="tabpanel" aria-labelledby="add-remove-candidates-tab"
-         id="add-remove-candidates" style="padding-top: 2rem; padding-left: 12rem ;">
+    <div class="tab-pane col-9 fade" role="tabpanel" aria-labelledby="add-remove-candidates-tab"
+         id="add-remove-candidates" style="padding-top: 2rem; padding-left: 2rem ;">
         <table id="candidates-table" class="table table-striped table-bordered">
             <thead class="thead-dark">
             <tr>
-            <th scope="col">Candidate Picture</th>
+                <th scope="col">Candidate Picture</th>
                 <th scope="col">Candidate Name</th>
                 <th scope="col">Contestant ID</th>
                 <th scope="col">Elections</th>
                 <th scope="col">Action</th>
-           </tr>
+            </tr>
             </thead>
             <tbody id="candidates-table-body">
             </tbody>
@@ -232,7 +227,7 @@
             <div class="card-body">
                 <form id="add-edit-candidate" enctype="multipart/form-data" action="add_candidate.php">
                     <div class="form-group">
-                    <label>Candidate Name</label>
+                        <label>Candidate Name</label>
                         <input type="text" class="form-control input-lg" id="candidate-name"
                                placeholder="Enter candidate name" required>
                     </div>
@@ -252,9 +247,9 @@
                             <option value="AHVC">Aryabhatta House Vice Captain</option>
                         </select>
                     </div>
-                <div class="form-group">
-                    <input type="file" class="form-control-file" id="candidate-picture" required>
-                </div>
+                    <div class="form-group">
+                        <input type="file" class="form-control-file" id="candidate-picture" required>
+                    </div>
                     <div class="form-group">
                         <label>Submit form as</label>
                         <select class="form-control input-lg selectpicker" id="type-of-form" required>
@@ -262,17 +257,18 @@
                             <option value="edit-candidate">Edit candidate</option>
                         </select>
                     </div>
-                <div class="form-group">
-                    <input type="submit" class="btn btn-primary form-control input-lg" id="submit-candidate-details">
-                </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary form-control input-lg"
+                               id="submit-candidate-details">
+                    </div>
                 </form>
             </div>
             <div class="alert alert-danger" id="response" style="display: none; padding-top: 2rem">
             </div>
         </div>
     </div>
-    <div class="col-8 tab-pane fade" role="tabpanel" aria-labelledby="add-remove-voters-tab" id="add-remove-voters"
-         style="padding-top: 2rem; padding-left: 12rem ;">
+    <div class="tab-pane col-9 fade" role="tabpanel" aria-labelledby="add-remove-voters-tab" id="add-remove-voters"
+         style="padding-top: 2rem; padding-left: 2rem ;">
         <table id="voters-table" class="table table-striped table-bordered">
             <thead class="thead-dark">
             <tr>
@@ -371,8 +367,8 @@
             </div>
         </div>
     </div>
-    <div class="col-8 tab-pane fade" role="tabpanel" aria-labelledby="add-remove-administrators-tab"
-         id="add-remove-administrators" style="padding-top: 2rem; padding-left: 12rem ; ">
+    <div class="tab-pane col-9 fade" role="tabpanel" aria-labelledby="add-remove-administrators-tab"
+         id="add-remove-administrators" style="padding-top: 2rem; padding-left: 2rem ; ">
         <table id="admin-info-table" class="table table-striped table-bordered">
             <thead class="thead-dark">
             <tr>
@@ -436,6 +432,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 <div class="modal fade" id="exitModal">
     <div class="modal-dialog">
