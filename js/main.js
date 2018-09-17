@@ -94,6 +94,25 @@ $('#student-details-form').submit(function () {
     xhr.open('POST','student_details.php',true);
     xhr.send(formData);
    });
+$('#vote-form').submit(function (e) {
+    e.preventDefault();
+    $.ajax(
+        {
+            url: 'submit_votes.php',
+            type: 'POST',
+            dataType: 'json',
+            data: {
+                school_captain_vote: document.getElementById('school-captain-select').value,
+                school_vice_captain_vote: document.getElementById('school-vice-captain-vote').value,
+                house_captain_vote: document.getElementById('house-captain').value,
+                house_vice_captain_vote: document.getElementById('house-vice-captain').value
+            },
+            success: function (res) {
+                //do something
+            }
+        }
+    )
+});
 $(document).ready( function () {
     let cookie=document.cookie.split(';').pop();
     let admin_username=cookie.split('=').pop();

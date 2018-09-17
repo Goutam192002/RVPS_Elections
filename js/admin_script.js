@@ -133,17 +133,17 @@ function addOrRemoveCandidates() {
     refreshCandidateTable();
 }
 function addOrRemoveVoters() {
-    document.getElementById("admin-home").style.display="none";
+    /*document.getElementById("admin-home").style.display="none";
     document.getElementById("add-remove-candidates").style.display="none";
     document.getElementById("add-remove-administrators").style.display="none";
-    document.getElementById("add-remove-voters").style.display="block";
+    document.getElementById("add-remove-voters").style.display="block";*/
     refreshVotersTable();
 }
 function addOrRemoveAdministrators() {
-    document.getElementById("admin-home").style.display="none";
+    /*document.getElementById("admin-home").style.display="none";
     document.getElementById("add-remove-voters").style.display="none";
     document.getElementById("add-remove-candidates").style.display="none";
-    document.getElementById("add-remove-administrators").style.display="block";
+    document.getElementById("add-remove-administrators").style.display="block";*/
     refreshAdministratorTable();
 }
 function adminLogoutYes() {
@@ -504,7 +504,7 @@ function removeAdminYes(param) {
     })
 }
 
-$(' a').on('click', function (e) {
+$(' a').on('cl  ick', function (e) {
     e.preventDefault();
     $(this).tab('show')
 });
