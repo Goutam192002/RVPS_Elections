@@ -503,8 +503,3 @@ function removeAdminYes(param) {
         }
     })
 }
-
-$(' a').on('cl  ick', function (e) {
-    e.preventDefault();
-    $(this).tab('show')
-});
