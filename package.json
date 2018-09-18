@@ -11,5 +11,9 @@
     "url": "RVPS_Elections"
   },
   "author": "Goutam B Seervi",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "scss": "^0.2.4"
+  }
 }
