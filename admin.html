@@ -31,7 +31,6 @@
     </div>
 </nav>
 <div class="row">
-    <!--<div class="col-3" style="padding-left: 5px" >-->
     <!-- Sidebar Links -->
     <div class="nav nav-pills flex-column col-3" id="navbar-admin" role="tablist" style="padding-left: 1rem">
         <div style="padding-left: 1.5rem ; padding-top: 1rem; align-items: center">
@@ -432,11 +431,12 @@
             </div>
         </div>
     </div>
-        <div class="tab-pane fade" id="statistics-tab">
-            <div class="form-row" style="padding-top: 3rem" id="input-graph-type">
+        <div class="tab-pane fade" role="tabpanel" aria-labelledby="statistics-tab" id="statistics-tab"
+             style="padding-top: 2rem; padding-left: 2rem ;">
+            <div class="form-row" id="input-graph-type" style="padding-bottom: 2rem">
                 <label>Select the Election Type: </label>
-                <select class="form-control input-lg" id="select-election-typr-graph">
-                    <option class="active disabled">Select the election-type</option>
+                <select class="form-control input-lg" id="select-election-type-graph">
+                    <option class="active disabled" value="none">Select the election-type</option>
                     <option value="SLCN">School Captain</option>
                     <option value="SLVC">School Vice Captain</option>
                     <option value="BHCN">Bhaskara House Captain</option>
@@ -446,6 +446,17 @@
                     <option value="SHCN">Shushrutha House Captain</option>
                     <option value="SHVC">Shushrutha House Vice Captain</option>
                 </select>
+                <span id="error-none-selected" class="alert-info"></span>
+            </div>
+            <div class="card" id="graph-card">
+                <div class="card-body" id="graph-card-body">
+                    <div class="card-columns">
+                        <!--Bar graph of selected election here-->
+                    </div>
+                    <div class="card-columns">
+                        <!--Pie chart of selected election here-->
+                    </div>
+                </div>
             </div>
         </div>
 </div>

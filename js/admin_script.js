@@ -503,3 +503,11 @@ function removeAdminYes(param) {
         }
     })
 }
+
+$('#select-election-type-graph').onchange(function (e) {
+    e.preventDefault();
+    if ($('#select-election-type-graph').val == "none")
+        document.getElementById('error-none-selected').innerText = "Please select the election type";
+    else
+        document.getElementById('error-none-selected').innerText = "";
+});
