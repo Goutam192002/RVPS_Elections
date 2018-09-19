@@ -12,7 +12,7 @@ if ($conn->query($query)->num_rows != 1) {
     $query = "SELECT school_captain_vote FROM voting_details WHERE student_class='$student_class' AND student_section='$student_section' AND student_roll_no='$roll_no'";
     $result = $conn->query($query)->fetch_assoc();
     foreach ($result as $value) {
-        $value == "" ? $response = "OK" : "Vote has already been casted";
+        $value == "" ? $response = "OK" : $response = "Vote has already been casted";
     }
 }
 echo json_encode($response);

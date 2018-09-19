@@ -34,15 +34,27 @@ function loadAllCandidates(param) {
                     houseName = "Aryabhatta House";
                     break;
             }
+            document.getElementById('school-vice-captain-section').innerHTML = '<h5>School Vice Captain</h5>' +
+                '<div class=\"form-group\">' +
+                '<select class=\"form-control input-lg\" id=\"school-vice-captain-select\" required>' +
+                '<option class=\"active disabled\" value=\"none\">Select school vice captain</option>' +
+                '</select>' +
+                '</div>';
+            document.getElementById('school-captain-section').innerHTML = '<h5>School Captain</h5>' +
+                +'<div class="form-group">'
+                + '<select class=" form-control input-lg " id="school-captain-select" required>'
+                + '<option class="disabled active" value="none">Select school captain</option>' +
+                +'</select>' +
+                '</div>';
             document.getElementById('house-captain-section').innerHTML = "<h5>" + houseName + " Captain</h5>" +
                 "<div class='form-group'>" +
                 "<select class='form-control input-lg selectpicker' id='house-captain' required>" +
-                "<option class='active disabled'>Select house captain</option></select>  " +
+                "<option class='active disabled' value='none'>Select house captain</option></select>  " +
                 "</div>";
             document.getElementById('house-vice-captain-section').innerHTML = "<h5>" + houseName + " Vice Captain</h5>" +
                 "<div class='form-group'>" +
                 "<select  class='form-control input-lg selectpicker' id='house-vice-captain' required>" +
-                "<option class='active disabled'>Select house vice captain</option></select>" +
+                "<option class='active disabled' value='none'>Select house vice captain</option></select>" +
                 "</div>";
             for (let i = 0; i < res.length; i++) {
                 if (res[i].election_type == "SLCN")
@@ -66,19 +78,26 @@ function returnChild(res) {
 }
 
 let formData = new FormData();
-$('#student-details-form').submit(function () {
-    event.preventDefault();
-    formData.append('student_class',$('#student_class').val());
-    formData.append('student_section',$('#student-section').val());
-    formData.append('roll_no',$('#roll-no').val());
-    formData.append('student_house',$('#student-house').val());
+let studentClass;
+let studentSection;
+let studentRollno;
+let studentHouse;
+$('#student-details-form').submit(function (e) {
+    e.preventDefault();
     param = $('#student-house').val();
-    //console.log(formData);
+    studentClass = $('#student_class').val();
+    studentHouse = $('#student-house').val();
+    studentRollno = $('#roll-no').val();
+    studentSection = $('#student-section').val();
+    formData.append('student_class', studentClass);
+    formData.append('student_section', studentSection);
+    formData.append('roll_no', studentRollno);
+    formData.append('student_house', studentHouse);
     let xhr = new XMLHttpRequest();
     xhr.onreadystatechange=function () {
         if(this.readyState===4 || this.status===400)
         {
-            console.log(xhr.response);
+            //console.log(xhr.response);
             if (xhr.response == "\"OK\"") {
                 loadAllCandidates(param);
                 $('#student-details-section').hide();
@@ -96,23 +115,53 @@ $('#student-details-form').submit(function () {
    });
 $('#vote-form').submit(function (e) {
     e.preventDefault();
-    $.ajax(
-        {
-            url: 'submit_votes.php',
-            type: 'POST',
-            dataType: 'json',
-            data: {
-                school_captain_vote: document.getElementById('school-captain-select').value,
-                school_vice_captain_vote: document.getElementById('school-vice-captain-vote').value,
-                house_captain_vote: document.getElementById('house-captain').value,
-                house_vice_captain_vote: document.getElementById('house-vice-captain').value
-            },
-            success: function (res) {
-                //do something
+    if (document.getElementById('school-captain-select').value == 'none' || document.getElementById('school-vice-captain-select') == 'none' || document.getElementById('house-captain').value == 'none' || document.getElementById('house-vice-captain').value == 'none') {
+        document.getElementById('after-vote-message').classList.add('alert', 'alert-success', 'col-6', 'ml-auto', 'mr-auto');
+        document.getElementById('after-vote-message').innerHTML = '<p>Select atleast one option</p>';
+        document.getElementById('after-vote-message').style.display = 'block';
+    }
+    else {
+        $.ajax(
+            {
+                url: 'submit_votes.php',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    school_captain_vote: document.getElementById('school-captain-select').value,
+                    school_vice_captain_vote: document.getElementById('school-vice-captain-select').value,
+                    house_captain_vote: document.getElementById('house-captain').value,
+                    house_vice_captain_vote: document.getElementById('house-vice-captain').value,
+                    voter_class: studentClass,
+                    voter_section: studentSection,
+                    voter_roll_no: studentRollno,
+                    voter_house: studentHouse
+                },
+                success: function (res) {
+                    if (res == "OK") {
+                        document.getElementById('after-vote-message').classList.add('alert', 'alert-success', 'col-6', 'ml-auto', 'mr-auto');
+                        //document.getElementById('after-vote-message').style.alignItems='center';
+                        document.getElementById('after-vote-message').innerHTML = '<p>Vote successfully casted</p>' +
+                            '<button class="btn btn-primary" onclick="goBackToVoterForm()">Go Back and vote</button>';
+                        document.getElementById('after-vote-message').style.display = 'block';
+                    }
+                    else {
+                        document.getElementById('after-vote-message').classList.add('alert', 'alert-danger', 'col-6');
+                        //document.getElementById('after-vote-message').style.alignItems='center';
+                        document.getElementById('voting-card').innerHTML = '<p>' + res + '</p>' +
+                            '<button class="btn btn-primary" onclick="goBackToVoterForm()">Go Back and vote</button>';
+                        document.getElementById('after-vote-message').style.display = 'block';
+                    }
+                }
             }
-        }
-    )
+        )
+    }
 });
+
+function goBackToVoterForm() {
+    loadStudentForm();
+    document.getElementById('voting-section').style.display = 'none';
+    document.getElementById('after-vote-message').style.display = 'none';
+}
 $(document).ready( function () {
     let cookie=document.cookie.split(';').pop();
     let admin_username=cookie.split('=').pop();

@@ -50,7 +50,7 @@
         <a class="nav-link" data-toggle="pill" href="#add-remove-administrators" role="tab"
            aria-controls="add-remove-administrators" aria-selected="false" onclick="addOrRemoveAdministrators()">Add/Remove
             Administrators</a>
-        <a class="nav-link" data-toggle="pill" href="#" aria-controls="" role="tab"
+        <a class="nav-link" data-toggle="pill" href="#statistics-tab" aria-controls="statistics-tab" role="tab"
            aria-selected="false">Statistics </a>
         <a class="nav-link" data-toggle="pill modal" data-target="#exitModal" role="tab">Logout</a>
     </div>
@@ -432,6 +432,22 @@
             </div>
         </div>
     </div>
+        <div class="tab-pane fade" id="statistics-tab">
+            <div class="form-row" style="padding-top: 3rem" id="input-graph-type">
+                <label>Select the Election Type: </label>
+                <select class="form-control input-lg" id="select-election-typr-graph">
+                    <option class="active disabled">Select the election-type</option>
+                    <option value="SLCN">School Captain</option>
+                    <option value="SLVC">School Vice Captain</option>
+                    <option value="BHCN">Bhaskara House Captain</option>
+                    <option value="BHVC">Bhaskara House Vice Captain</option>
+                    <option value="AHCN">Aryabhatta House Captain</option>
+                    <option value="AHVC">Aryabhatta House Vice Captain</option>
+                    <option value="SHCN">Shushrutha House Captain</option>
+                    <option value="SHVC">Shushrutha House Vice Captain</option>
+                </select>
+            </div>
+        </div>
 </div>
 </div>
 <div class="modal fade" id="exitModal">
