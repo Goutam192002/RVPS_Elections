@@ -504,10 +504,64 @@ function removeAdminYes(param) {
     })
 }
 
-$('#select-election-type-graph').onchange(function (e) {
-    e.preventDefault();
-    if ($('#select-election-type-graph').val == "none")
+let barGraph = document.getElementById("barGraph").getContext("2d");
+let barChart = new Chart(barGraph, {
+    type: 'bar',
+    data: {
+        labels: [],
+        datasets: [{
+            label: 'Number of votes',
+            data: []
+        }]
+    },
+    options: {
+        legend: {display: false},
+        title: {
+            display: true,
+            title: 'Statistics'
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    min: 0,
+                    stepSize: 20
+                }
+            }]
+        }
+    }
+});
+$('#select-election-type-graph').on('change', function () {
+    let electiontype = document.getElementById('select-election-type-graph').value;
+    //console.log(electiontype);
+    if (electiontype == "none")
         document.getElementById('error-none-selected').innerText = "Please select the election type";
-    else
+    else {
+        barChart.data.labels = [];
+        barChart.data.datasets.forEach((dataset) => {
+            dataset.data.pop();
+        });
+        barChart.update();
         document.getElementById('error-none-selected').innerText = "";
+        $.ajax({
+            url: 'getGraphData.php',
+            type: 'POST',
+            dataType: 'json',
+            data: {
+                election_type: electiontype
+            },
+            success: function (res) {
+                let labels = [];
+                let voteData = [];
+                for (let i = 0; i < res.length; i++) {
+                    labels[i] = res[i].candidate_info.candidate_name;
+                    voteData[i] = res[i].count_of_votes;
+                    barChart.data.labels.push(labels[i]);
+                    barChart.data.datasets.forEach((dataset) => {
+                        dataset.data.push(voteData[i]);
+                    });
+                    barChart.update();
+                }
+            }
+        })
+    }
 });

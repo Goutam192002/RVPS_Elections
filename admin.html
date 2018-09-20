@@ -438,19 +438,22 @@
                 <select class="form-control input-lg" id="select-election-type-graph">
                     <option class="active disabled" value="none">Select the election-type</option>
                     <option value="SLCN">School Captain</option>
-                    <option value="SLVC">School Vice Captain</option>
+                    <option value="SVCN">School Vice Captain</option>
                     <option value="BHCN">Bhaskara House Captain</option>
                     <option value="BHVC">Bhaskara House Vice Captain</option>
                     <option value="AHCN">Aryabhatta House Captain</option>
                     <option value="AHVC">Aryabhatta House Vice Captain</option>
                     <option value="SHCN">Shushrutha House Captain</option>
                     <option value="SHVC">Shushrutha House Vice Captain</option>
+                    <option value="CHCN">Charaka House Captain</option>
+                    <option value="CHVC">Charaka House Vice Captain</option>
                 </select>
-                <span id="error-none-selected" class="alert-info"></span>
+                <span id="error-none-selected" class="text-danger"></span>
             </div>
             <div class="card" id="graph-card">
                 <div class="card-body" id="graph-card-body">
                     <div class="card-columns">
+                        <canvas id="barGraph"></canvas>
                         <!--Bar graph of selected election here-->
                     </div>
                     <div class="card-columns">
@@ -539,5 +542,6 @@
 <script src="js/jquery-3.3.1.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/popper.js-1.14.0/package/dist/popper.js"></script>
+<script src="node_modules/chart.js/dist/Chart.bundle.min.js"></script>
 <script src="js/admin_script.js"></script>
 </html>
