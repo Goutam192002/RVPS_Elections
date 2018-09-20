@@ -172,7 +172,7 @@ $(document).ready( function () {
     }
     else
     {
-        document.getElementById("admin-name-header").innerHTML="<a class=nav-link href=admin_login.html>Admin Login</a>";
+        document.getElementById("admin-name-header").innerHTML = "<a class=nav-link href=/admin_login.html>Admin Login</a>";
     }
 });
 
