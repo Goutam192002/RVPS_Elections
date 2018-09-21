@@ -201,8 +201,8 @@ function refreshCandidateTable() {
                     "<td class=\'contestant-name\'>" + res[iRes].contestant_name + "</td>" +
                     "<td class=\'contestant-id\'>" + res[iRes].contestant_id + "</td>" +
                     "<td class=\'election-type\'>" + res[iRes].election_type + "</td>" +
-                    "<td><a href=\'#\' onclick=changeCandidateDetails('" + res[iRes].contestant_id + "')  style=\'padding-right: 1rem\' id=\'edit-candidate\'>Edit</a>" +
-                    "<a href='#' onclick=removeCandidate('" + res[iRes].contestant_id + "')>Remove</a></td></tr>";
+                    "<td><a href='#' onclick=\"changeCandidateDetails('" + res[iRes].contestant_id + "')\"  style=\'padding-right: 1rem\' id=\'edit-candidate\'>Edit</a>" +
+                    "<a href='#' data-toggle='modal' data-target='#removeCandidateModal' onclick=\"removeCandidate('" + res[iRes].contestant_id + "')\">Remove</a></td></tr>";
             }
         }
     })
@@ -219,19 +219,14 @@ function changeCandidateDetails(candidate_id) {
     old_candidate_id = tempRes[candidate_id].contestant_id;
     document.getElementById('type-of-form').value = 'edit-candidate';
 }
+
 function removeCandidate(candidate_id_2) {
-    console.log("executing the remove()");
     tempRes[candidate_id_2] = JSON.parse(tempRes[candidate_id_2]);
-    document.getElementById('remove-candidates-modal-body').innerHTML = '<p>Are you sure you want to remove the following candidate' +
-        'Candidate Name:' + tempRes[candidate_id_2].contestant_name +
-        'Candidate ID:' + tempRes[candidate_id_2].contestant_id +
-        'Elections:' + tempRes[candidate_id_2].election_type + '</p>';
-    //the above innerHTML is not working for unknown reasons
-    document.getElementById('remove-candidates-modal-body').outerHTML = '<div class="modal-footer">' +
-        '<button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>\n' +
-        '                <button type="button" class="btn btn-primary" onclick=removeCandidateYes("' + candidate_id_2 + '")>Yes</button>\n' +
-        '            </div>';
-    $('#removeVoterModal').show();
+    document.getElementById('remove-candidates-modal-body').innerHTML = '<p>Are you sure you want to remove the following candidate<br> Candidate Name:' + tempRes[candidate_id_2].contestant_name +
+        '<br>Candidate ID:' + tempRes[candidate_id_2].contestant_id +
+        '<br>Elections:' + tempRes[candidate_id_2].election_type + '</p>';
+    document.getElementById('remove-candidates-modal-footer').innerHTML = '<button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>\n' +
+        '                <button type="button" class="btn btn-primary" onclick=removeCandidateYes("' + candidate_id_2 + '")>Yes</button>\n';
 }
 
 function removeCandidateYes(candidate_id_3) {
@@ -288,7 +283,7 @@ function refreshVotersTable() {
                     "<td>" + res[i].student_class + "</td>" +
                     "<td>" + res[i].student_section + "</td>" +
                     "<td>" + res[i].no_of_students + "</td>" +
-                    "<td><a data-toggle=\"modal\" data-target=\"#removeVoterModal\" onclick=removeVoter('" + JSON.stringify(res[i]) + "')>Remove</a></td></tr>";
+                    "<td><a href='#' data-toggle=\"modal\" data-target=\"#removeVoterModal\" onclick=removeVoter('" + JSON.stringify(res[i]) + "')>Remove</a></td></tr>";
             }
         }
     })
@@ -297,11 +292,9 @@ function refreshVotersTable() {
 function removeVoter(param) {
     param = JSON.parse(param);
     document.getElementById("remove-voter-modal-content").innerHTML = "<p>Are you sure you want to delete the class " + param.student_class +
-        "and section " + param.student_section + "</p>";
-    document.getElementById("remove-voter-modal-content").outerHTML = "<div class='modal-footer'>\n" +
-        "                <button type='button' class='btn btn-secondary' data-dismiss='modal'>No</button>\n" +
-        "                <button type='button' class='btn btn-primary' onclick=removeVoterYes('" + JSON.stringify(param) + "')>Yes</button>" +
-        "                    </div>";
+        "  and section " + param.student_section + "</p>";
+    document.getElementById("remove-voter-modal-footer").innerHTML = "<button type='button' class='btn btn-secondary' data-dismiss='modal'>No</button>\n" +
+        "                <button type='button' class='btn btn-primary' onclick=removeVoterYes('" + JSON.stringify(param) + "')>Yes</button>";
 }
 
 function removeVoterYes(param) {
@@ -341,7 +334,7 @@ function refreshAdministratorTable() {
                 document.getElementById('administrator-table-body').innerHTML += '<tr><td>' + responseAdministratorTable[i].admin_username + '</td>' +
                     '<td>' + responseAdministratorTable[i].admin_password + '</td>' +
                     '<td>' +
-                    '<a id="removeAdmin" onclick=removeAdmin("' + responseAdministratorTable[i].admin_username + '")>Remove</a> ' +
+                    '<a id="removeAdmin" href="#" data-toggle="modal" data-target="#removeAdminModal" onclick=removeAdmin("' + responseAdministratorTable[i].admin_username + '")>Remove</a> ' +
                     '</td>' +
                     '</tr>';
             }
@@ -469,10 +462,9 @@ $('#add-new-admin-form').submit(function (e) {
 });
 
 function removeAdmin(admin_username) {
-    document.getElementById("remove-administrator-modal-content").innerHTML = "<p>Are you sure you want to remove administrator<strong>" + admin_username + "</strong> ?";
-    document.getElementById("remove-administrator-modal-content").outerHTML = "<button type='button' class='btn btn-secondary' data-dismiss='modal'>No</button>" +
+    document.getElementById("remove-administrator-modal-content").innerHTML = "<p>Are you sure you want to remove administrator <strong>" + admin_username + "</strong> ?";
+    document.getElementById("remove-administrator-modal-footer").innerHTML = "<button type='button' class='btn btn-secondary' data-dismiss='modal'>No</button>" +
         "<button type='button' data-toggle='modal' data-target='#removeAdminModal' class='btn btn-primary' onclick=removeAdminYes('" + admin_username + "')>Yes</button>";
-    $('#removeVoterModal').show('show');
 }
 
 function removeAdminYes(param) {

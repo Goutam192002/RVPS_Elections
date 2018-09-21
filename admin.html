@@ -50,7 +50,7 @@
             Administrators</a>
         <a class="nav-link" data-toggle="pill" href="#statistics-tab" aria-controls="statistics-tab" role="tab"
            aria-selected="false">Statistics </a>
-        <a class="nav-link" data-toggle="modal" data-target="#exitModal">Logout</a>
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#exitModal">Logout</a>
     </div>
     <!--Navigation content-->
     <div id="nav-content" class="tab-content col-8">
@@ -503,6 +503,9 @@
             <div class="modal-body" id="remove-voter-modal-content">
 
             </div>
+            <div class="modal-footer" id="remove-voter-modal-footer">
+
+            </div>
         </div>
     </div>
 </div>
@@ -519,6 +522,9 @@
             <div class="modal-body" id="remove-candidates-modal-body">
 
             </div>
+            <div class="modal-footer" id="remove-candidates-modal-footer">
+
+            </div>
         </div>
     </div>
 </div>
@@ -528,10 +534,14 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Remove Administrator?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body" id="remove-administrator-modal-content">
                 <!--Details of the administrator to be removed here -->
             </div>
+            <div class="modal-footer" id="remove-administrator-modal-footer"></div>
         </div>
     </div>
 </div>
