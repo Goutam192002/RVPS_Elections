@@ -50,7 +50,7 @@
             Administrators</a>
         <a class="nav-link" data-toggle="pill" href="#statistics-tab" aria-controls="statistics-tab" role="tab"
            aria-selected="false">Statistics </a>
-        <a class="nav-link" data-toggle="pill modal" data-target="#exitModal" role="tab">Logout</a>
+        <a class="nav-link" data-toggle="modal" data-target="#exitModal">Logout</a>
     </div>
     <!--</div>-->
     <div id="nav-content" class="tab-content col-8">
@@ -160,10 +160,12 @@
                 <form id="change-email-address">
                     <div class="form-group">
                         <label>New email address</label>
-                        <input type="text" id="new-email" class="form-control input-lg" required>
+                        <div class="form-group">
+                            <input type="text" id="new-email" class=" form-control input-lg" required>
+                            <input type="button" class="btn btn-primary input-lg" name="send" value="Send">
+                        </div>
+                        <p> A verification code will be sent to your new email address</p>
                         <span id="email-errors"></span>
-                        <a style="display: inline-block"> A verification code will be sent to your new email address</a>
-                        <input type="button" class="btn-primary form-control input-lg" name="send" value="send">
                     </div>
                     <div class="form-group">
                         <label>Verification code</label>
@@ -189,7 +191,7 @@
                     <label>New mobile number</label>
                     <input type="number" id="new-mobileno" class="form-control input-lg" required>
                     <a style="display: inline-block"> A verification code will be sent to your new mobile number</a>
-                    <input type="button" class="btn-primary form-control input-lg" name="send" value="send">
+                    <input type="button" class="btn-primary input-lg" name="send" value="Send">
                     <span id="mobileno-error"></span>
                 </div>
                 <div class="form-group">
@@ -463,7 +465,7 @@
         </div>
 </div>
 </div>
-<div class="modal fade" id="exitModal">
+<div class="modal fade" id="exitModal" role="document">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

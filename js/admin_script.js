@@ -64,6 +64,8 @@ function change_admin_username() {
                     document.cookie="admin_username="+admin_username+" ; path=/";
                     document.getElementById('admin-username-navigation').innerText=admin_username;
                     document.getElementById('table_admin_username').innerText=admin_username;
+                    document.getElementById('current_username').value = addmin_username;
+                    document.getElementById('username-availability').innerText = "";
                 }
                 else
                 {
@@ -212,7 +214,7 @@ function refreshCandidateTable() {
                     "<td class=\'contestant-id\'>" + res[iRes].contestant_id + "</td>" +
                     "<td class=\'election-type\'>" + res[iRes].election_type + "</td>" +
                     "<td><a href=\'#\' onclick=changeCandidateDetails('" + res[iRes].contestant_id + "')  style=\'padding-right: 1rem\' id=\'edit-candidate\'>Edit</a>" +
-                    "<a href='#' onclick=removeCandidate('" + res[iRes].contestant_id + "')>Remove</a></td></tr>";
+                    "<a  data-toggle='modal' data-target='#removeVoterModal' onclick=removeCandidate('" + res[iRes].contestant_id + "')>Remove</a></td></tr>";
             }
         }
     })
@@ -240,7 +242,7 @@ function removeCandidate(candidate_id_2) {
         '<button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>\n' +
         '                <button type="button" class="btn btn-primary" onclick=removeCandidateYes("' + candidate_id_2 + '")>Yes</button>\n' +
         '            </div>';
-    $('#removeCandidateModal').modal('show');
+
 }
 
 function removeCandidateYes(candidate_id_3) {
