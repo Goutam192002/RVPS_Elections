@@ -128,24 +128,12 @@ function change_admin_mobileno() {
 
 }
 function addOrRemoveCandidates() {
-    /* document.getElementById("admin-home").style.display="none";
-     document.getElementById("add-remove-voters").style.display="none";
-     document.getElementById("add-remove-administrators").style.display="none";
-     document.getElementById("add-remove-candidates").style.display="block";*/
     refreshCandidateTable();
 }
 function addOrRemoveVoters() {
-    /*document.getElementById("admin-home").style.display="none";
-    document.getElementById("add-remove-candidates").style.display="none";
-    document.getElementById("add-remove-administrators").style.display="none";
-    document.getElementById("add-remove-voters").style.display="block";*/
     refreshVotersTable();
 }
 function addOrRemoveAdministrators() {
-    /*document.getElementById("admin-home").style.display="none";
-    document.getElementById("add-remove-voters").style.display="none";
-    document.getElementById("add-remove-candidates").style.display="none";
-    document.getElementById("add-remove-administrators").style.display="block";*/
     refreshAdministratorTable();
 }
 function adminLogoutYes() {
@@ -214,7 +202,7 @@ function refreshCandidateTable() {
                     "<td class=\'contestant-id\'>" + res[iRes].contestant_id + "</td>" +
                     "<td class=\'election-type\'>" + res[iRes].election_type + "</td>" +
                     "<td><a href=\'#\' onclick=changeCandidateDetails('" + res[iRes].contestant_id + "')  style=\'padding-right: 1rem\' id=\'edit-candidate\'>Edit</a>" +
-                    "<a  data-toggle='modal' data-target='#removeVoterModal' onclick=removeCandidate('" + res[iRes].contestant_id + "')>Remove</a></td></tr>";
+                    "<a href='#' onclick=removeCandidate('" + res[iRes].contestant_id + "')>Remove</a></td></tr>";
             }
         }
     })
@@ -232,17 +220,18 @@ function changeCandidateDetails(candidate_id) {
     document.getElementById('type-of-form').value = 'edit-candidate';
 }
 function removeCandidate(candidate_id_2) {
+    console.log("executing the remove()");
     tempRes[candidate_id_2] = JSON.parse(tempRes[candidate_id_2]);
-    document.getElementById('Remove-candidate-modal-content').innerHTML = '<p>Are you sure you want to remove the following candidate' +
+    document.getElementById('remove-candidates-modal-body').innerHTML = '<p>Are you sure you want to remove the following candidate' +
         'Candidate Name:' + tempRes[candidate_id_2].contestant_name +
         'Candidate ID:' + tempRes[candidate_id_2].contestant_id +
         'Elections:' + tempRes[candidate_id_2].election_type + '</p>';
     //the above innerHTML is not working for unknown reasons
-    document.getElementById('Remove-candidate-modal-content').outerHTML = '<div class="modal-footer">' +
+    document.getElementById('remove-candidates-modal-body').outerHTML = '<div class="modal-footer">' +
         '<button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>\n' +
         '                <button type="button" class="btn btn-primary" onclick=removeCandidateYes("' + candidate_id_2 + '")>Yes</button>\n' +
         '            </div>';
-
+    $('#removeVoterModal').show();
 }
 
 function removeCandidateYes(candidate_id_3) {
@@ -307,9 +296,9 @@ function refreshVotersTable() {
 
 function removeVoter(param) {
     param = JSON.parse(param);
-    document.getElementById("Remove-voter-modal-content").innerText = "Are you sure you want to delete the class " + param.student_class +
-        "and section " + param.student_section;
-    document.getElementById("Remove-voter-modal-content").outerHTML = "<div class='modal-footer'>\n" +
+    document.getElementById("remove-voter-modal-content").innerHTML = "<p>Are you sure you want to delete the class " + param.student_class +
+        "and section " + param.student_section + "</p>";
+    document.getElementById("remove-voter-modal-content").outerHTML = "<div class='modal-footer'>\n" +
         "                <button type='button' class='btn btn-secondary' data-dismiss='modal'>No</button>\n" +
         "                <button type='button' class='btn btn-primary' onclick=removeVoterYes('" + JSON.stringify(param) + "')>Yes</button>" +
         "                    </div>";
@@ -526,7 +515,7 @@ let barChart = new Chart(barGraph, {
             yAxes: [{
                 ticks: {
                     min: 0,
-                    stepSize: 20
+                    stepSize: calcStepSize()
                 }
             }]
         }
@@ -567,3 +556,16 @@ $('#select-election-type-graph').on('change', function () {
         })
     }
 });
+
+function calcStepSize() {
+    let no_of_rows = 0;
+    $.get(
+        {
+            url: 'retrieve_rows.php',
+            dataType: 'json',
+            success: function (res) {
+                no_of_rows = res / 10;
+            }
+        });
+    return no_of_rows;
+}

@@ -52,8 +52,9 @@
            aria-selected="false">Statistics </a>
         <a class="nav-link" data-toggle="modal" data-target="#exitModal">Logout</a>
     </div>
-    <!--</div>-->
+    <!--Navigation content-->
     <div id="nav-content" class="tab-content col-8">
+        <!--Admin home tab-->
         <div class="tab-pane  fade show active" role="tabpanel" aria-labelledby="admin-home-tab" id="admin-home"
          style="padding-top: 2rem; padding-left: 2rem ;">
         <div class="card border-dark">
@@ -205,6 +206,7 @@
             </div>
         </div>
     </div>
+        <!-- Add or remove candidates tab-->
         <div class="tab-pane  fade" role="tabpanel" aria-labelledby="add-remove-candidates-tab"
              id="add-remove-candidates" style="padding-top: 2rem; padding-left: 2rem ;">
         <table id="candidates-table" class="table table-striped table-bordered">
@@ -267,6 +269,7 @@
             </div>
         </div>
     </div>
+        <!-- Add or remove voters tab-->
         <div class="tab-pane  fade" role="tabpanel" aria-labelledby="add-remove-voters-tab" id="add-remove-voters"
              style="padding-top: 2rem; padding-left: 2rem ;">
         <table id="voters-table" class="table table-striped table-bordered">
@@ -367,6 +370,7 @@
             </div>
         </div>
     </div>
+        <!-- Add or remove administrators tab-->
         <div class="tab-pane  fade" role="tabpanel" aria-labelledby="add-remove-administrators-tab"
              id="add-remove-administrators" style="padding-top: 2rem; padding-left: 2rem ; ">
         <table id="admin-info-table" class="table table-striped table-bordered">
@@ -432,6 +436,7 @@
             </div>
         </div>
     </div>
+        <!-- Add or remove statistics tab-->
         <div class="tab-pane fade" role="tabpanel" aria-labelledby="statistics-tab" id="statistics-tab"
              style="padding-top: 2rem; padding-left: 2rem ;">
             <div class="form-row" id="input-graph-type" style="padding-bottom: 2rem">
@@ -465,6 +470,7 @@
         </div>
 </div>
 </div>
+<!--Admin Logout Modal-->
 <div class="modal fade" id="exitModal" role="document">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -484,6 +490,7 @@
         </div>
     </div>
 </div>
+<!--Remove voter modal-->
 <div class="modal fade" id="removeVoterModal">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -493,13 +500,13 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body" id="Remove-voter-modal-content">
-
+            <div class="modal-body" id="remove-voter-modal-content">
 
             </div>
         </div>
     </div>
 </div>
+<!--Remove candidate modal-->
 <div class="modal fade" id="removeCandidateModal">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -509,15 +516,13 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
-                <div id="Remove-candidate-modal-content">
+            <div class="modal-body" id="remove-candidates-modal-body">
 
-
-                </div>
             </div>
         </div>
     </div>
 </div>
+<!--Remove Admin Modal-->
 <div class="modal fade" id="removeAdminModal">
     <div class="modal-dialog">
         <div class="modal-content">
