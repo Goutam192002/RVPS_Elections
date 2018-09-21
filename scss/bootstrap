@@ -1,0 +1,30 @@
+@import "../node_modules/bootstrap";
+
+$primary: $teal;
+$enable-shadows: true;
+.btn-primary {
+  color: #fff;
+  background-color: teal;
+  border-color: teal;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: teal;
+  border-color: #008090;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #fff;
+  background-color: teal;
+  border-color: #009090;
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #009090;
+  border-color: #009060;
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 900, 255, 0.5);
+}
