@@ -168,11 +168,11 @@ $(document).ready( function () {
     let cookie_name=(document.cookie.split(';').pop()).split('=').slice();
     if (cookie_name[0] === 'admin_username')
     {
-        document.getElementById("admin-name-header").innerHTML="<a class=nav-link href=admin.html>" + admin_username + "</a>";
+        document.getElementById("admin-name-header").innerHTML = "<a class=nav-link href='admin.html'>" + admin_username + "</a>";
     }
     else
     {
-        document.getElementById("admin-name-header").innerHTML = "<a class=nav-link href=/admin_login.html>Admin Login</a>";
+        document.getElementById("admin-name-header").innerHTML = "<a class=nav-link href='admin_login.html'>Admin Login</a>";
     }
 });
 

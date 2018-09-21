@@ -5,381 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4060ed57-a012-4437-ba17-3a018f14b147" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/admin_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/admin_script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/.eslintrc.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/.htmllintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/MAINTAINING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/book.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/Chart.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/Chart.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/Chart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/Chart.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/axes/cartesian/category.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/axes/cartesian/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/axes/cartesian/linear.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/axes/cartesian/logarithmic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/axes/cartesian/time.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/axes/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/axes/labelling.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/axes/radial/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/axes/radial/linear.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/axes/styling.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/charts/area.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/charts/bar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/charts/bubble.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/charts/doughnut.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/charts/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/charts/line.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/charts/mixed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/charts/polar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/charts/radar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/charts/scatter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/configuration/animations.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/configuration/elements.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/configuration/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/configuration/layout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/configuration/legend.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/configuration/title.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/configuration/tooltip.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/developers/api.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/developers/axes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/developers/charts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/developers/contributing.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/developers/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/developers/plugins.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/developers/updates.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/general/colors.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/general/device-pixel-ratio.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/general/fonts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/general/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/general/interactions/events.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/general/interactions/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/general/interactions/modes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/general/options.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/general/responsive.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/getting-started/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/getting-started/installation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/getting-started/integration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/getting-started/usage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/fonts/fontawesome/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/fonts/fontawesome/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/fonts/fontawesome/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/fonts/fontawesome/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/fonts/fontawesome/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/fonts/fontawesome/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-anchorjs/anchor-style.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/Chart.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/Chart.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/Chart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/Chart.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/chartjs-plugin-deferred.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/chartjs-plugin-deferred.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-chartjs/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-fontsettings/fontsettings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-fontsettings/website.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-ga/plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-highlight/ebook.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-highlight/website.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-search-plus/jquery.mark.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-search-plus/search.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-search-plus/search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/gitbook-plugin-sharing/buttons.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/gitbook.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/images/apple-touch-icon-precomposed-152.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/images/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/gitbook/theme.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/notes/comparison.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/notes/extensions.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/notes/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/notes/license.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/search_plus_index.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/docs/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/SUMMARY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/axes/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/axes/cartesian/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/axes/cartesian/category.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/axes/cartesian/linear.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/axes/cartesian/logarithmic.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/axes/cartesian/time.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/axes/labelling.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/axes/radial/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/axes/radial/linear.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/axes/styling.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/charts/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/charts/area.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/charts/bar.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/charts/bubble.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/charts/doughnut.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/charts/line.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/charts/mixed.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/charts/polar.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/charts/radar.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/charts/scatter.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/configuration/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/configuration/animations.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/configuration/elements.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/configuration/layout.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/configuration/legend.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/configuration/title.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/configuration/tooltip.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/developers/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/developers/api.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/developers/axes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/developers/charts.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/developers/contributing.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/developers/plugins.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/developers/updates.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/general/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/general/colors.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/general/device-pixel-ratio.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/general/fonts.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/general/interactions/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/general/interactions/events.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/general/interactions/modes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/general/options.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/general/responsive.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/getting-started/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/getting-started/installation.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/getting-started/integration.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/getting-started/usage.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/notes/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/notes/comparison.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/notes/extensions.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/notes/license.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/docs/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/gulpfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/.eslintrc.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/advanced/data-labelling.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/advanced/progress-bar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/area/analyser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/area/line-boundaries.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/area/line-datasets.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/area/line-stacked.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/area/radar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/bar/horizontal.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/bar/multi-axis.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/bar/stacked-group.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/bar/stacked.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/bar/vertical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/bubble.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/combo-bar-line.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/doughnut.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/line/basic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/line/interpolation-modes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/line/line-styles.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/line/multi-axis.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/line/point-sizes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/line/point-styles.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/line/skip-points.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/line/stepped.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/pie.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/polar-area.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/radar-skip-points.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/radar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/scatter/basic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/charts/scatter/multi-axis.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/legend/point-style.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/legend/positioning.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/samples.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/filtering-labels.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/gridlines-display.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/gridlines-style.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/linear/min-max-suggested.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/linear/min-max.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/linear/step-size.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/logarithmic/line.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/logarithmic/scatter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/multiline-labels.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/non-numeric-y.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/time/combo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/time/financial.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/time/line-point-data.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/time/line.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scales/toggle-scale-type.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/scriptable/bubble.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/tooltips/border.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/tooltips/callbacks.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/tooltips/custom-line.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/tooltips/custom-pie.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/tooltips/custom-points.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/tooltips/interactions.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/tooltips/positioning.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/samples/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/scripts/deploy.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/scripts/release.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/chart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/charts/Chart.Bar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/charts/Chart.Bubble.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/charts/Chart.Doughnut.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/charts/Chart.Line.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/charts/Chart.PolarArea.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/charts/Chart.Radar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/charts/Chart.Scatter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/controllers/controller.bar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/controllers/controller.bubble.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/controllers/controller.doughnut.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/controllers/controller.line.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/controllers/controller.polarArea.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/controllers/controller.radar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/controllers/controller.scatter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.animation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.datasetController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.defaults.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.element.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.helpers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.interaction.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.layouts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.plugins.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.scale.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.scaleService.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.ticks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/core/core.tooltip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/elements/element.arc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/elements/element.line.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/elements/element.point.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/elements/element.rectangle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/elements/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/helpers/helpers.canvas.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/helpers/helpers.core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/helpers/helpers.easing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/helpers/helpers.options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/helpers/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/platforms/platform.basic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/platforms/platform.dom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/platforms/platform.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/plugins/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/plugins/plugin.filler.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/plugins/plugin.legend.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/plugins/plugin.title.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/scales/scale.category.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/scales/scale.linear.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/scales/scale.linearbase.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/scales/scale.logarithmic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/scales/scale.radialLinear.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/src/scales/scale.time.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/.eslintrc.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-absolute.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-absolute.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-flex-offset.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-flex-offset.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-flex.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-flex.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-max.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-max.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-min-interval.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-min-interval.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-multiple.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-multiple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-no-overlap.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-no-overlap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-offset.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-offset.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-single-xy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-single-xy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-single.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-single.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-stacked.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/controller.bar/bar-thickness-stacked.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/core.scale/label-offset-vertical-axes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/core.scale/label-offset-vertical-axes.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-end-span.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-end-span.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-end.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-end.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-span.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-span.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-spline-span.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-spline-span.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-spline.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-spline.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-stepped-span.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-stepped-span.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-stepped.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin-stepped.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-origin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-start-span.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-start-span.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-start.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-boundary-start.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset-span.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset-span.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset-spline-span.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset-spline-span.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset-spline.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset-spline.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-line-dataset.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-radar-boundary-origin-spline.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-radar-boundary-origin-spline.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-radar-boundary-origin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/fixtures/plugin.filler/fill-radar-boundary-origin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/jasmine.context.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/jasmine.index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/jasmine.matchers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/jasmine.utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/controller.bar.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/controller.bubble.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/controller.doughnut.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/controller.line.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/controller.polarArea.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/controller.radar.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/controller.scatter.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/core.controller.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/core.datasetController.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/core.element.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/core.helpers.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/core.interaction.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/core.layouts.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/core.plugin.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/core.scale.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/core.scaleService.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/core.ticks.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/core.tooltip.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/element.arc.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/element.line.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/element.point.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/element.rectangle.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/global.defaults.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/global.deprecations.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/helpers.canvas.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/helpers.core.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/helpers.easing.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/helpers.options.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/platform.dom.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/plugin.filler.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/plugin.legend.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/plugin.title.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/scale.category.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/scale.linear.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/scale.logarithmic.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/scale.radialLinear.tests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/test/specs/scale.time.tests.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/bootstrap.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -410,48 +41,48 @@
     <session id="159389226">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="34" />
+          <entry key="project.closed" value="35" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.12" value="9" />
           <entry key="project.open.time.13" value="6" />
-          <entry key="project.open.time.14" value="5" />
+          <entry key="project.open.time.14" value="6" />
           <entry key="project.open.time.16" value="4" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="6" />
-          <entry key="project.opened" value="39" />
+          <entry key="project.opened" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="bootstrap" value="1" />
-          <entry key="css" value="18" />
+          <entry key="css" value="20" />
           <entry key="custom" value="1" />
-          <entry key="html" value="13" />
-          <entry key="js" value="21" />
+          <entry key="html" value="14" />
+          <entry key="js" value="24" />
           <entry key="json" value="5" />
-          <entry key="map" value="2" />
+          <entry key="map" value="3" />
           <entry key="php" value="38" />
           <entry key="rnc" value="1" />
-          <entry key="scss" value="3" />
+          <entry key="scss" value="4" />
           <entry key="sql" value="5" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="18" />
-          <entry key="HTML" value="13" />
+          <entry key="CSS" value="20" />
+          <entry key="HTML" value="14" />
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="21" />
+          <entry key="JavaScript" value="24" />
           <entry key="PHP" value="38" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RNG Compact" value="1" />
-          <entry key="SCSS" value="5" />
+          <entry key="SCSS" value="6" />
           <entry key="Scratch" value="5" />
-          <entry key="SourceMap" value="2" />
+          <entry key="SourceMap" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -459,11 +90,11 @@
           <entry key="css" value="32" />
           <entry key="custom" value="21" />
           <entry key="html" value="5581" />
-          <entry key="js" value="15568" />
+          <entry key="js" value="15650" />
           <entry key="json" value="17" />
           <entry key="php" value="7046" />
           <entry key="sql" value="385" />
-          <entry key="txt" value="442" />
+          <entry key="txt" value="456" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -471,12 +102,17 @@
           <entry key="CSS" value="32" />
           <entry key="HTML" value="5604" />
           <entry key="JSON" value="17" />
-          <entry key="JavaScript" value="15545" />
+          <entry key="JavaScript" value="15627" />
           <entry key="PHP" value="7037" />
-          <entry key="PLAIN_TEXT" value="442" />
+          <entry key="PLAIN_TEXT" value="456" />
           <entry key="SCSS" value="21" />
           <entry key="SQL" value="9" />
           <entry key="Scratch" value="385" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="TypeScriptServerServiceImpl" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -489,8 +125,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            <state relative-caret-position="374">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -507,8 +143,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2405">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="238">
+              <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -520,17 +156,45 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="173" column="5" lean-forward="true" selection-start-line="173" selection-start-column="5" selection-end-line="173" selection-end-column="5" />
+            <state relative-caret-position="199">
+              <caret line="172" column="8" lean-forward="true" selection-start-line="172" selection-start-column="8" selection-end-line="172" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/student_details.php">
+        <entry file="file://$PROJECT_DIR$/admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+            <state relative-caret-position="136">
+              <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/admin_script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="92" selection-start-line="8" selection-start-column="92" selection-end-line="8" selection-end-column="92" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#td#4;n#tr#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -566,7 +230,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sidebar-menu</find>
       <find>sidebar-m</find>
       <find>admin-table</find>
       <find>Remove-ca</find>
@@ -596,6 +259,7 @@
       <find>custom-control</find>
       <find>pill</find>
       <find>npm-run-dist</find>
+      <find>primary</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;option value</replace>
@@ -634,12 +298,12 @@
         <option value="$PROJECT_DIR$/student_details.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/43f84b54-f0d7-4ae6-ba66-379cee807c08/console.sql" />
         <option value="$PROJECT_DIR$/getGraphData.php" />
-        <option value="$PROJECT_DIR$/js/admin_script.js" />
         <option value="$PROJECT_DIR$/admin.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/admin_login.html" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/scss/bootstrap.scss" />
+        <option value="$PROJECT_DIR$/js/admin_script.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
@@ -655,9 +319,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
@@ -709,7 +370,7 @@
         <observation name="false" value="128.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="false" value="1.0" />
+        <observation name="false" value="2.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:liftShorterClasses">
@@ -741,7 +402,7 @@
         <observation name="UNDEFINED" value="288.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="UNDEFINED" value="1.0" />
+        <observation name="UNDEFINED" value="2.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:middleMatching">
@@ -778,6 +439,7 @@
         <observation name="true" value="6.0" />
       </dailyData>
       <dailyData date="21-09-2018">
+        <observation name="false" value="1.0" />
         <observation name="true" value="1.0" />
       </dailyData>
     </factor>
@@ -810,7 +472,7 @@
         <observation name="UNDEFINED" value="288.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="UNDEFINED" value="1.0" />
+        <observation name="UNDEFINED" value="2.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_inResolveScope">
@@ -858,7 +520,7 @@
         <observation name="true" value="20.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="true" value="1.0" />
+        <observation name="true" value="2.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_openedInEditor">
@@ -905,7 +567,7 @@
         <observation name="true" value="45.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="true" value="1.0" />
+        <observation name="true" value="2.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameDirectory">
@@ -951,7 +613,7 @@
         <observation name="true" value="46.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="false" value="1.0" />
+        <observation name="false" value="2.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameLogicalRoot">
@@ -992,7 +654,7 @@
         <observation name="false" value="101.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="false" value="1.0" />
+        <observation name="false" value="2.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sdkOrLibrary">
@@ -1033,7 +695,7 @@
         <observation name="false" value="101.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="false" value="1.0" />
+        <observation name="false" value="2.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:templates">
@@ -1071,7 +733,7 @@
         <observation name="true" value="1.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="false" value="1.0" />
+        <observation name="false" value="2.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:accessible">
@@ -1103,7 +765,7 @@
         <observation name="UNDEFINED" value="288.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="UNDEFINED" value="1.0" />
+        <observation name="UNDEFINED" value="2.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:expectedType">
@@ -1135,7 +797,7 @@
         <observation name="UNDEFINED" value="288.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="UNDEFINED" value="1.0" />
+        <observation name="UNDEFINED" value="2.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:kind">
@@ -1167,7 +829,7 @@
         <observation name="UNDEFINED" value="288.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="UNDEFINED" value="1.0" />
+        <observation name="UNDEFINED" value="2.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_groovyReferenceListWeigher">
@@ -1199,7 +861,7 @@
         <observation name="UNDEFINED" value="288.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="UNDEFINED" value="1.0" />
+        <observation name="UNDEFINED" value="2.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_javaInheritance">
@@ -1231,7 +893,7 @@
         <observation name="UNDEFINED" value="288.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="UNDEFINED" value="1.0" />
+        <observation name="UNDEFINED" value="2.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_referenceList">
@@ -1263,7 +925,7 @@
         <observation name="UNDEFINED" value="288.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="UNDEFINED" value="1.0" />
+        <observation name="UNDEFINED" value="2.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:recursion">
@@ -1295,7 +957,7 @@
         <observation name="UNDEFINED" value="288.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="UNDEFINED" value="1.0" />
+        <observation name="UNDEFINED" value="2.0" />
       </dailyData>
     </factor>
     <factor id="completionFinishedType">
@@ -1345,8 +1007,8 @@
         <observation name="typedSelect" value="42.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="cancelled" value="4.0" />
-        <observation name="explicitSelect" value="1.0" />
+        <observation name="cancelled" value="71.0" />
+        <observation name="explicitSelect" value="2.0" />
       </dailyData>
     </factor>
     <factor id="completionType">
@@ -1378,7 +1040,7 @@
         <observation name="BASIC" value="425.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="BASIC" value="2.0" />
+        <observation name="BASIC" value="13.0" />
       </dailyData>
     </factor>
     <factor id="completionUsage">
@@ -1410,7 +1072,7 @@
         <observation name="count" value="1712.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="count" value="5.0" />
+        <observation name="count" value="73.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:explicitProximity">
@@ -1488,7 +1150,7 @@
       </dailyData>
       <dailyData date="21-09-2018">
         <observation name="average" value="0.0" />
-        <observation name="count" value="1.0" />
+        <observation name="count" value="3.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -1569,7 +1231,7 @@
       </dailyData>
       <dailyData date="21-09-2018">
         <observation name="average" value="0.0" />
-        <observation name="count" value="1.0" />
+        <observation name="count" value="3.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -1604,7 +1266,7 @@
         <observation name="UNDEFINED" value="288.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="UNDEFINED" value="1.0" />
+        <observation name="UNDEFINED" value="2.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:nameEnd">
@@ -1636,7 +1298,7 @@
         <observation name="UNDEFINED" value="288.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="UNDEFINED" value="1.0" />
+        <observation name="UNDEFINED" value="2.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:position">
@@ -1704,11 +1366,11 @@
         <observation name="variance" value="0.274499" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="average" value="1.0" />
-        <observation name="count" value="1.0" />
+        <observation name="average" value="0.333333" />
+        <observation name="count" value="3.0" />
         <observation name="max" value="1.0" />
-        <observation name="min" value="1.0" />
-        <observation name="variance" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.055556" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prefix">
@@ -1776,11 +1438,11 @@
         <observation name="variance" value="65820.938602" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="average" value="-2.0" />
-        <observation name="count" value="1.0" />
+        <observation name="average" value="-768.666667" />
+        <observation name="count" value="3.0" />
         <observation name="max" value="-2.0" />
-        <observation name="min" value="-2.0" />
-        <observation name="variance" value="0.0" />
+        <observation name="min" value="-1152.0" />
+        <observation name="variance" value="73472.222222" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:priority">
@@ -1849,7 +1511,7 @@
       </dailyData>
       <dailyData date="21-09-2018">
         <observation name="average" value="0.0" />
-        <observation name="count" value="1.0" />
+        <observation name="count" value="3.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -1884,7 +1546,7 @@
         <observation name="UNDEFINED" value="288.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="UNDEFINED" value="1.0" />
+        <observation name="UNDEFINED" value="2.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_knownElement">
@@ -1916,7 +1578,7 @@
         <observation name="UNDEFINED" value="288.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="UNDEFINED" value="1.0" />
+        <observation name="UNDEFINED" value="2.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_sameModule">
@@ -1994,7 +1656,7 @@
       </dailyData>
       <dailyData date="21-09-2018">
         <observation name="average" value="2.0" />
-        <observation name="count" value="1.0" />
+        <observation name="count" value="3.0" />
         <observation name="max" value="2.0" />
         <observation name="min" value="2.0" />
         <observation name="variance" value="0.0" />
@@ -2029,7 +1691,7 @@
         <observation name="UNDEFINED" value="288.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="UNDEFINED" value="1.0" />
+        <observation name="UNDEFINED" value="2.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:query_length">
@@ -2098,7 +1760,7 @@
       </dailyData>
       <dailyData date="21-09-2018">
         <observation name="average" value="0.0" />
-        <observation name="count" value="1.0" />
+        <observation name="count" value="3.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -2170,7 +1832,7 @@
       </dailyData>
       <dailyData date="21-09-2018">
         <observation name="average" value="16.0" />
-        <observation name="count" value="1.0" />
+        <observation name="count" value="3.0" />
         <observation name="max" value="16.0" />
         <observation name="min" value="16.0" />
         <observation name="variance" value="0.0" />
@@ -2205,7 +1867,7 @@
         <observation name="UNDEFINED" value="288.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="UNDEFINED" value="1.0" />
+        <observation name="UNDEFINED" value="2.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:shorter">
@@ -2237,7 +1899,7 @@
         <observation name="UNDEFINED" value="288.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="UNDEFINED" value="1.0" />
+        <observation name="UNDEFINED" value="2.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:simple">
@@ -2269,7 +1931,7 @@
         <observation name="UNDEFINED" value="288.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="UNDEFINED" value="1.0" />
+        <observation name="UNDEFINED" value="2.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sorter">
@@ -2338,7 +2000,7 @@
       </dailyData>
       <dailyData date="21-09-2018">
         <observation name="average" value="1.0" />
-        <observation name="count" value="1.0" />
+        <observation name="count" value="3.0" />
         <observation name="max" value="1.0" />
         <observation name="min" value="1.0" />
         <observation name="variance" value="0.0" />
@@ -2373,7 +2035,7 @@
         <observation name="UNDEFINED" value="288.0" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="UNDEFINED" value="1.0" />
+        <observation name="UNDEFINED" value="2.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:stats">
@@ -2441,11 +2103,11 @@
         <observation name="variance" value="15693914.060496" />
       </dailyData>
       <dailyData date="21-09-2018">
-        <observation name="average" value="9338.0" />
-        <observation name="count" value="1.0" />
-        <observation name="max" value="9338.0" />
+        <observation name="average" value="9779.333333" />
+        <observation name="count" value="3.0" />
+        <observation name="max" value="10000.0" />
         <observation name="min" value="9338.0" />
-        <observation name="variance" value="0.0" />
+        <observation name="variance" value="24346.888889" />
       </dailyData>
     </factor>
     <factor id="itemPosition">
@@ -2516,14 +2178,11 @@
         <observation name="6" value="1.0" />
       </dailyData>
       <dailyData date="21-09-2018">
+        <observation name="0" value="1.0" />
         <observation name="1" value="1.0" />
       </dailyData>
     </factor>
     <factor id="mnemonicsUsage">
-      <dailyData date="10-09-2018">
-        <observation name="total" value="117.0" />
-        <observation name="withMnemonics" value="3.0" />
-      </dailyData>
       <dailyData date="11-09-2018">
         <observation name="total" value="89.0" />
         <observation name="withMnemonics" value="1.0" />
@@ -2559,6 +2218,10 @@
       <dailyData date="20-09-2018">
         <observation name="total" value="195.0" />
         <observation name="withMnemonics" value="6.0" />
+      </dailyData>
+      <dailyData date="21-09-2018">
+        <observation name="total" value="1.0" />
+        <observation name="withMnemonics" value="0.0" />
       </dailyData>
     </factor>
     <factor id="prefixLength">
@@ -2670,13 +2333,10 @@
       </dailyData>
       <dailyData date="21-09-2018">
         <observation name="1" value="1.0" />
+        <observation name="2" value="1.0" />
       </dailyData>
     </factor>
     <factor id="timeBetweenTyping">
-      <dailyData date="10-09-2018">
-        <observation name="average" value="411.836013" />
-        <observation name="count" value="311.0" />
-      </dailyData>
       <dailyData date="11-09-2018">
         <observation name="average" value="428.808511" />
         <observation name="count" value="188.0" />
@@ -2713,6 +2373,10 @@
         <observation name="average" value="386.04175" />
         <observation name="count" value="503.0" />
       </dailyData>
+      <dailyData date="21-09-2018">
+        <observation name="average" value="739.5" />
+        <observation name="count" value="6.0" />
+      </dailyData>
     </factor>
   </component>
   <component name="ProjectView">
@@ -2738,21 +2402,6 @@
               <item name="RVPS Elections" type="b2602c69:ProjectViewProjectNode" />
               <item name="RVPS Elections" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="RVPS Elections" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RVPS Elections" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RVPS Elections" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RVPS Elections" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RVPS Elections" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RVPS Elections" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -2772,6 +2421,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2018.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -2897,7 +2547,8 @@
       <workItem from="1537362537605" duration="7236000" />
       <workItem from="1537440709082" duration="78000" />
       <workItem from="1537451483048" duration="13588000" />
-      <workItem from="1537468255716" duration="2244000" />
+      <workItem from="1537468255716" duration="2876000" />
+      <workItem from="1537494756073" duration="526000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1536151567356</created>
@@ -3067,11 +2718,18 @@
       <option name="project" value="LOCAL" />
       <updated>1537466125582</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="minor update">
+      <created>1537470723232</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1537470723232</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141401000" />
+    <option name="totallyTimeSpent" value="142559000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -3090,7 +2748,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.5011601" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32866043" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919093" visible="true" weight="0.32866043" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919093" weight="0.32866043" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39875388" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -3104,9 +2762,10 @@
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.32866043" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5008091" side_tool="true" weight="0.32866043" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.3364486" />
-      <window_info anchor="bottom" id="File Transfer" order="16" weight="0.32866043" />
+      <window_info anchor="bottom" id="File Transfer" order="16" visible="true" weight="0.32866043" />
       <window_info active="true" anchor="bottom" id="Messages" order="17" visible="true" weight="0.32866043" />
       <window_info anchor="bottom" id="Inspection Results" order="18" weight="0.32866043" />
+      <window_info anchor="bottom" id="TypeScript" order="19" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -3176,18 +2835,13 @@
     <MESSAGE value="update" />
     <MESSAGE value="Added Statistics Tab" />
     <MESSAGE value="refractored project" />
-    <option name="LAST_COMMIT_MESSAGE" value="refractored project" />
+    <MESSAGE value="minor update" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor update" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-118" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/bootstrap.min.js" />
     <entry file="file://$PROJECT_DIR$/js/jquery-3.3.1.js" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/applications.rnc">
       <provider selected="true" editor-type-id="text-editor">
@@ -3280,13 +2934,7 @@
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14591">
-          <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/_variables.scss" />
     <entry file="file://$PROJECT_DIR$/node_modules/scss/examples/blog.scss" />
     <entry file="file://$PROJECT_DIR$/scss/custom" />
     <entry file="file://$PROJECT_DIR$/css/bootstrap.css" />
@@ -3304,6 +2952,85 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="210" selection-start-line="11" selection-start-column="210" selection-end-line="11" selection-end-column="210" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getGraphData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/dist/js/bootstrap.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/package.json" />
+    <entry file="file://$PROJECT_DIR$/node_modules/jquery/dist/jquery.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/bootstrap.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/node_modules/stylelint/lib/utils/configurationError.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap.css.map">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="8240" column="13" lean-forward="true" selection-start-line="8240" selection-start-column="13" selection-end-line="8240" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/load_candidates_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_candidate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="82" selection-start-line="28" selection-start-column="82" selection-end-line="28" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_candidates.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -3332,101 +3059,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/admin_script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8942">
-          <caret line="526" column="32" selection-start-line="526" selection-start-column="32" selection-end-line="526" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getGraphData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student_details.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/load_candidates_details.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/add_candidate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="82" selection-start-line="28" selection-start-column="82" selection-end-line="28" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_candidates.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/dist/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="136">
+          <caret line="8" column="92" selection-start-line="8" selection-start-column="92" selection-end-line="8" selection-end-column="92" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#td#4;n#tr#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1413">
-          <caret line="4495" column="11" selection-start-line="4495" selection-start-column="7" selection-end-line="4495" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/bootstrap.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-750">
-          <caret line="184" column="35" selection-start-line="184" selection-start-column="35" selection-end-line="184" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="173" column="5" lean-forward="true" selection-start-line="173" selection-start-column="5" selection-end-line="173" selection-end-column="5" />
+        <state relative-caret-position="199">
+          <caret line="172" column="8" lean-forward="true" selection-start-line="172" selection-start-column="8" selection-end-line="172" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2405">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="238">
+          <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
