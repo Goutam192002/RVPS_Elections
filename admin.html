@@ -19,10 +19,7 @@
                 <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">Contact Us</a>
+                <a class="nav-link" href="#footer">Contact Us</a>
             </li>
             <li class="nav-item" id="admin-name-header">
             </li>
@@ -88,17 +85,17 @@
                 <tr>
                     <td>Admin Password</td>
                     <td id="table_admin_password"></td>
-                    <td><a href="#" onclick=change_admin_password()>Change Password</a></td>
+                    <td><a href="#change-password-dialog" onclick=change_admin_password()>Change Password</a></td>
                 </tr>
                 <tr>
                     <td>Admin email</td>
                     <td id="table_admin_email"></td>
-                    <td><a href="#" onclick=change_admin_email()>Change email</a></td>
+                    <td><a href="#change-email-dialog" onclick=change_admin_email()>Change email</a></td>
                 </tr>
                 <tr>
                     <td>Admin mobile Number</td>
                     <td id="table_admin_mobileno"></td>
-                    <td><a href="#" onclick=change_admin_mobileno()>Change mobile number</a></td>
+                    <td><a href="#change-mobileno-dialog" onclick=change_admin_mobileno()>Change mobile number</a></td>
                 </tr>
             </table>
         </div>
@@ -109,12 +106,12 @@
             <div class="card-body">
                 <div class="form-group">
                     <label>Current Username</label>
-                    <input type="text" value="" id="current-username" class="form-control input-lg" readonly>
+                    <input type="text"  id="current-username" class="form-control input-lg" readonly>
                 </div>
                 <form id="change-username-form">
                     <div class="form-group">
                         <label>Enter new username</label>
-                        <input type="text" id="new-username" class="form-control input-lg" required>
+                        <input type="text" placeholder="Enter New Username" id="new-username" class="form-control input-lg" required>
                         <span id="username-availability" class="text-danger"></span>
                     </div>
                     <div class="form-group">
@@ -130,17 +127,17 @@
             <div class="card-body">
                 <div class="form-group">
                     <label>Currrent Password</label>
-                    <input type="text" value="" id="current-password" class="form-control input-lg" readonly>
+                    <input type="password"  id="current-password" class="form-control input-lg" readonly>
                 </div>
                 <form id="change-password-form">
                     <div class="form-group">
                         <label>Enter new password</label>
-                        <input type="text" id="new-password" class="form-control input-lg" required>
+                        <input type="password" id="new-password" class="form-control input-lg" required>
                         <span id="password-alerts" class="text-danger"></span>
                     </div>
                     <div class="form-group">
                         <label>Confirm New Password</label>
-                        <input type="text" id="confirm-new-password" class="form-control input-lg" required>
+                        <input type="password" id="confirm-new-password" class="form-control input-lg" required>
                         <span id="confirm-password-alerts" class="text-danger"></span>
                     </div>
                     <div class="form-group">
@@ -156,7 +153,7 @@
             <div class="card-body">
                 <div class="form-group">
                     <label>Current e-mail address</label>
-                    <input type="text" value="" id="current-emailid" class="form-control input-lg" readonly>
+                    <input type="text"  id="current-emailid" class="form-control input-lg" readonly>
                 </div>
                 <form id="change-email-address">
                     <div class="form-group">
@@ -545,7 +542,7 @@
         </div>
     </div>
 </div>
-<footer>
+<footer id="footer">
     <div class="container-fluid padding">
         <h1  align="center">About Us</h1>
         <p align="center">I am Goutam B Seervi. A student of RVPS for the year 2015-18</p>

@@ -1,5 +1,5 @@
 <?php
-$election_type = $_POST['election_type'];
+$election_type =$_POST['election_type'];
 include "dbconnect.php";
 $query = "SELECT contestant_name,contestant_id FROM contestant_details WHERE election_type='$election_type'";
 $result = $conn->query($query);
