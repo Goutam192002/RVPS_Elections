@@ -11,6 +11,7 @@ dbconnect.php
 The database was created using phpMyAdmin, there may be some problems in using the database.In case of any problem mail me.
 Email id: goutambseervi@gmail.com
 
-Suggestion-The method i would recommend is installing XAMPP and placing all files in the xampp/htdocs folder except for the election_database which would go into xampp/mysql/data folder
+Suggestion-The method I would recommend is executing the election_database.sql . This would erase any chances of errors.
+You could also copy the election_database folder but that could cause some problems related to database engine
 
 The data used in this project is only for representational purpose. Any misuse of data could lead to legal action against the person
