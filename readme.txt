@@ -14,4 +14,6 @@ Email id: goutambseervi@gmail.com
 Suggestion-The method I would recommend is executing the election_database.sql . This would erase any chances of errors.
 You could also copy the election_database folder but that could cause some problems related to database engine
 
+Read the wiki for insights of what the project is all about
+
 The data used in this project is only for representational purpose. Any misuse of data could lead to legal action against the person
